@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="data.csv">data.csv</file>
+        <file alias="Global.qml">Global.qml</file>
+        <file alias="GradeWidgetBase.qml">GradeWidgetBase.qml</file>
+        <file alias="French.qml">French.qml</file>
+        <file alias="YDS.qml">YDS.qml</file>
+    </qresource>
+</RCC>
