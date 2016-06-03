@@ -35,7 +35,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     Data *data = new Data;
 
     engine.rootContext()->setContextProperty(QLatin1String("dataStore"), data);
-    engine.load(QUrl(QStringLiteral("qrc:///Global.qml")));
+    engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
 
     if (engine.rootObjects().isEmpty()) {
         return -1;

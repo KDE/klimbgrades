@@ -18,13 +18,15 @@
  */
 
 import QtQuick 2.0
+import QtGraphicalEffects 1.0
 import org.kde.kirigami 1.0 as Kirigami
 
-Item {
+Rectangle {
     id: root
 
-    width: 100
-    height: 100
+    color: Kirigami.Theme.viewBackgroundColor
+    width: mainLayout.width + Kirigami.Units.gridUnit * 2
+    height: mainLayout.height + Kirigami.Units.gridUnit * 2
 
     property alias scaleName: scaleNameLabel.text
     property string url
@@ -47,6 +49,8 @@ Item {
         return decimalGrade;
     }
 
+    signal infoClicked
+
     onDecimalGradeChanged: {
         parent.grade = decimalGrade;
     }
@@ -56,11 +60,36 @@ Item {
     }
 
     Column {
+        id: mainLayout
+        z: 2
+        width: Math.max(Kirigami.Units.gridUnit * 8, implicitWidth)
+        anchors {
+            top: parent.top
+            left: parent.left
+            margins: Kirigami.Units.gridUnit
+        }
         Kirigami.Label {
             id: scaleNameLabel
         }
         Kirigami.Heading {
             text: format(decimalGrade);
+        }
+    
+        Kirigami.Icon {
+            anchors {
+                right: parent.right
+            }
+            source: "documentinfo"
+            width: Kirigami.Units.iconSizes.smallMedium
+            height: width
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    sheet.description = description
+                    sheet.url = url
+                    sheet.open();
+                }
+            }
         }
     }
     MouseArea {
@@ -82,5 +111,13 @@ Item {
                 decrement();                
             }
         }
+    }
+    layer.enabled: true
+    layer.effect: DropShadow {
+        horizontalOffset: 0
+        verticalOffset: 0
+        radius: Kirigami.Units.gridUnit
+        samples: 32
+        color: Qt.rgba(0, 0, 0, 0.5)
     }
 }

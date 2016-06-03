@@ -18,18 +18,53 @@
  */
 
 import QtQuick 2.0
+import QtQuick.Layouts 1.2
+import QtQuick.Controls 1.2 as Controls
 import org.kde.kirigami 1.0 as Kirigami
 
-Kirigami.AbstractApplicationWindow {
+Kirigami.ScrollablePage {
 
-    Column {
-        property real grade: 1
-        French {
-            decimalGrade: parent.grade
+    title: "Climbing grades"
+    actions {
+        main: Kirigami.Action {
+            iconName: "view-refresh"
+            text: "Reset"
+            onTriggered: mainLayout.grade = 45;
         }
-        YDS {
-            decimalGrade: parent.grade
+    }
+    Kirigami.OverlaySheet {
+        id: sheet
+        property alias description: descrLabel.text
+        property string url
+        ColumnLayout {
+            Kirigami.Label {
+                id: descrLabel
+                Layout.fillWidth: true
+                wrapMode: Text.WordWrap
+            }
+            Controls.Button {
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: "Source: Wikipedia"
+                onClicked: {
+                    Qt.openUrlExternally(sheet.url);
+                    sheet.close();
+                }
+            }
         }
     }
 
+    Column {
+        id: mainLayout
+        anchors.horizontalCenter: parent.horizontalCenter
+        spacing: Kirigami.Units.gridUnit * 2
+        property real grade: 45
+        French {
+            anchors.horizontalCenter: parent.horizontalCenter
+            decimalGrade: parent.grade
+        }
+        YDS {
+            anchors.horizontalCenter: parent.horizontalCenter
+            decimalGrade: parent.grade
+        }
+    }
 }

@@ -22,6 +22,7 @@ import QtQuick 2.0
 GradeWidgetBase {
     scaleName: "French"
 
+    visible: applicationWindow().french
     url: "https://en.wikipedia.org/wiki/Grade_%28climbing%29#French_numerical_grades"
 
     function format(grade) {
@@ -58,4 +59,6 @@ GradeWidgetBase {
 
         return Math.floor(adjusted) + letter + plus;
     }
+
+    description: "The French numerical system rates a climb according to the overall technical difficulty and strenuousness of the route. Grades start at 1 (very easy) and the system is open-ended. Each numerical grade can be subdivided by adding a letter (a, b or c). Examples: 2, 4, 4b, 6a, 7c. An optional + may be used to further differentiate difficulty. For example, these routes are sorted by ascending difficulty: 5c+, 6a, 6a+, 6b, 6b+. Although some countries in Europe use a system with similar grades but not necessarily matching difficulties, the French system remains the main system used in the vast majority of European countries and in many international events outside the USA."
 }
