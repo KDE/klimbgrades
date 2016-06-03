@@ -29,7 +29,7 @@ Kirigami.ApplicationWindow {
     globalDrawer: Kirigami.GlobalDrawer {
         title: "climbing grades"
         titleIcon: "kruler"
-        //bannerImageSource: "banner.jpg"
+        bannerImageSource: "halfdome.jpg"
 
         actions: [
             Kirigami.Action {

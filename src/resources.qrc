@@ -6,5 +6,6 @@
         <file alias="GradeWidgetBase.qml">GradeWidgetBase.qml</file>
         <file alias="French.qml">French.qml</file>
         <file alias="YDS.qml">YDS.qml</file>
+        <file alias="halfdome.jpg">halfdome.jpg</file>
     </qresource>
 </RCC>
