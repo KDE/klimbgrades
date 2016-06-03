@@ -28,13 +28,7 @@ Data::Data(QObject *parent)
     : QObject(parent)
 {
     QFile file(":/data.csv");
-    /*file.open(QIODevice::ReadOnly);
-    QByteArray line;
-    while (!file.atEnd()) {
-        line = file.readLine();
-        qWarning()<<QString::fromLatin1(line).split(":");
-    }
-    */
+
     QString rawData;
     if (file.open(QIODevice::ReadOnly)) {
         QTextStream in(&file);
@@ -62,7 +56,7 @@ Data::Data(QObject *parent)
             }
             ++line;
         }
-        qWarning()<<m_data;
+        //qWarning()<<m_data;
     }
     
 }
