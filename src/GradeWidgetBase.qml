@@ -18,6 +18,7 @@
  */
 
 import QtQuick 2.0
+import QtQuick.Layouts 1.2
 import QtGraphicalEffects 1.0
 import org.kde.kirigami 1.0 as Kirigami
 
@@ -71,24 +72,36 @@ Rectangle {
         Kirigami.Label {
             id: scaleNameLabel
         }
-        Kirigami.Heading {
-            text: format(decimalGrade);
+        RowLayout {
+            anchors {
+                left: parent.left
+                right: parent.right
+            }
+            IconButton {
+                source: "go-previous"
+                onClicked: root.decimalGrade -= 3;
+            }
+            Kirigami.Heading {
+                Layout.fillWidth: true
+                horizontalAlignment: Text.AlignHCenter
+                text: format(decimalGrade);
+            }
+            IconButton {
+                source: "go-next"
+                onClicked: root.decimalGrade += 3;
+            }
         }
     
-        Kirigami.Icon {
+        IconButton {
             anchors {
                 right: parent.right
             }
             source: "documentinfo"
-            width: Kirigami.Units.iconSizes.smallMedium
-            height: width
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    sheet.description = description
-                    sheet.url = url
-                    sheet.open();
-                }
+
+            onClicked: {
+                sheet.description = description
+                sheet.url = url
+                sheet.open();
             }
         }
     }
@@ -96,6 +109,7 @@ Rectangle {
         id: mouseArea
         anchors.fill: parent
         property int startX
+        preventStealing: true
         onPressed: {
             startX = mouse.x
         }
