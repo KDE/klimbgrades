@@ -130,7 +130,7 @@ Rectangle {
     layer.effect: DropShadow {
         horizontalOffset: 0
         verticalOffset: 0
-        radius: Kirigami.Units.gridUnit
+        radius: Kirigami.Units.gridUnit/1.6
         samples: 32
         color: Qt.rgba(0, 0, 0, 0.5)
     }
