@@ -66,5 +66,9 @@ Kirigami.ScrollablePage {
             anchors.horizontalCenter: parent.horizontalCenter
             decimalGrade: parent.grade
         }
+        Uiaa {
+            anchors.horizontalCenter: parent.horizontalCenter
+            decimalGrade: parent.grade
+        }
     }
 }

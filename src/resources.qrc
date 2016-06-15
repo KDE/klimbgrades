@@ -7,6 +7,7 @@
         <file alias="GradeWidgetBase.qml">GradeWidgetBase.qml</file>
         <file alias="French.qml">French.qml</file>
         <file alias="YDS.qml">YDS.qml</file>
+        <file alias="Uiaa.qml">Uiaa.qml</file>
         <file alias="halfdome.jpg">halfdome.jpg</file>
         <!--FIXME-->
         <!--<file alias="icons/climbinggrades.svg">climbinggrades.svg</file>-->

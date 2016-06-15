@@ -58,7 +58,30 @@ Data::Data(QObject *parent)
         }
         //qWarning()<<m_data;
     }
-    
+
+    m_enabledScales = m_scales;
+    emit scalesChanged();
+    emit enabledScalesChanged();
+}
+
+QStringList Data::scales() const
+{
+    return m_scales;
+}
+
+QStringList Data::enabledScales() const
+{
+    return m_enabledScales;
+}
+
+void Data::setEnabledScales(const QStringList &scales)
+{
+    if (m_enabledScales == scales) {
+        return;
+    }
+
+    m_enabledScales = scales;
+    emit enabledScalesChanged();
 }
 
 QString Data::gradeName(const QString &scale, int decimalGrade) const

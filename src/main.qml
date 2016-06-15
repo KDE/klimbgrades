@@ -25,8 +25,10 @@ Kirigami.ApplicationWindow {
 
     property bool french: true
     property bool yds: true
+    property bool uiaa: true
 
     globalDrawer: Kirigami.GlobalDrawer {
+        id: drawer
         title: "climbing grades"
         titleIcon: "climbinggrades"
         bannerImageSource: "halfdome.jpg"
@@ -43,6 +45,12 @@ Kirigami.ApplicationWindow {
                 checkable: true
                 checked: true
                 onCheckedChanged: root.yds = checked;
+            },
+            Kirigami.Action {
+                text: "UIAA"
+                checkable: true
+                checked: true
+                onCheckedChanged: root.uiaa = checked;
             }
         ]
     }
