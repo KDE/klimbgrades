@@ -47,6 +47,10 @@ Rectangle {
     }
 
     function format(decimalGrade) {
+        var formattedGrade = dataStore.gradeName(scaleName, decimalGrade);
+        if (formattedGrade) {
+            return formattedGrade;
+        }
         return decimalGrade;
     }
 

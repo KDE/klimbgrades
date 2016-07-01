@@ -24,12 +24,17 @@
 #include <QUrl>
 
 #include "data.h"
+#include "availablegradesmodel.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
+    QCoreApplication::setOrganizationName("KDE");
+    QCoreApplication::setOrganizationDomain("kde.org");
+    QCoreApplication::setApplicationName("Climbing Grades");
 
     //qputenv("QML_IMPORT_TRACE", "1");
+    qmlRegisterType<AvailableGradesModel>();
     QQmlApplicationEngine engine;
 
     Data *data = new Data;

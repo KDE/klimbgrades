@@ -1,5 +1,6 @@
 
 set(climbinggrades_SRCS
+    availablegradesmodel.cpp
     data.cpp
     main.cpp
     )

@@ -1,0 +1,28 @@
+[
+{
+    "name": "French",
+    "description": "The French numerical system rates a climb according to the overall technical difficulty and strenuousness of the route. Grades start at 1 (very easy) and the system is open-ended. Each numerical grade can be subdivided by adding a letter (a, b or c). Examples: 2, 4, 4b, 6a, 7c. An optional + may be used to further differentiate difficulty. For example, these routes are sorted by ascending difficulty: 5c+, 6a, 6a+, 6b, 6b+. Although some countries in Europe use a system with similar grades but not necessarily matching difficulties, the French system remains the main system used in the vast majority of European countries and in many international events outside the USA.",
+    "url": "https://en.wikipedia.org/wiki/Grade_%28climbing%29#French_numerical_grades"
+},
+{
+    "name": "YDS",
+    "description": "The system was initially developed as the Sierra Club grading system in the 1930s to classify hikes and climbs in the Sierra Nevada. Previously, these were described relative to others. For example, Z is harder than X but easier than Y. This primitive system was difficult to learn for those who did not yet have experience of X or Y. The club adapted a numerical system of classification that was easy to learn and which seemed practical in its application.
+
+The system now divides all hikes and climbs into five classes: The exact definition of the classes is somewhat controversial, and updated versions of these classifications have been proposed.
+
+    Class 1: Walking with a low chance of injury, hiking boots a good idea.
+    Class 2: Simple scrambling, with the possibility of occasional use of the hands. Little potential danger is encountered. Hiking Boots highly recommended.
+    Class 3: Scrambling with increased exposure. Handholds are necessary. A rope should be available for learning climbers, or if you just choose to use one that day, but is usually not required. Falls could easily be fatal.
+    Class 4: Simple climbing, with exposure. A rope is often used. Natural protection can be easily found. Falls may well be fatal.
+    Class 5: Is considered technical roped free (without hanging on the rope, pulling on, or stepping on anchors) climbing; belaying, and other protection hardware is used for safety. Un-roped falls can result in severe injury or death.
+        Class 5.0 to 5.15c[5] is used to define progressively more difficult free moves.
+    Class 6: Is considered Aid (often broken into A.0 to A.5) climbing. Equipment (Etriers, aiders, or stirrups are often used to stand in, and the equipment is used for hand holds) is used for more than just safety.",
+    "url": "https://en.wikipedia.org/wiki/Yosemite_Decimal_System"
+},
+{
+    "name": "UIAA",
+    "description": "The UIAA grading system is mostly used for short rock routes in Germany, Austria, Switzerland, Czech Republic, Slovakia and Hungary. On long routes it is often used in the Alps and Himalaya. Using Roman numerals, it was originally intended to run from I (easiest) to VI (hardest), but as with all other grading systems, improvements to climbing standards have led to the system being open-ended after the grade VII was accepted in 1977. An optional + or − may be used to further differentiate difficulty. As of 2004, the hardest climbs are XII−.",
+    "url": "https://en.wikipedia.org/wiki/Grade_%28climbing%29#UIAA"
+}
+]
+

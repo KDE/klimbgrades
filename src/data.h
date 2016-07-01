@@ -22,20 +22,22 @@
 
 #include <QObject>
 #include <QHash>
+#include <QStandardItemModel>
 #include <QVector>
+
+class AvailableGradesModel;
 
 class Data : public QObject {
     Q_OBJECT
+    Q_PROPERTY(AvailableGradesModel *availableGradesModel READ availableGradesModel CONSTANT)
     Q_PROPERTY(QStringList scales READ scales NOTIFY scalesChanged)
-    Q_PROPERTY(QStringList enabledScales READ enabledScales WRITE setEnabledScales NOTIFY enabledScalesChanged)
 
 public:
     Data(QObject *parent = 0);
 
     QStringList scales() const;
 
-    QStringList enabledScales() const;
-    void setEnabledScales(const QStringList &scales);
+    AvailableGradesModel *availableGradesModel();
 
     Q_INVOKABLE QString gradeName(const QString &scale, int decimalGrade) const;
 
@@ -45,8 +47,8 @@ Q_SIGNALS:
 
 private:
     QStringList m_scales;
-    QStringList m_enabledScales;
     QHash<QString, QVector<QString> > m_data;
+    AvailableGradesModel *m_availableGradesModel;
 };
 
 #endif

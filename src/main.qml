@@ -18,6 +18,7 @@
  */
 
 import QtQuick 2.1
+import QtQuick.Controls 1.2 as Controls
 import org.kde.kirigami 1.0 as Kirigami
 
 Kirigami.ApplicationWindow {
@@ -33,26 +34,41 @@ Kirigami.ApplicationWindow {
         titleIcon: "climbinggrades"
         bannerImageSource: "halfdome.jpg"
 
-        actions: [
-            Kirigami.Action {
-                text: "French"
-                checkable: true
-                checked: true
-                onCheckedChanged: root.french = checked;
-            },
-            Kirigami.Action {
-                text: "YDS"
-                checkable: true
-                checked: true
-                onCheckedChanged: root.yds = checked;
-            },
-            Kirigami.Action {
-                text: "UIAA"
-                checkable: true
-                checked: true
-                onCheckedChanged: root.uiaa = checked;
+        Column {
+            anchors {
+                left: parent.left
+                right: parent.right
             }
-        ]
+            Kirigami.Heading {
+                text: "Lead"
+            }
+            Repeater {
+                model: dataStore.availableGradesModel
+                delegate: Kirigami.BasicListItem {
+                    height: Kirigami.Units.gridUnit * 3
+                    Controls.CheckBox {
+                        id: checkBox
+                        enabled: false
+                        anchors {
+                            left: parent.left
+                            verticalCenter: parent.verticalCenter
+                        }
+                        checked: model.enabledRole
+                    }
+                    label: model.nameRole
+                    onClicked: {
+                        checkBox.checked = !checkBox.checked;
+                        dataStore.availableGradesModel.setScaleEnabled(index, checkBox.checked);
+                    }
+                }
+            }
+            Kirigami.Heading {
+                text: "Boulder"
+            }
+            Kirigami.Label {
+                text: "TODO"
+            }
+        }
     }
     pageStack.initialPage: mainPageComponent
 

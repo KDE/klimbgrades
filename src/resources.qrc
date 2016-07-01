@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
+        <file alias="scales.json">scales.json</file>
         <file alias="data.csv">data.csv</file>
         <file alias="main.qml">main.qml</file>
         <file alias="IconButton.qml">IconButton.qml</file>

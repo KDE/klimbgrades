@@ -58,7 +58,18 @@ Kirigami.ScrollablePage {
         anchors.horizontalCenter: parent.horizontalCenter
         spacing: Kirigami.Units.gridUnit * 2
         property real grade: 45
-        French {
+        Repeater {
+            model: dataStore.availableGradesModel
+            delegate: GradeWidgetBase {
+                decimalGrade: mainLayout.grade
+                anchors.horizontalCenter: parent.horizontalCenter
+                visible: model.enabledRole
+                scaleName: model.nameRole
+                url: model.urlRole
+                description: model.descriptionRole
+            }
+        }
+        /*French {
             anchors.horizontalCenter: parent.horizontalCenter
             decimalGrade: parent.grade
         }
@@ -69,6 +80,6 @@ Kirigami.ScrollablePage {
         Uiaa {
             anchors.horizontalCenter: parent.horizontalCenter
             decimalGrade: parent.grade
-        }
+        }*/
     }
 }
