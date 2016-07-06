@@ -34,7 +34,7 @@ Kirigami.ApplicationWindow {
         titleIcon: "climbinggrades"
         bannerImageSource: "halfdome.jpg"
 
-        Column {
+        topContent: Column {
             anchors {
                 left: parent.left
                 right: parent.right
@@ -46,6 +46,7 @@ Kirigami.ApplicationWindow {
                 model: dataStore.availableGradesModel
                 delegate: Kirigami.BasicListItem {
                     height: Kirigami.Units.gridUnit * 3
+                    width: parent.width
                     Controls.CheckBox {
                         id: checkBox
                         enabled: false
