@@ -33,6 +33,22 @@ Kirigami.ScrollablePage {
             text: "Reset"
             onTriggered: mainLayout.grade = root.defaultGrade;
         }
+        contextualActions: [
+            Kirigami.Action {
+                text: "Set Grade As Personal Record"
+                iconName: "games-highscores"
+                onTriggered: {
+                    root.model.personalRecord = mainLayout.grade;
+                }
+            },
+            Kirigami.Action {
+                text: "Reset Personal Record"
+                iconName: "view-refresh"
+                onTriggered: {
+                    root.model.personalRecord = 0;
+                }
+            }
+        ]
     }
     Kirigami.OverlaySheet {
         id: sheet
@@ -63,6 +79,7 @@ Kirigami.ScrollablePage {
         Repeater {
             id: mainRepeater
             delegate: GradeWidgetBase {
+                page: root
                 decimalGrade: mainLayout.grade
                 anchors.horizontalCenter: parent.horizontalCenter
                 visible: model.enabledRole

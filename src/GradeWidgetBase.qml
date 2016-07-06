@@ -29,6 +29,7 @@ Rectangle {
     width: mainLayout.width + Kirigami.Units.gridUnit * 2
     height: mainLayout.height + Kirigami.Units.gridUnit * 2
 
+    property Item page
     property alias scaleName: scaleNameLabel.text
     property string url
     property string description
@@ -96,16 +97,20 @@ Rectangle {
             }
         }
     
-        IconButton {
-            anchors {
-                right: parent.right
+        RowLayout {
+            width: parent.width
+            Kirigami.Label {
+                Layout.fillWidth: true
+                text: page.model.personalRecord > 0 ? ("Record: " + format(page.model.personalRecord)) : "";
             }
-            source: "documentinfo"
+            IconButton {
+                source: "documentinfo"
 
-            onClicked: {
-                sheet.description = description
-                sheet.url = url
-                sheet.open();
+                onClicked: {
+                    sheet.description = description
+                    sheet.url = url
+                    sheet.open();
+                }
             }
         }
     }

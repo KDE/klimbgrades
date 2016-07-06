@@ -28,6 +28,7 @@
 class AvailableGradesModel : public QAbstractListModel
 {
     Q_OBJECT
+    Q_PROPERTY(int personalRecord READ personalRecord WRITE setPersonalRecord NOTIFY personalRecordChanged)
 
 public:
     enum Roles {
@@ -40,6 +41,9 @@ public:
     explicit AvailableGradesModel(QObject *parent = 0);
     ~AvailableGradesModel();
 
+    int personalRecord() const;
+    void setPersonalRecord(int record);
+
     Q_INVOKABLE void setScaleEnabled(int row, bool enabled);
     virtual QHash<int, QByteArray> roleNames() const;
     virtual int rowCount(const QModelIndex &parent) const;
@@ -47,10 +51,15 @@ public:
 
     void load(const QString &dataName);
 
+Q_SIGNALS:
+    void personalRecordChanged();
+
 private:
     QHash<int, QByteArray> m_roleNames;
 
     QJsonDocument m_jsonDoc;
+    QString m_dataName;
+    int m_personalRecord;
 };
 
 #endif // AVAILABLEGRADESMODEL_H

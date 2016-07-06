@@ -30,7 +30,8 @@
 
 
 AvailableGradesModel::AvailableGradesModel(QObject *parent)
-    : QAbstractListModel(parent)
+    : QAbstractListModel(parent),
+      m_personalRecord(0)
 {
     m_roleNames.insert(NameRole, "nameRole");
     m_roleNames.insert(EnabledRole, "enabledRole");
@@ -100,6 +101,7 @@ void AvailableGradesModel::load(const QString &dataName)
 {
     beginResetModel();
 
+    m_dataName = dataName;
     QFile jsonFile(":/" + dataName + "scales.json");
     jsonFile.open(QIODevice::ReadOnly);
 
@@ -111,6 +113,34 @@ void AvailableGradesModel::load(const QString &dataName)
     }
 
     endResetModel();
+
+    QSettings settings(QCoreApplication::organizationName(), QCoreApplication::applicationName());
+    settings.beginGroup(m_dataName);
+    m_personalRecord = settings.value("personalRecord", 0).toInt();
+    settings.endGroup();
+    emit personalRecordChanged();
+}
+
+int AvailableGradesModel::personalRecord() const
+{
+    return m_personalRecord;
+}
+
+void AvailableGradesModel::setPersonalRecord(int record)
+{
+    if (record == m_personalRecord) {
+        return;
+    }
+
+    m_personalRecord = record;
+
+    QSettings settings(QCoreApplication::organizationName(), QCoreApplication::applicationName());
+    settings.beginGroup(m_dataName);
+    settings.setValue("personalRecord", record);
+    settings.endGroup();
+    settings.sync();
+
+    emit personalRecordChanged();
 }
 
 #include "moc_availablegradesmodel.cpp"

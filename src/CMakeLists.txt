@@ -16,4 +16,4 @@ install(TARGETS climbinggrades ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
 install(FILES climbinggrades.svg DESTINATION ${KDE_INSTALL_QMLDIR}/org/kde/kirigami/icons)
 
 #include(KF5KirigamiMacros.cmake)
-kirigami_package_breeze_icons(ICONS documentinfo view-refresh)
+kirigami_package_breeze_icons(ICONS documentinfo view-refresh games-highscores)
