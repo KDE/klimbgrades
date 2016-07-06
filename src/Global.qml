@@ -42,8 +42,8 @@ Kirigami.ScrollablePage {
                 }
             },
             Kirigami.Action {
-                text: "Reset Personal Record"
-                iconName: "view-refresh"
+                text: "Clear Personal Record"
+                iconName: "edit-clear"
                 onTriggered: {
                     root.model.personalRecord = 0;
                 }

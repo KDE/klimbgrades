@@ -122,11 +122,20 @@ Kirigami.ApplicationWindow {
     contextDrawer: Kirigami.ContextDrawer {
         id: contextDrawer
     }
-    pageStack.initialPage: leadPageComponent
+    pageStack.initialPage: [leadPageComponent, boulderPageComponent]
+    pageStack.onCurrentIndexChanged: {
+        if (loaded) {
+            dataStore.currentTab = pageStack.currentIndex;
+        }
+    }
+    //HACK: use this as semaphore, don't know other ways to make this not
+    //emit a signal otherwise
+    property bool loaded: false;
+
 
     Component.onCompleted: {
-        pageStack.push(boulderPageComponent);
-        pageStack.currentIndex = 0;
+        pageStack.currentIndex = dataStore.currentTab;
+        loaded = true
     }
     Component {
         id: leadPageComponent

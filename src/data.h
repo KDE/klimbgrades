@@ -31,6 +31,7 @@ class Data : public QObject {
     Q_OBJECT
     Q_PROPERTY(AvailableGradesModel *availableLeadModel READ availableLeadModel CONSTANT)
     Q_PROPERTY(AvailableGradesModel *availableBoulderModel READ availableBoulderModel CONSTANT)
+    Q_PROPERTY(int currentTab READ currentTab WRITE setCurrentTab NOTIFY currentTabChanged)
 
 public:
     Data(QObject *parent = 0);
@@ -38,14 +39,20 @@ public:
     AvailableGradesModel *availableLeadModel();
     AvailableGradesModel *availableBoulderModel();
 
+    int currentTab() const;
+    void setCurrentTab(int tab);
+
     Q_INVOKABLE QString gradeName(const QString &scale, int decimalGrade) const;
 
+Q_SIGNALS:
+    void currentTabChanged();
 
 private:
     QStringList m_scales;
     QHash<QString, QVector<QString> > m_data;
     AvailableGradesModel *m_availableLeadModel;
     AvailableGradesModel *m_availableBoulderModel;
+    int m_currentTab;
 };
 
 #endif

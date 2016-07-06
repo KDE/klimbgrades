@@ -24,10 +24,17 @@
 #include <QFile>
 #include <QDebug>
 #include <QTextStream>
+#include <QSettings>
+#include <QCoreApplication>
 
 Data::Data(QObject *parent)
     : QObject(parent)
 {
+    QSettings settings(QCoreApplication::organizationName(), QCoreApplication::applicationName());
+    settings.beginGroup("General");
+    m_currentTab = settings.value("currentTab", 0).toInt();
+    settings.endGroup();
+
     m_availableLeadModel = new AvailableGradesModel(this);
     m_availableLeadModel->load("lead");
     m_availableBoulderModel = new AvailableGradesModel(this);
@@ -87,6 +94,28 @@ QString Data::gradeName(const QString &scale, int decimalGrade) const
     }
 
     return m_data[scale][position];
+}
+
+int Data::currentTab() const
+{
+    return m_currentTab;
+}
+
+void Data::setCurrentTab(int tab)
+{
+    if (tab == m_currentTab) {
+        return;
+    }
+
+    m_currentTab = tab;
+
+    QSettings settings(QCoreApplication::organizationName(), QCoreApplication::applicationName());
+    settings.beginGroup("General");
+    settings.setValue("currentTab", tab);
+    settings.endGroup();
+    settings.sync();
+
+    emit currentTabChanged();
 }
 
 #include "moc_data.cpp"
