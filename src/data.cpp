@@ -28,7 +28,10 @@
 Data::Data(QObject *parent)
     : QObject(parent)
 {
-    m_availableGradesModel = new AvailableGradesModel(this);
+    m_availableLeadModel = new AvailableGradesModel(this);
+    m_availableLeadModel->load("lead");
+    m_availableBoulderModel = new AvailableGradesModel(this);
+    m_availableBoulderModel->load("boulder");
 
     QFile file(":/data.csv");
 
@@ -44,13 +47,13 @@ Data::Data(QObject *parent)
     foreach (const QString &string, lines) {
         if (first) {
             first = false;
-            foreach (const QString &scale, string.split(':')) {
+            foreach (const QString &scale, string.split(',')) {
                 m_data[scale] = QVector<QString>(lines.count());
                 m_scales << scale;
             }
         } else {
             int i = 0;
-            foreach (const QString &grade, string.split(':')) {
+            foreach (const QString &grade, string.split(',')) {
                 if (i > m_data.size()) {
                     break;
                 }
@@ -61,21 +64,19 @@ Data::Data(QObject *parent)
         }
         //qWarning()<<m_data;
     }
-
-    emit scalesChanged();
 }
 
 
-AvailableGradesModel *Data::availableGradesModel()
+AvailableGradesModel *Data::availableLeadModel()
 {
-    return m_availableGradesModel;
+    return m_availableLeadModel;
 }
 
-
-QStringList Data::scales() const
+AvailableGradesModel *Data::availableBoulderModel()
 {
-    return m_scales;
+    return m_availableBoulderModel;
 }
+
 
 QString Data::gradeName(const QString &scale, int decimalGrade) const
 {

@@ -45,7 +45,7 @@ public:
     virtual int rowCount(const QModelIndex &parent) const;
     virtual QVariant data(const QModelIndex &index, int role) const;
 
-    void load();
+    void load(const QString &dataName);
 
 private:
     QHash<int, QByteArray> m_roleNames;

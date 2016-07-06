@@ -23,13 +23,15 @@ import QtQuick.Controls 1.2 as Controls
 import org.kde.kirigami 1.0 as Kirigami
 
 Kirigami.ScrollablePage {
+    id: root
 
-    title: "Climbing grades"
+    property alias model: mainRepeater.model
+    property int defaultGrade
     actions {
         main: Kirigami.Action {
             iconName: "view-refresh"
             text: "Reset"
-            onTriggered: mainLayout.grade = 45;
+            onTriggered: mainLayout.grade = root.defaultGrade;
         }
     }
     Kirigami.OverlaySheet {
@@ -57,9 +59,9 @@ Kirigami.ScrollablePage {
         id: mainLayout
         anchors.horizontalCenter: parent.horizontalCenter
         spacing: Kirigami.Units.gridUnit * 2
-        property real grade: 45
+        property real grade: root.defaultGrade
         Repeater {
-            model: dataStore.availableGradesModel
+            id: mainRepeater
             delegate: GradeWidgetBase {
                 decimalGrade: mainLayout.grade
                 anchors.horizontalCenter: parent.horizontalCenter

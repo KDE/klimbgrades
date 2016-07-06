@@ -36,8 +36,6 @@ AvailableGradesModel::AvailableGradesModel(QObject *parent)
     m_roleNames.insert(EnabledRole, "enabledRole");
     m_roleNames.insert(DescriptionRole, "descriptionRole");
     m_roleNames.insert(UrlRole, "urlRole");
-
-    load();
 }
 
 AvailableGradesModel::~AvailableGradesModel()
@@ -98,11 +96,11 @@ QVariant AvailableGradesModel::data(const QModelIndex &index, int role) const
 }
 
 
-void AvailableGradesModel::load()
+void AvailableGradesModel::load(const QString &dataName)
 {
     beginResetModel();
 
-    QFile jsonFile(":/scales.json");
+    QFile jsonFile(":/" + dataName + "scales.json");
     jsonFile.open(QIODevice::ReadOnly);
 
     QJsonParseError error;

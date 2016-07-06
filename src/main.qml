@@ -18,6 +18,7 @@
  */
 
 import QtQuick 2.1
+import QtQuick.Layouts 1.2
 import QtQuick.Controls 1.2 as Controls
 import org.kde.kirigami 1.0 as Kirigami
 
@@ -27,6 +28,10 @@ Kirigami.ApplicationWindow {
     property bool french: true
     property bool yds: true
     property bool uiaa: true
+
+    header: Kirigami.ApplicationHeader {
+        separatorStyle: "TabBar"
+    }
 
     globalDrawer: Kirigami.GlobalDrawer {
         id: drawer
@@ -38,12 +43,22 @@ Kirigami.ApplicationWindow {
             anchors {
                 left: parent.left
                 right: parent.right
+                margins: -Kirigami.Units.smallSpacing
             }
             Kirigami.Heading {
                 text: "Lead"
             }
+            Rectangle {
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                }
+                color: Kirigami.Theme.textColor
+                opacity: 0.2
+                height: Math.floor(Kirigami.Units.devicePixelRatio)
+            }
             Repeater {
-                model: dataStore.availableGradesModel
+                model: dataStore.availableLeadModel
                 delegate: Kirigami.BasicListItem {
                     height: Kirigami.Units.gridUnit * 3
                     width: parent.width
@@ -53,28 +68,77 @@ Kirigami.ApplicationWindow {
                         anchors {
                             left: parent.left
                             verticalCenter: parent.verticalCenter
+                            leftMargin: Kirigami.Units.smallSpacing
                         }
                         checked: model.enabledRole
                     }
                     label: model.nameRole
                     onClicked: {
                         checkBox.checked = !checkBox.checked;
-                        dataStore.availableGradesModel.setScaleEnabled(index, checkBox.checked);
+                        dataStore.availableLeadModel.setScaleEnabled(index, checkBox.checked);
                     }
                 }
+            }
+            Item {
+                width: 1
+                height: Kirigami.Units.largeSpacing
             }
             Kirigami.Heading {
                 text: "Boulder"
             }
-            Kirigami.Label {
-                text: "TODO"
+            Rectangle {
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                }
+                color: Kirigami.Theme.textColor
+                opacity: 0.2
+                height: Math.floor(Kirigami.Units.devicePixelRatio)
+            }
+            Repeater {
+                model: dataStore.availableBoulderModel
+                delegate: Kirigami.BasicListItem {
+                    height: Kirigami.Units.gridUnit * 3
+                    width: parent.width
+                    Controls.CheckBox {
+                        id: checkBox
+                        enabled: false
+                        anchors {
+                            left: parent.left
+                            verticalCenter: parent.verticalCenter
+                            leftMargin: Kirigami.Units.smallSpacing
+                        }
+                        checked: model.enabledRole
+                    }
+                    label: model.nameRole
+                    onClicked: {
+                        checkBox.checked = !checkBox.checked;
+                        dataStore.availableBoulderModel.setScaleEnabled(index, checkBox.checked);
+                    }
+                }
             }
         }
     }
-    pageStack.initialPage: mainPageComponent
+    pageStack.initialPage: leadPageComponent
 
+    Component.onCompleted: {
+        pageStack.push(boulderPageComponent);
+        pageStack.currentIndex = 0;
+    }
     Component {
-        id: mainPageComponent
-        Global {}
+        id: leadPageComponent
+        Global {
+            title: "Lead"
+            model: dataStore.availableLeadModel
+            defaultGrade: 45
+        }
+    }
+    Component {
+        id: boulderPageComponent
+        Global {
+            title: "Boulder"
+            model: dataStore.availableBoulderModel
+            defaultGrade: 65
+        }
     }
 }

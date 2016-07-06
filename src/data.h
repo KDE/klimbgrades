@@ -29,26 +29,23 @@ class AvailableGradesModel;
 
 class Data : public QObject {
     Q_OBJECT
-    Q_PROPERTY(AvailableGradesModel *availableGradesModel READ availableGradesModel CONSTANT)
-    Q_PROPERTY(QStringList scales READ scales NOTIFY scalesChanged)
+    Q_PROPERTY(AvailableGradesModel *availableLeadModel READ availableLeadModel CONSTANT)
+    Q_PROPERTY(AvailableGradesModel *availableBoulderModel READ availableBoulderModel CONSTANT)
 
 public:
     Data(QObject *parent = 0);
 
-    QStringList scales() const;
-
-    AvailableGradesModel *availableGradesModel();
+    AvailableGradesModel *availableLeadModel();
+    AvailableGradesModel *availableBoulderModel();
 
     Q_INVOKABLE QString gradeName(const QString &scale, int decimalGrade) const;
 
-Q_SIGNALS:
-    void scalesChanged();
-    void enabledScalesChanged();
 
 private:
     QStringList m_scales;
     QHash<QString, QVector<QString> > m_data;
-    AvailableGradesModel *m_availableGradesModel;
+    AvailableGradesModel *m_availableLeadModel;
+    AvailableGradesModel *m_availableBoulderModel;
 };
 
 #endif
