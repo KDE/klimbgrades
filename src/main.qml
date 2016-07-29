@@ -47,6 +47,10 @@ Kirigami.ApplicationWindow {
             }
             Kirigami.Heading {
                 text: "Lead"
+                anchors {
+                    left: parent.left
+                    margins: Kirigami.Units.smallSpacing
+                }
             }
             Rectangle {
                 anchors {
@@ -85,6 +89,10 @@ Kirigami.ApplicationWindow {
             }
             Kirigami.Heading {
                 text: "Boulder"
+                anchors {
+                    left: parent.left
+                    margins: Kirigami.Units.smallSpacing
+                }
             }
             Rectangle {
                 anchors {
