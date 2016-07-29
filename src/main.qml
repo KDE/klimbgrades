@@ -30,7 +30,7 @@ Kirigami.ApplicationWindow {
     property bool uiaa: true
 
     header: Kirigami.ApplicationHeader {
-        separatorStyle: "TabBar"
+        headerStyle: Kirigami.ApplicationHeaderStyle.TabBar
     }
 
     globalDrawer: Kirigami.GlobalDrawer {
