@@ -27,11 +27,13 @@ Kirigami.ScrollablePage {
 
     property alias model: mainRepeater.model
     property int defaultGrade
+    property int decimalGrade: defaultGrade
+
     actions {
         main: Kirigami.Action {
             iconName: "view-refresh"
             text: "Reset"
-            onTriggered: mainLayout.grade = root.defaultGrade;
+            onTriggered: root.decimalGrade = root.defaultGrade;
         }
         contextualActions: [
             Kirigami.Action {
@@ -75,12 +77,11 @@ Kirigami.ScrollablePage {
         id: mainLayout
         anchors.horizontalCenter: parent.horizontalCenter
         spacing: Kirigami.Units.gridUnit * 2
-        property real grade: root.defaultGrade
         Repeater {
             id: mainRepeater
             delegate: GradeWidgetBase {
                 page: root
-                decimalGrade: mainLayout.grade
+                decimalGrade: root.decimalGrade
                 anchors.horizontalCenter: parent.horizontalCenter
                 visible: model.enabledRole
                 scaleName: model.nameRole

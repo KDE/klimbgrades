@@ -58,11 +58,11 @@ Rectangle {
     signal infoClicked
 
     onDecimalGradeChanged: {
-        parent.grade = decimalGrade;
+        page.decimalGrade = decimalGrade;
     }
     Connections {
-        target: parent
-        onGradeChanged: decimalGrade = parent.grade
+        target: page
+        onDecimalGradeChanged: decimalGrade = page.decimalGrade
     }
 
     Column {
@@ -131,7 +131,7 @@ Rectangle {
 
             } else if (mouse.x - startX < -Kirigami.Units.gridUnit) {
                 startX = mouse.x;
-                decrement();                
+                decrement();
             }
         }
     }
