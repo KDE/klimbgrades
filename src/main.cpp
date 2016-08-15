@@ -18,7 +18,7 @@
  */
 
 
-#include <QGuiApplication>
+#include <QApplication>
 #include <QQmlApplicationEngine>
 #include <QtQml>
 #include <QUrl>
@@ -28,7 +28,7 @@
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
-    QGuiApplication app(argc, argv);
+    QApplication app(argc, argv);
     QCoreApplication::setOrganizationName("KDE");
     QCoreApplication::setOrganizationDomain("kde.org");
     QCoreApplication::setApplicationName("Climbing Grades");
@@ -40,7 +40,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     Data *data = new Data;
 
     engine.rootContext()->setContextProperty(QLatin1String("dataStore"), data);
-    engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
+    engine.load(QUrl(QStringLiteral("qrc:///mobilemain.qml")));
 
     if (engine.rootObjects().isEmpty()) {
         return -1;

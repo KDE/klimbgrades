@@ -3,7 +3,9 @@
         <file alias="leadscales.json">leadscales.json</file>
         <file alias="boulderscales.json">boulderscales.json</file>
         <file alias="data.csv">data.csv</file>
-        <file alias="main.qml">main.qml</file>
+        <file alias="desktopmain.qml">desktopmain.qml</file>
+        <file alias="mobilemain.qml">mobilemain.qml</file>
+        <file alias="Main.qml">Main.qml</file>
         <file alias="IconButton.qml">IconButton.qml</file>
         <file alias="Global.qml">Global.qml</file>
         <file alias="GradeWidgetBase.qml">GradeWidgetBase.qml</file>

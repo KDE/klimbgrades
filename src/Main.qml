@@ -29,10 +29,6 @@ Kirigami.ApplicationWindow {
     property bool yds: true
     property bool uiaa: true
 
-    header: Kirigami.ApplicationHeader {
-        headerStyle: Kirigami.ApplicationHeaderStyle.TabBar
-    }
-
     globalDrawer: Kirigami.GlobalDrawer {
         id: drawer
         title: "climbing grades"
