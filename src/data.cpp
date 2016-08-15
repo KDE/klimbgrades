@@ -33,6 +33,7 @@ Data::Data(QObject *parent)
     QSettings settings(QCoreApplication::organizationName(), QCoreApplication::applicationName());
     settings.beginGroup("General");
     m_currentTab = settings.value("currentTab", 0).toInt();
+    m_currentGrade = settings.value("currentGrade", 0).toInt();
     settings.endGroup();
 
     m_availableLeadModel = new AvailableGradesModel(this);
@@ -116,6 +117,28 @@ void Data::setCurrentTab(int tab)
     settings.sync();
 
     emit currentTabChanged();
+}
+
+int Data::currentGrade() const
+{
+    return m_currentGrade;
+}
+
+void Data::setCurrentGrade(int tab)
+{
+    if (tab == m_currentGrade) {
+        return;
+    }
+
+    m_currentGrade = tab;
+
+    QSettings settings(QCoreApplication::organizationName(), QCoreApplication::applicationName());
+    settings.beginGroup("General");
+    settings.setValue("currentGrade", tab);
+    settings.endGroup();
+    settings.sync();
+
+    emit currentGradeChanged();
 }
 
 #include "moc_data.cpp"

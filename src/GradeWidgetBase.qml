@@ -34,17 +34,15 @@ Rectangle {
     property string url
     property string description
 
-    property int decimalGrade: 1
-
     function increment() {
-        print("Decimal grade: " + decimalGrade);
+        print("Decimal grade: " + dataStore.currentGrade);
 
-        decimalGrade++;
+        dataStore.currentGrade++;
     }
 
     function decrement() {
-        print("Decimal grade: " + decimalGrade);
-        decimalGrade = Math.max(0, decimalGrade - 1);
+        print("Decimal grade: " + dataStore.currentGrade);
+        dataStore.currentGrade = Math.max(0, dataStore.currentGrade - 1);
     }
 
     function format(decimalGrade) {
@@ -56,14 +54,6 @@ Rectangle {
     }
 
     signal infoClicked
-
-    onDecimalGradeChanged: {
-        page.decimalGrade = decimalGrade;
-    }
-    Connections {
-        target: page
-        onDecimalGradeChanged: decimalGrade = page.decimalGrade
-    }
 
     Column {
         id: mainLayout
@@ -84,16 +74,16 @@ Rectangle {
             }
             IconButton {
                 source: "go-previous"
-                onClicked: root.decimalGrade -= 3;
+                onClicked: dataStore.currentGrade -= 3;
             }
             Kirigami.Heading {
                 Layout.fillWidth: true
                 horizontalAlignment: Text.AlignHCenter
-                text: format(decimalGrade);
+                text: format(dataStore.currentGrade);
             }
             IconButton {
                 source: "go-next"
-                onClicked: root.decimalGrade += 3;
+                onClicked: dataStore.currentGrade += 3;
             }
         }
     
