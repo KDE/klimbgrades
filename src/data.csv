@@ -1,52 +1,52 @@
-YDS,French,UIAA,British Tech,British Adjectival,Font,Hueco
-Class 1,1,I,1,M,-,-
-Class 2,1,I,1,M,-,-
-Class 3,1,I,1,M,-,-
-Class 4,1,I,1,M,-,-
-5,1,I,1,M,-,-
-5,1,I,1,M,-,-
-5.1,2,II,2,M,-,-
-5.1,2,II,2,M,-,-
-5.1,2,II,2,D,-,-
-5.2,2,II,2,D,-,-
-5.2,2,II,2,D,-,-
-5.2,2,II,2,D,-,-
-5.3,3,III,3,D,-,-
-5.3,3,III,3,D,-,-
-5.3,3,III,3,D,-,-
-5.3,3,III,3,VD,-,-
-5.3,3,III,3,VD,-,-
-5.4,4a,IV,3,VD,-,-
-5.4,4a,IV,4a,VD,-,-
-5.5,4b,IV+,4a,S,-,-
-5.5,4b,IV+,4a,S,-,-
-5.6,4c,V,4b,HS,-,-
-5.6,4c,V,4b,HS,-,-
-5.7,5a,V+,4c,VS,-,-
-5.7,5a,V+,4c,VS,3,-
-5.8,5b,VI-,5a,HVS,4-,V0
-5.8,5b,VI-,5a,HVS,4,V0
-5.9,5c,VI,5a,HVS,4+,V0+
-5.9,5c,VI,5a,HVS,4+,V0+
-5.10a,6a,VI+,5a,E1,5-,V1
-510b,6a+,VII-,5b,E2,5,V1
-5.10c,6b,VII,5b,E2,5+,V1+
-5.10d,6b+,VII+,5c,E3,5+,V1+
-5.11a,6c,VII+,5c,E3,6A,V2
-5.11b,6c+,VIII-,6a,E4,6A+,V3
-5.11d,7a,VIII,6a,E4,6B,V4
-5.12a,7a+,VIII+,6b,E5,6B+,V4+
-5.12b,7b,VIII+,6b,E6,6C,V4+
-5.12c,7b+,IX-,6b,E6,6C+,V5
-5.12d,7c,IX,6b,E7,7A,V6
-5.13a,7c+,IX+,6b,E7,7A+,V7
-5.13b,8a,IX+,6c,E8,7B,V7
-5.13c,8a+,X-,6c,E8,7B+,V8
-5.13d,8b,X,6c,E9,7C,V9
-5.14a,8b+,X+,7a,E10,7C+,V10
-5.14b,8c,X+,7a,E11,8A,V11
-5.14c,8c+,XI-,7b,E11,8A+,V12
-5.14d,9a,XI,7b,E12,8B,V13
-5.15a,9a+,XI+,-,-,8B+,V14
-5.15b,9b,XI+/XII-,-,-,8C,V15
-5.15c,9b+,XII-,-,-,8C+,V16
+YDS,French,UIAA,British Tech,British Adjectival,Font,Hueco,B Grade
+Class 1,1,I,1,M,-,-,-
+Class 2,1,I,1,M,-,-,-
+Class 3,1,I,1,M,-,-,-
+Class 4,1,I,1,M,-,-,-
+5,1,I,1,M,-,-,-
+5,1,I,1,M,-,-,-
+5.1,2,II,2,M,-,-,-
+5.1,2,II,2,M,-,-,-
+5.1,2,II,2,D,-,-,-
+5.2,2,II,2,D,-,-,-
+5.2,2,II,2,D,-,-,-
+5.2,2,II,2,D,-,-,-
+5.3,3,III,3,D,-,-,-
+5.3,3,III,3,D,-,-,-
+5.3,3,III,3,D,-,-,-
+5.3,3,III,3,VD,-,-,-
+5.3,3,III,3,VD,-,-,-
+5.4,4a,IV,3,VD,-,-,-
+5.4,4a,IV,4a,VD,-,-,-
+5.5,4b,IV+,4a,S,-,-,-
+5.5,4b,IV+,4a,S,-,-,-
+5.6,4c,V,4b,HS,-,-,-
+5.6,4c,V,4b,HS,-,-,-
+5.7,5a,V+,4c,VS,-,-,-
+5.7,5a,V+,4c,VS,3,-,-
+5.8,5b,VI-,5a,HVS,4-,V0,B1
+5.8,5b,VI-,5a,HVS,4,V0,B1
+5.9,5c,VI,5a,HVS,4+,V0+,B2
+5.9,5c,VI,5a,HVS,4+,V0+,B2
+5.10a,6a,VI+,5a,E1,5-,V1,B3
+510b,6a+,VII-,5b,E2,5,V1,B3
+5.10c,6b,VII,5b,E2,5+,V1+,B3
+5.10d,6b+,VII+,5c,E3,5+,V1+,B3
+5.11a,6c,VII+,5c,E3,6A,V2,B4
+5.11b,6c+,VIII-,6a,E4,6A+,V3,B5
+5.11d,7a,VIII,6a,E4,6B,V4,B5
+5.12a,7a+,VIII+,6b,E5,6B+,V4+,B5
+5.12b,7b,VIII+,6b,E6,6C,V4+,B6
+5.12c,7b+,IX-,6b,E6,6C+,V5,B6
+5.12d,7c,IX,6b,E7,7A,V6,B7
+5.13a,7c+,IX+,6b,E7,7A+,V7,B8
+5.13b,8a,IX+,6c,E8,7B,V7,B8
+5.13c,8a+,X-,6c,E8,7B+,V8,B8
+5.13d,8b,X,6c,E9,7C,V9,B9
+5.14a,8b+,X+,7a,E10,7C+,V10,B10
+5.14b,8c,X+,7a,E11,8A,V11,B11
+5.14c,8c+,XI-,7b,E11,8A+,V12,B12
+5.14d,9a,XI,7b,E12,8B,V13,B13
+5.15a,9a+,XI+,-,-,8B+,V14,B14
+5.15b,9b,XI+/XII-,-,-,8C,V15,B15
+5.15c,9b+,XII-,-,-,8C+,V16,B16

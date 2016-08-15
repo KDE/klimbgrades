@@ -88,7 +88,7 @@ AvailableGradesModel *Data::availableBoulderModel()
 QString Data::gradeName(const QString &scale, int decimalGrade) const
 {
     const int position = qRound((qreal)decimalGrade/(qreal)2.0);
-    
+
     if (position < 0 || !m_data.contains(scale) || m_data[scale].size() <= position+1) {
         return QString();
     }
