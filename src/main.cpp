@@ -28,6 +28,7 @@
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
+    //TODO: make it selectively a QAplpication or a QGuiApplication with ifdefs
     QApplication app(argc, argv);
     QCoreApplication::setOrganizationName("KDE");
     QCoreApplication::setOrganizationDomain("kde.org");
@@ -40,7 +41,11 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     Data *data = new Data;
 
     engine.rootContext()->setContextProperty(QLatin1String("dataStore"), data);
-    engine.load(QUrl(QStringLiteral("qrc:///mobilemain.qml")));
+    if (QString::fromLatin1(qgetenv("QT_QUICK_CONTROLS_STYLE")) == QStringLiteral("Desktop")) {
+        engine.load(QUrl(QStringLiteral("qrc:///desktopmain.qml")));
+    } else {
+        engine.load(QUrl(QStringLiteral("qrc:///mobilemain.qml")));
+    }
 
     if (engine.rootObjects().isEmpty()) {
         return -1;
