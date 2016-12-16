@@ -19,8 +19,8 @@
 
 import QtQuick 2.1
 import QtQuick.Layouts 1.2
-import QtQuick.Controls 1.2 as Controls
-import org.kde.kirigami 1.0 as Kirigami
+import QtQuick.Controls 2.0 as Controls
+import org.kde.kirigami 2.0 as Kirigami
 
 Kirigami.ApplicationWindow {
     id: root

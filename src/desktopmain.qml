@@ -19,8 +19,8 @@
 
 import QtQuick 2.1
 import QtQuick.Layouts 1.2
-import QtQuick.Controls 1.2 as Controls
-import org.kde.kirigami 1.0 as Kirigami
+import QtQuick.Controls 2.0 as Controls
+import org.kde.kirigami 2.0 as Kirigami
 
 Main {
     id: root
@@ -29,4 +29,5 @@ Main {
     }
 
     contextDrawer: null
+    pageStack.defaultColumnWidth: pageStack.width > Kirigami.Units.gridUnit * 25 ? pageStack.width / 2 : pageStack.width
 }
