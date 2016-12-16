@@ -28,6 +28,8 @@
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
+    QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+    qputenv("QT_QUICK_CONTROLS_STYLE", "Material");
     //TODO: make it selectively a QAplpication or a QGuiApplication with ifdefs
     QApplication app(argc, argv);
     QCoreApplication::setOrganizationName("KDE");
