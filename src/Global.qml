@@ -39,7 +39,7 @@ Kirigami.ScrollablePage {
                 text: "Set Grade As Personal Record"
                 iconName: "games-highscores"
                 onTriggered: {
-                    root.model.personalRecord = mainLayout.grade;
+                    root.model.personalRecord = dataStore.currentGrade;
                 }
             },
             Kirigami.Action {
