@@ -59,23 +59,12 @@ Kirigami.ApplicationWindow {
             }
             Repeater {
                 model: dataStore.availableLeadModel
-                delegate: Kirigami.BasicListItem {
-                    height: Kirigami.Units.gridUnit * 3
-                    width: parent.width
-                    Controls.CheckBox {
-                        id: checkBox
-                        enabled: false
-                        anchors {
-                            left: parent.left
-                            verticalCenter: parent.verticalCenter
-                            leftMargin: Kirigami.Units.smallSpacing
-                        }
-                        checked: model.enabledRole
-                    }
-                    label: model.nameRole
-                    onClicked: {
-                        checkBox.checked = !checkBox.checked;
-                        dataStore.availableLeadModel.setScaleEnabled(index, checkBox.checked);
+                delegate: Controls.CheckDelegate {
+                    width: drawer.width
+                    text: model.nameRole
+                    checkState: model.enabledRole ? Qt.Checked : Qt.Unchecked
+                    onCheckStateChanged: {
+                        dataStore.availableLeadModel.setScaleEnabled(index, checkState == Qt.Checked);
                     }
                 }
             }
@@ -101,31 +90,18 @@ Kirigami.ApplicationWindow {
             }
             Repeater {
                 model: dataStore.availableBoulderModel
-                delegate: Kirigami.BasicListItem {
-                    height: Kirigami.Units.gridUnit * 3
-                    width: parent.width
-                    Controls.CheckBox {
-                        id: checkBox
-                        enabled: false
-                        anchors {
-                            left: parent.left
-                            verticalCenter: parent.verticalCenter
-                            leftMargin: Kirigami.Units.smallSpacing
-                        }
-                        checked: model.enabledRole
-                    }
-                    label: model.nameRole
-                    onClicked: {
-                        checkBox.checked = !checkBox.checked;
-                        dataStore.availableBoulderModel.setScaleEnabled(index, checkBox.checked);
+                delegate: Controls.CheckDelegate {
+                    width: drawer.width
+                    text: model.nameRole
+                    checkState: model.enabledRole ? Qt.Checked : Qt.Unchecked
+                    onCheckStateChanged: {
+                        dataStore.availableBoulderModel.setScaleEnabled(index, checkState == Qt.Checked);
                     }
                 }
             }
         }
     }
-    contextDrawer: Kirigami.ContextDrawer {
-        id: contextDrawer
-    }
+
     pageStack.initialPage: [leadPageComponent, boulderPageComponent]
     pageStack.onCurrentIndexChanged: {
         if (loaded) {
