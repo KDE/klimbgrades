@@ -13,6 +13,7 @@
         <file alias="YDS.qml">YDS.qml</file>
         <file alias="Uiaa.qml">Uiaa.qml</file>
         <file alias="halfdome.jpg">halfdome.jpg</file>
+        <file alias="qtquickcontrols2.conf">android/qtquickcontrols2.conf</file>
         <!--FIXME-->
         <!--<file alias="icons/climbinggrades.svg">climbinggrades.svg</file>-->
     </qresource>
