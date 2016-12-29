@@ -33,5 +33,5 @@ Main {
         id: contextDrawer
     }
 
-    pageStack.defaultColumnWidth: Kirigami.Units.gridUnit * 15
+    pageStack.defaultColumnWidth: pageStack.width > Kirigami.Units.gridUnit * 25 ? pageStack.width / 2 : pageStack.width
 }

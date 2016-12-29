@@ -28,6 +28,14 @@ Kirigami.ScrollablePage {
     property alias model: mainRepeater.model
     property int defaultGrade
 
+    //Close the drawer with the back button
+    onBackRequested: {
+        if (sheet.sheetOpen) {
+            event.accepted = true;
+            sheet.close();
+        }
+    }
+
     actions {
         main: Kirigami.Action {
             iconName: "view-refresh"
@@ -53,9 +61,11 @@ Kirigami.ScrollablePage {
     }
     Kirigami.OverlaySheet {
         id: sheet
+        parent: applicationWindow().overlay
         property alias description: descrLabel.text
         property string url
         ColumnLayout {
+            property int implicitWidth: Kirigami.Units.gridUnit * 25
             Kirigami.Label {
                 id: descrLabel
                 Layout.fillWidth: true
