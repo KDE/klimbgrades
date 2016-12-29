@@ -32,4 +32,6 @@ Main {
     contextDrawer: Kirigami.ContextDrawer {
         id: contextDrawer
     }
+
+    pageStack.defaultColumnWidth: Kirigami.Units.gridUnit * 15
 }
