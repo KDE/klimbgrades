@@ -24,17 +24,15 @@
 #include <QFile>
 #include <QDebug>
 #include <QTextStream>
-#include <QSettings>
 #include <QCoreApplication>
+#include <KConfigGroup>
 
 Data::Data(QObject *parent)
     : QObject(parent)
 {
-    QSettings settings(QCoreApplication::organizationName(), QCoreApplication::applicationName());
-    settings.beginGroup("General");
-    m_currentTab = settings.value("currentTab", 0).toInt();
-    m_currentGrade = settings.value("currentGrade", 0).toInt();
-    settings.endGroup();
+    KConfigGroup cg(config(), "General");
+    m_currentTab = cg.readEntry("currentTab", 0);
+    m_currentGrade = cg.readEntry("currentGrade", 0);
 
     m_availableLeadModel = new AvailableGradesModel(this);
     m_availableLeadModel->load("lead");
@@ -74,6 +72,14 @@ Data::Data(QObject *parent)
     }
 }
 
+KSharedConfigPtr Data::config()
+{
+    if (!m_config) {
+        m_config = KSharedConfig::openConfig("climbinggradesrc", KConfig::SimpleConfig);
+    }
+
+    return m_config;
+}
 
 AvailableGradesModel *Data::availableLeadModel()
 {
@@ -110,11 +116,9 @@ void Data::setCurrentTab(int tab)
 
     m_currentTab = tab;
 
-    QSettings settings(QCoreApplication::organizationName(), QCoreApplication::applicationName());
-    settings.beginGroup("General");
-    settings.setValue("currentTab", tab);
-    settings.endGroup();
-    settings.sync();
+    KConfigGroup cg(config(), "General");
+    cg.writeEntry("currentTab", tab);
+    cg.sync();
 
     emit currentTabChanged();
 }
@@ -132,11 +136,9 @@ void Data::setCurrentGrade(int tab)
 
     m_currentGrade = tab;
 
-    QSettings settings(QCoreApplication::organizationName(), QCoreApplication::applicationName());
-    settings.beginGroup("General");
-    settings.setValue("currentGrade", tab);
-    settings.endGroup();
-    settings.sync();
+    KConfigGroup cg(config(), "General");
+    cg.writeEntry("currentGrade", tab);
+    cg.sync();
 
     emit currentGradeChanged();
 }

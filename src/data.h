@@ -25,6 +25,8 @@
 #include <QStandardItemModel>
 #include <QVector>
 
+#include <ksharedconfig.h>
+
 class AvailableGradesModel;
 
 class Data : public QObject {
@@ -39,6 +41,8 @@ public:
 
     AvailableGradesModel *availableLeadModel();
     AvailableGradesModel *availableBoulderModel();
+
+    KSharedConfigPtr config();
 
     int currentTab() const;
     void setCurrentTab(int tab);
@@ -57,6 +61,7 @@ private:
     QHash<QString, QVector<QString> > m_data;
     AvailableGradesModel *m_availableLeadModel;
     AvailableGradesModel *m_availableBoulderModel;
+    KSharedConfigPtr m_config;
     int m_currentTab;
     int m_currentGrade;
 };
