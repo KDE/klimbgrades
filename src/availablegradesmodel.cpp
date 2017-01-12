@@ -67,7 +67,7 @@ void AvailableGradesModel::setScaleEnabled(int row, bool enabled)
     KConfigGroup cg(m_data->config(), "General");
     const QVariantMap value = m_jsonDoc.array().at(row).toObject().toVariantMap();
     cg.writeEntry(value.value("name").toString() + "-enabled", enabled);
-    cg.sync();
+    m_data->configNeedsSaving();
 
     emit dataChanged(index(row), index(row));
 }
@@ -135,7 +135,7 @@ void AvailableGradesModel::setPersonalRecord(int record)
 
     KConfigGroup cg(m_data->config(), m_dataName);
     cg.writeEntry("personalRecord", record);
-    cg.sync();
+    m_data->configNeedsSaving();
 
     emit personalRecordChanged();
 }

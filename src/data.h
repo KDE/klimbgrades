@@ -39,6 +39,7 @@ class Data : public QObject {
 
 public:
     Data(QObject *parent = 0);
+    ~Data();
 
     AvailableGradesModel *availableLeadModel();
     AvailableGradesModel *availableBoulderModel();

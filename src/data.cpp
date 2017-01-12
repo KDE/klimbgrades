@@ -80,6 +80,11 @@ Data::Data(QObject *parent)
     }
 }
 
+Data::~Data()
+{
+    config()->sync();
+}
+
 void Data::configNeedsSaving()
 {
     m_configSyncTimer->start(10000);
@@ -131,7 +136,7 @@ void Data::setCurrentTab(int tab)
 
     KConfigGroup cg(config(), "General");
     cg.writeEntry("currentTab", tab);
-    cg.sync();
+    configNeedsSaving();
 
     emit currentTabChanged();
 }
@@ -151,7 +156,7 @@ void Data::setCurrentGrade(int tab)
 
     KConfigGroup cg(config(), "General");
     cg.writeEntry("currentGrade", tab);
-    cg.sync();
+    configNeedsSaving();
 
     emit currentGradeChanged();
 }
