@@ -24,12 +24,20 @@
 #include <QFile>
 #include <QDebug>
 #include <QTextStream>
+#include <QTimer>
 #include <QCoreApplication>
 #include <KConfigGroup>
 
 Data::Data(QObject *parent)
     : QObject(parent)
 {
+    m_configSyncTimer = new QTimer(this);
+    m_configSyncTimer->setSingleShot(false);
+    connect(m_configSyncTimer, &QTimer::timeout,
+        this, [this]() {
+            config()->sync();
+        });
+
     KConfigGroup cg(config(), "General");
     m_currentTab = cg.readEntry("currentTab", 0);
     m_currentGrade = cg.readEntry("currentGrade", 0);
@@ -70,6 +78,11 @@ Data::Data(QObject *parent)
         }
         //qWarning()<<m_data;
     }
+}
+
+void Data::configNeedsSaving()
+{
+    m_configSyncTimer->start(10000);
 }
 
 KSharedConfigPtr Data::config()

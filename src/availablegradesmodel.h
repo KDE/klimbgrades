@@ -25,6 +25,8 @@
 #include <QJsonObject>
 #include <QJsonDocument>
 
+class Data;
+
 class AvailableGradesModel : public QAbstractListModel
 {
     Q_OBJECT
@@ -38,7 +40,7 @@ public:
         UrlRole
     };
 
-    explicit AvailableGradesModel(QObject *parent = 0);
+    explicit AvailableGradesModel(Data *parent = 0);
     ~AvailableGradesModel();
 
     int personalRecord() const;
@@ -57,6 +59,7 @@ Q_SIGNALS:
 private:
     QHash<int, QByteArray> m_roleNames;
 
+    Data *m_data;
     QJsonDocument m_jsonDoc;
     QString m_dataName;
     int m_personalRecord;

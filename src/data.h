@@ -27,6 +27,7 @@
 
 #include <ksharedconfig.h>
 
+class QTimer;
 class AvailableGradesModel;
 
 class Data : public QObject {
@@ -50,6 +51,8 @@ public:
     int currentGrade() const;
     void setCurrentGrade(int tab);
  
+    void configNeedsSaving();
+
     Q_INVOKABLE QString gradeName(const QString &scale, int decimalGrade) const;
 
 Q_SIGNALS:
@@ -61,6 +64,7 @@ private:
     QHash<QString, QVector<QString> > m_data;
     AvailableGradesModel *m_availableLeadModel;
     AvailableGradesModel *m_availableBoulderModel;
+    QTimer *m_configSyncTimer;
     KSharedConfigPtr m_config;
     int m_currentTab;
     int m_currentGrade;

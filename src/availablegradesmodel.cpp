@@ -18,6 +18,7 @@
  */
 
 #include "availablegradesmodel.h"
+#include "data.h"
 
 #include <QCoreApplication>
 #include <QDebug>
@@ -28,9 +29,12 @@
 #include <QStandardPaths>
 #include <QSettings>
 
+#include <KConfigGroup>
 
-AvailableGradesModel::AvailableGradesModel(QObject *parent)
+
+AvailableGradesModel::AvailableGradesModel(Data *parent)
     : QAbstractListModel(parent),
+      m_data(parent),
       m_personalRecord(0)
 {
     m_roleNames.insert(NameRole, "nameRole");
@@ -60,12 +64,11 @@ void AvailableGradesModel::setScaleEnabled(int row, bool enabled)
         return;
     }
 
-    QSettings settings(QCoreApplication::organizationName(), QCoreApplication::applicationName());
-    settings.beginGroup("General");
+    KConfigGroup cg(m_data->config(), "General");
     const QVariantMap value = m_jsonDoc.array().at(row).toObject().toVariantMap();
-    settings.setValue(value.value("name").toString() + "-enabled", enabled);
-    settings.endGroup();
-    settings.sync();
+    cg.writeEntry(value.value("name").toString() + "-enabled", enabled);
+    cg.sync();
+
     emit dataChanged(index(row), index(row));
 }
 
@@ -81,11 +84,8 @@ QVariant AvailableGradesModel::data(const QModelIndex &index, int role) const
     case NameRole:
         return value.value("name");
     case EnabledRole: {
-        QSettings settings(QCoreApplication::organizationName(), QCoreApplication::applicationName());
-        settings.beginGroup("General");
-        bool enabled = settings.value(value.value("name").toString() + "-enabled", true).toBool();
-        settings.endGroup();
-        return enabled;
+        KConfigGroup cg(m_data->config(), "General");
+        return cg.readEntry(value.value("name").toString() + "-enabled", true);
     }
     case DescriptionRole:
         return value.value("description");
@@ -114,10 +114,9 @@ void AvailableGradesModel::load(const QString &dataName)
 
     endResetModel();
 
-    QSettings settings(QCoreApplication::organizationName(), QCoreApplication::applicationName());
-    settings.beginGroup(m_dataName);
-    m_personalRecord = settings.value("personalRecord", 0).toInt();
-    settings.endGroup();
+    KConfigGroup cg(m_data->config(), m_dataName);
+    m_personalRecord = cg.readEntry("personalRecord", 0);
+
     emit personalRecordChanged();
 }
 
@@ -134,11 +133,9 @@ void AvailableGradesModel::setPersonalRecord(int record)
 
     m_personalRecord = record;
 
-    QSettings settings(QCoreApplication::organizationName(), QCoreApplication::applicationName());
-    settings.beginGroup(m_dataName);
-    settings.setValue("personalRecord", record);
-    settings.endGroup();
-    settings.sync();
+    KConfigGroup cg(m_data->config(), m_dataName);
+    cg.writeEntry("personalRecord", record);
+    cg.sync();
 
     emit personalRecordChanged();
 }
