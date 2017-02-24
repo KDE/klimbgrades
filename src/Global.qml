@@ -44,15 +44,18 @@ Kirigami.ScrollablePage {
         }
         contextualActions: [
             Kirigami.Action {
-                text: "Set Grade As Personal Record"
+                text: "Set Record"
+                tooltip: "Set Grade As Personal Record"
                 iconName: "games-highscores"
                 onTriggered: {
                     root.model.personalRecord = root.model.currentGrade;
                 }
             },
             Kirigami.Action {
-                text: "Clear Personal Record"
+                text: "Clear"
+                tooltip: "Clear Personal Record"
                 iconName: "edit-clear"
+                enabled: root.model.personalRecord > 0
                 onTriggered: {
                     root.model.personalRecord = 0;
                 }
