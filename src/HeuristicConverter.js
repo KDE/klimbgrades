@@ -40,8 +40,8 @@ function formatYDS(decimalGrade)
 function formatFrench(decimalGrade)
 {
     //completely aleatory but whatever
-    //10.6 is 53/50: the ratio of number of lines in the table and the grade 10a
-    var adjusted = decimalGrade/10.6;
+    //10.6 is 52/50: the ratio of number of lines in the table and the grade 10a
+    var adjusted = decimalGrade/10.4;
 
     print("Fallback to calculation, Raw french: " + adjusted);
 
@@ -88,8 +88,8 @@ function formatUIAA(decimalGrade)
 function formatFont(decimalGrade)
 {
     //completely aleatory similar to french
-    var adjusted = decimalGrade/10.6;
-    adjusted -= 0.45;
+    var adjusted = decimalGrade/10.4;
+    adjusted -= 0.6;
 
     print("Fallback to calculation, Raw french: " + adjusted);
 
