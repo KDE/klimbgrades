@@ -30,6 +30,7 @@ class Data;
 class AvailableGradesModel : public QAbstractListModel
 {
     Q_OBJECT
+    Q_PROPERTY(int currentGrade READ currentGrade WRITE setCurrentGrade NOTIFY currentGradeChanged)
     Q_PROPERTY(int personalRecord READ personalRecord WRITE setPersonalRecord NOTIFY personalRecordChanged)
 
 public:
@@ -46,6 +47,9 @@ public:
     int personalRecord() const;
     void setPersonalRecord(int record);
 
+    int currentGrade() const;
+    void setCurrentGrade(int tab);
+
     Q_INVOKABLE void setScaleEnabled(int row, bool enabled);
     virtual QHash<int, QByteArray> roleNames() const;
     virtual int rowCount(const QModelIndex &parent) const;
@@ -55,6 +59,7 @@ public:
 
 Q_SIGNALS:
     void personalRecordChanged();
+    void currentGradeChanged();
 
 private:
     QHash<int, QByteArray> m_roleNames;
@@ -63,6 +68,7 @@ private:
     QJsonDocument m_jsonDoc;
     QString m_dataName;
     int m_personalRecord;
+    int m_currentGrade;
 };
 
 #endif // AVAILABLEGRADESMODEL_H

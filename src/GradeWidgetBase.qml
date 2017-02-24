@@ -30,19 +30,20 @@ Rectangle {
     height: mainLayout.height + Kirigami.Units.gridUnit * 2
 
     property Item page
+    property QtObject availableGradesModel
     property alias scaleName: scaleNameLabel.text
     property string url
     property string description
 
     function increment() {
-        print("Decimal grade: " + dataStore.currentGrade);
+        print("Decimal grade: " + availableGradesModel.currentGrade);
 
-        dataStore.currentGrade++;
+        availableGradesModel.currentGrade++;
     }
 
     function decrement() {
-        print("Decimal grade: " + dataStore.currentGrade);
-        dataStore.currentGrade = Math.max(0, dataStore.currentGrade - 1);
+        print("Decimal grade: " + availableGradesModel.currentGrade);
+        availableGradesModel.currentGrade = Math.max(0, availableGradesModel.currentGrade - 1);
     }
 
     function format(decimalGrade) {
@@ -74,16 +75,16 @@ Rectangle {
             }
             IconButton {
                 source: "go-previous"
-                onClicked: dataStore.currentGrade -= 3;
+                onClicked: availableGradesModel.currentGrade -= 3;
             }
             Kirigami.Heading {
                 Layout.fillWidth: true
                 horizontalAlignment: Text.AlignHCenter
-                text: format(dataStore.currentGrade);
+                text: format(availableGradesModel.currentGrade);
             }
             IconButton {
                 source: "go-next"
-                onClicked: dataStore.currentGrade += 3;
+                onClicked: availableGradesModel.currentGrade += 3;
             }
         }
     

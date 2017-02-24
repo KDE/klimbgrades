@@ -35,7 +35,6 @@ class Data : public QObject {
     Q_PROPERTY(AvailableGradesModel *availableLeadModel READ availableLeadModel CONSTANT)
     Q_PROPERTY(AvailableGradesModel *availableBoulderModel READ availableBoulderModel CONSTANT)
     Q_PROPERTY(int currentTab READ currentTab WRITE setCurrentTab NOTIFY currentTabChanged)
-    Q_PROPERTY(int currentGrade READ currentGrade WRITE setCurrentGrade NOTIFY currentGradeChanged)
 
 public:
     Data(QObject *parent = 0);
@@ -48,9 +47,6 @@ public:
 
     int currentTab() const;
     void setCurrentTab(int tab);
-
-    int currentGrade() const;
-    void setCurrentGrade(int tab);
  
     void configNeedsSaving();
 
@@ -58,7 +54,6 @@ public:
 
 Q_SIGNALS:
     void currentTabChanged();
-    void currentGradeChanged();
 
 private:
     QStringList m_scales;
@@ -68,7 +63,6 @@ private:
     QTimer *m_configSyncTimer;
     KSharedConfigPtr m_config;
     int m_currentTab;
-    int m_currentGrade;
 };
 
 #endif

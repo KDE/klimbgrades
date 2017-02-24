@@ -40,7 +40,6 @@ Data::Data(QObject *parent)
 
     KConfigGroup cg(config(), "General");
     m_currentTab = cg.readEntry("currentTab", 0);
-    m_currentGrade = cg.readEntry("currentGrade", 0);
 
     m_availableLeadModel = new AvailableGradesModel(this);
     m_availableLeadModel->load("lead");
@@ -139,26 +138,6 @@ void Data::setCurrentTab(int tab)
     configNeedsSaving();
 
     emit currentTabChanged();
-}
-
-int Data::currentGrade() const
-{
-    return m_currentGrade;
-}
-
-void Data::setCurrentGrade(int tab)
-{
-    if (tab == m_currentGrade) {
-        return;
-    }
-
-    m_currentGrade = tab;
-
-    KConfigGroup cg(config(), "General");
-    cg.writeEntry("currentGrade", tab);
-    configNeedsSaving();
-
-    emit currentGradeChanged();
 }
 
 #include "moc_data.cpp"

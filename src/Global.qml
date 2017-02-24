@@ -40,14 +40,14 @@ Kirigami.ScrollablePage {
         main: Kirigami.Action {
             iconName: "view-refresh"
             text: "Reset"
-            onTriggered: dataStore.currentGrade = root.defaultGrade;
+            onTriggered: root.model.currentGrade = root.defaultGrade;
         }
         contextualActions: [
             Kirigami.Action {
                 text: "Set Grade As Personal Record"
                 iconName: "games-highscores"
                 onTriggered: {
-                    root.model.personalRecord = dataStore.currentGrade;
+                    root.model.personalRecord = root.model.currentGrade;
                 }
             },
             Kirigami.Action {
@@ -90,6 +90,7 @@ Kirigami.ScrollablePage {
             id: mainRepeater
             delegate: GradeWidgetBase {
                 page: root
+                availableGradesModel: root.model
                 anchors.horizontalCenter: parent.horizontalCenter
                 visible: model.enabledRole
                 scaleName: model.nameRole

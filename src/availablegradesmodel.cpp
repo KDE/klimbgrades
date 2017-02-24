@@ -37,6 +37,9 @@ AvailableGradesModel::AvailableGradesModel(Data *parent)
       m_data(parent),
       m_personalRecord(0)
 {
+    KConfigGroup cg(m_data->config(), m_dataName);
+    m_currentGrade = cg.readEntry("currentGrade", 50);
+
     m_roleNames.insert(NameRole, "nameRole");
     m_roleNames.insert(EnabledRole, "enabledRole");
     m_roleNames.insert(DescriptionRole, "descriptionRole");
@@ -138,6 +141,26 @@ void AvailableGradesModel::setPersonalRecord(int record)
     m_data->configNeedsSaving();
 
     emit personalRecordChanged();
+}
+
+int AvailableGradesModel::currentGrade() const
+{
+    return m_currentGrade;
+}
+
+void AvailableGradesModel::setCurrentGrade(int tab)
+{
+    if (tab == m_currentGrade) {
+        return;
+    }
+
+    m_currentGrade = tab;
+
+    KConfigGroup cg(m_data->config(), m_dataName);
+    cg.writeEntry("currentGrade", tab);
+    m_data->configNeedsSaving();
+
+    emit currentGradeChanged();
 }
 
 #include "moc_availablegradesmodel.cpp"
