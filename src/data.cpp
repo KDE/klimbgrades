@@ -87,7 +87,7 @@ Data::~Data()
 
 void Data::configNeedsSaving()
 {
-    m_configSyncTimer->start(10000);
+    m_configSyncTimer->start(3000);
 }
 
 KSharedConfigPtr Data::config()
