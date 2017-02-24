@@ -37,9 +37,6 @@ AvailableGradesModel::AvailableGradesModel(Data *parent)
       m_data(parent),
       m_personalRecord(0)
 {
-    KConfigGroup cg(m_data->config(), m_dataName);
-    m_currentGrade = cg.readEntry("currentGrade", 50);
-
     m_roleNames.insert(NameRole, "nameRole");
     m_roleNames.insert(EnabledRole, "enabledRole");
     m_roleNames.insert(DescriptionRole, "descriptionRole");
@@ -119,6 +116,7 @@ void AvailableGradesModel::load(const QString &dataName)
 
     KConfigGroup cg(m_data->config(), m_dataName);
     m_personalRecord = cg.readEntry("personalRecord", 0);
+    m_currentGrade = cg.readEntry("currentGrade", 50);
 
     emit personalRecordChanged();
 }
