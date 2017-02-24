@@ -40,6 +40,7 @@ Data::Data(QObject *parent)
 
     KConfigGroup cg(config(), "General");
     m_currentTab = cg.readEntry("currentTab", 0);
+    m_leadAndBoulderLinked = cg.readEntry("leadAndBoulderLinked", false);
 
     m_availableLeadModel = new AvailableGradesModel(this);
     m_availableLeadModel->load("lead");
@@ -138,6 +139,26 @@ void Data::setCurrentTab(int tab)
     configNeedsSaving();
 
     emit currentTabChanged();
+}
+
+int Data::isLeadAndBoulderLinked() const
+{
+    return m_leadAndBoulderLinked;
+}
+
+void Data::setLeadAndBoulderLinked(bool linked)
+{
+    if (linked == m_leadAndBoulderLinked) {
+        return;
+    }
+
+    m_leadAndBoulderLinked = linked;
+
+    KConfigGroup cg(config(), "General");
+    cg.writeEntry("leadAndBoulderLinked", linked);
+    configNeedsSaving();
+
+    emit leadAndBoulderLinkedChanged();
 }
 
 #include "moc_data.cpp"

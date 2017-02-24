@@ -100,6 +100,27 @@ Kirigami.ApplicationWindow {
                     }
                 }
             }
+            Item {
+                width: 1
+                height: Kirigami.Units.largeSpacing
+            }
+            Rectangle {
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                }
+                color: Kirigami.Theme.textColor
+                opacity: 0.2
+                height: Math.floor(Kirigami.Units.devicePixelRatio)
+            }
+            Controls.SwitchDelegate {
+                width: drawer.width
+                text: "Link Lead and Boulder"
+                checked: dataStore.leadAndBoulderLinked
+                onCheckedChanged: {
+                    dataStore.leadAndBoulderLinked = checked;
+                }
+            }
         }
     }
 
@@ -118,6 +139,25 @@ Kirigami.ApplicationWindow {
         pageStack.currentIndex = dataStore.currentTab;
         loaded = true
     }
+
+    Connections {
+        target: dataStore.availableLeadModel
+        onCurrentGradeChanged: {
+            if (dataStore.leadAndBoulderLinked) {
+                dataStore.availableBoulderModel.currentGrade = dataStore.availableLeadModel.currentGrade;
+            }
+        }
+    }
+
+    Connections {
+        target: dataStore.availableBoulderModel
+        onCurrentGradeChanged: {
+            if (dataStore.leadAndBoulderLinked) {
+                dataStore.availableLeadModel.currentGrade = dataStore.availableBoulderModel.currentGrade;
+            }
+        }
+    }
+
     Component {
         id: leadPageComponent
         Global {
