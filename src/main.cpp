@@ -17,8 +17,11 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-
+#ifdef Q_OS_ANDROID
+#include <QGuiApplication>
+#else
 #include <QApplication>
+#endif
 #include <QQmlApplicationEngine>
 #include <QtQml>
 #include <QUrl>
@@ -29,9 +32,13 @@
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-    qputenv("QT_QUICK_CONTROLS_STYLE", "Material");
+    //qputenv("QT_QUICK_CONTROLS_STYLE", "Material");
     //TODO: make it selectively a QAplpication or a QGuiApplication with ifdefs
+#ifdef Q_OS_ANDROID
+    QGuiApplication app(argc, argv);
+#else
     QApplication app(argc, argv);
+#endif
     QCoreApplication::setOrganizationName("KDE");
     QCoreApplication::setOrganizationDomain("kde.org");
     QCoreApplication::setApplicationName("Climbing Grades");

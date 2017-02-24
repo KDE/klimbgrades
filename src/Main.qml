@@ -31,8 +31,8 @@ Kirigami.ApplicationWindow {
 
     globalDrawer: Kirigami.GlobalDrawer {
         id: drawer
-        title: "climbing grades"
-        titleIcon: "climbinggrades"
+        title: "Klimbgrades"
+        titleIcon: "klimbgrades"
         bannerImageSource: "halfdome.jpg"
 
         topContent: Column {
