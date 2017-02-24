@@ -21,6 +21,7 @@ import QtQuick 2.0
 import QtQuick.Layouts 1.2
 import QtGraphicalEffects 1.0
 import org.kde.kirigami 2.0 as Kirigami
+import "HeuristicConverter.js" as HeuristicConverter
 
 Rectangle {
     id: root
@@ -51,7 +52,11 @@ Rectangle {
         if (formattedGrade) {
             return formattedGrade;
         }
-        return decimalGrade;
+        var func = HeuristicConverter["format"+root.scaleName.replace(/\s+/g, '')]
+        if (func) {
+            return func(decimalGrade);
+        }
+        return "--";
     }
 
     signal infoClicked
@@ -75,16 +80,17 @@ Rectangle {
             }
             IconButton {
                 source: "go-previous"
-                onClicked: availableGradesModel.currentGrade -= 3;
+                onClicked: availableGradesModel.currentGrade -= 2;
             }
             Kirigami.Heading {
                 Layout.fillWidth: true
                 horizontalAlignment: Text.AlignHCenter
+                color: availableGradesModel.currentGrade <= 100 ? Kirigami.Theme.viewTextColor : "red"
                 text: format(availableGradesModel.currentGrade);
             }
             IconButton {
                 source: "go-next"
-                onClicked: availableGradesModel.currentGrade += 3;
+                onClicked: availableGradesModel.currentGrade += 2;
             }
         }
     

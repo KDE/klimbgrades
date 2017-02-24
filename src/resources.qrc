@@ -9,6 +9,7 @@
         <file alias="IconButton.qml">IconButton.qml</file>
         <file alias="Global.qml">Global.qml</file>
         <file alias="GradeWidgetBase.qml">GradeWidgetBase.qml</file>
+        <file alias="HeuristicConverter.js">HeuristicConverter.js</file>
         <file alias="French.qml">French.qml</file>
         <file alias="YDS.qml">YDS.qml</file>
         <file alias="Uiaa.qml">Uiaa.qml</file>
