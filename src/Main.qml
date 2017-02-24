@@ -34,6 +34,7 @@ Kirigami.ApplicationWindow {
         title: "Klimbgrades"
         titleIcon: "klimbgrades"
         bannerImageSource: "halfdome.jpg"
+        contentItem.implicitWidth: Math.min (Kirigami.Units.gridUnit * 15, root.width * 0.8)
 
         topContent: Column {
             anchors {
