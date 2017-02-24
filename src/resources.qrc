@@ -10,9 +10,6 @@
         <file alias="Global.qml">Global.qml</file>
         <file alias="GradeWidgetBase.qml">GradeWidgetBase.qml</file>
         <file alias="HeuristicConverter.js">HeuristicConverter.js</file>
-        <file alias="French.qml">French.qml</file>
-        <file alias="YDS.qml">YDS.qml</file>
-        <file alias="Uiaa.qml">Uiaa.qml</file>
         <file alias="halfdome.jpg">halfdome.jpg</file>
         <file alias="qtquickcontrols2.conf">android/qtquickcontrols2.conf</file>
         <file alias="icons/klimbgrades.svg">klimbgrades.svg</file>

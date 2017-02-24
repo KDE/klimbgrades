@@ -98,17 +98,5 @@ Kirigami.ScrollablePage {
                 description: model.descriptionRole
             }
         }
-        /*French {
-            anchors.horizontalCenter: parent.horizontalCenter
-            decimalGrade: parent.grade
-        }
-        YDS {
-            anchors.horizontalCenter: parent.horizontalCenter
-            decimalGrade: parent.grade
-        }
-        Uiaa {
-            anchors.horizontalCenter: parent.horizontalCenter
-            decimalGrade: parent.grade
-        }*/
     }
 }
