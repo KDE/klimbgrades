@@ -98,7 +98,7 @@ Rectangle {
             width: parent.width
             Kirigami.Label {
                 Layout.fillWidth: true
-                text: page.model.personalRecord > 0 ? ("Record: " + format(page.model.personalRecord)) : "";
+                text: page.model.personalRecord > 0 ? (qsTr("Record: ") + format(page.model.personalRecord)) : "";
             }
             IconButton {
                 source: "documentinfo"

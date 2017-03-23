@@ -27,6 +27,7 @@ include(ECMSetupVersion)
 include(ECMGenerateHeaders)
 include(KDEInstallDirs)
 include(KDECMakeSettings)
+include(ECMPoQmTools)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 
 set(KF5_VERSION "5.22.0")
@@ -50,6 +51,10 @@ find_package(PkgConfig)
 #########################################################################
 
 add_subdirectory(src)
+
+if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
+    ecm_install_po_files_as_qm(po)
+endif()
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 

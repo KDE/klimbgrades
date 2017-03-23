@@ -1,4 +1,8 @@
 
+if (NOT STATIC_LIBRARY)
+    ecm_create_qm_loader(klimbgrades_QM_LOADER klimbgrades_qt)
+endif()
+
 set(klimbgrades_SRCS
     availablegradesmodel.cpp
     data.cpp

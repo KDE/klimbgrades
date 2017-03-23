@@ -39,21 +39,21 @@ Kirigami.ScrollablePage {
     actions {
         main: Kirigami.Action {
             iconName: "view-refresh"
-            text: "Reset"
+            text: qsTr("Reset")
             onTriggered: root.model.currentGrade = root.defaultGrade;
         }
         contextualActions: [
             Kirigami.Action {
-                text: "Set Record"
-                tooltip: "Set Grade As Personal Record"
+                text: qsTr("Set Record")
+                tooltip: qsTr("Set Grade As Personal Record")
                 iconName: "games-highscores"
                 onTriggered: {
                     root.model.personalRecord = root.model.currentGrade;
                 }
             },
             Kirigami.Action {
-                text: "Clear"
-                tooltip: "Clear Personal Record"
+                text: qsTr("Clear")
+                tooltip: qsTr("Clear Personal Record")
                 iconName: "edit-clear"
                 enabled: root.model.personalRecord > 0
                 onTriggered: {
@@ -76,7 +76,7 @@ Kirigami.ScrollablePage {
             }
             Controls.Button {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: "Source: Wikipedia"
+                text: qsTr("Source: Wikipedia")
                 onClicked: {
                     Qt.openUrlExternally(sheet.url);
                     sheet.close();

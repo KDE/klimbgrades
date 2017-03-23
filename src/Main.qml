@@ -43,7 +43,7 @@ Kirigami.ApplicationWindow {
                 margins: -Kirigami.Units.smallSpacing
             }
             Kirigami.Heading {
-                text: "Lead"
+                text: qsTr("Lead")
                 anchors {
                     left: parent.left
                     margins: Kirigami.Units.smallSpacing
@@ -74,7 +74,7 @@ Kirigami.ApplicationWindow {
                 height: Kirigami.Units.largeSpacing
             }
             Kirigami.Heading {
-                text: "Boulder"
+                text: qsTr("Boulder")
                 anchors {
                     left: parent.left
                     margins: Kirigami.Units.smallSpacing
@@ -115,7 +115,7 @@ Kirigami.ApplicationWindow {
             }
             Controls.SwitchDelegate {
                 width: drawer.width
-                text: "Link Lead and Boulder"
+                text: qsTr("Link Lead and Boulder")
                 checked: dataStore.leadAndBoulderLinked
                 onCheckedChanged: {
                     dataStore.leadAndBoulderLinked = checked;
@@ -161,7 +161,7 @@ Kirigami.ApplicationWindow {
     Component {
         id: leadPageComponent
         Global {
-            title: "Lead"
+            title: qsTr("Lead")
             model: dataStore.availableLeadModel
             defaultGrade: 45
         }
@@ -169,7 +169,7 @@ Kirigami.ApplicationWindow {
     Component {
         id: boulderPageComponent
         Global {
-            title: "Boulder"
+            title: qsTr("Boulder")
             model: dataStore.availableBoulderModel
             defaultGrade: 65
         }
