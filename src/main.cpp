@@ -52,7 +52,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty(QLatin1String("dataStore"), data);
     //we want different main files on desktop or mobile
     //very small difference as they as they are subclasses of the same thing
-    if (QString::fromLatin1(qgetenv("QT_QUICK_CONTROLS_STYLE")) == QStringLiteral("Desktop")) {
+    if (QString::fromLatin1(qgetenv("QT_QUICK_CONTROLS_STYLE")) == QStringLiteral("org.kde.desktop")) {
         engine.load(QUrl(QStringLiteral("qrc:///desktopmain.qml")));
     } else {
         engine.load(QUrl(QStringLiteral("qrc:///mobilemain.qml")));
