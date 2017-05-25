@@ -19,7 +19,7 @@ install(TARGETS klimbgrades ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
 if (ANDROID)
     install(FILES klimbgrades.svg DESTINATION ${KDE_INSTALL_QMLDIR}/org/kde/kirigami.2/icons)
 else()
-    install(FILES klimbgrades.svg DESTINATION ${KDE_INSTALL_FULL_ICONDIR}/breeze/apps/48)
+    install(FILES klimbgrades.svg DESTINATION ${KDE_INSTALL_FULL_ICONDIR}/hicolor/scalable/apps)
 endif()
 
 #include(KF5KirigamiMacros.cmake)

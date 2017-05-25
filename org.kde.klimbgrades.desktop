@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Klimbgradesa
-omment=Small application to quickly convert difficulty grades for rock climbing, lead and bouldering scales
+Comment=Small application to quickly convert difficulty grades for rock climbing, lead and bouldering scales
 Exec=klimbgrades %u
 MimeType=application/x-klimbgrades;
 Icon=klimbgrades
