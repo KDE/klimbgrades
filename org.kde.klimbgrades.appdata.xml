@@ -12,7 +12,7 @@
             <li>Boulder: Fontainebleu, Hueco, B Grade</li>
         </ul>
     </p>
-    <p>Example application to demostrate KDE's Kirigami Qt-based framework for building cross-platform applications.</p>
+    <p>Example application to demonstrate KDE's Kirigami Qt-based framework for building cross-platform applications.</p>
   </description>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=klimbgrades</url>
   <screenshots>
