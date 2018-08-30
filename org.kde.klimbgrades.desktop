@@ -1,6 +1,14 @@
 [Desktop Entry]
 Name=Klimbgrades
+Name[uk]=Klimbgrades
 Comment=Small application to quickly convert difficulty grades for rock climbing, lead and bouldering scales
+Comment[ca]=Petita aplicació per a convertir ràpidament els graus de dificultat a escales per escalar en roca, a plom i en bloc
+Comment[ca@valencia]=Petita aplicació per a convertir ràpidament els graus de dificultat a escales per escalar en roca, a plom i en bloc
+Comment[nl]=Een kleine toepassing om snel moeilijke schalen voor graden van gezekerde en niet-gezekerde rotsbeklimming te converteren
+Comment[pt]=Pequena aplicação para converter rapidamente os graus de dificuldade para escaladas, pesos e escalas
+Comment[sv]=Litet program för att snabbt konvertera svåra lutningar vid bergsbestigning och klippbestigning
+Comment[uk]=Невеличка програма для швидкого перетворення оцінок складності для скелелазання, оцінок лідерства та техніки скелелазання
+Comment[x-test]=xxSmall application to quickly convert difficulty grades for rock climbing, lead and bouldering scalesxx
 Exec=klimbgrades %u
 MimeType=application/x-klimbgrades;
 Icon=klimbgrades
