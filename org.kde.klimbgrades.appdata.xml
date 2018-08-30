@@ -4,15 +4,40 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <name>Klimbgrades</name>
+  <name xml:lang="ca">Klimbgrades</name>
+  <name xml:lang="ca-valencia">Klimbgrades</name>
+  <name xml:lang="pt">Klimbgrades</name>
+  <name xml:lang="sv">Klimbgrades</name>
+  <name xml:lang="uk">Klimbgrades</name>
+  <name xml:lang="x-test">xxKlimbgradesxx</name>
   <summary>Small application to quickly convert difficulty grades for rock climbing, lead and bouldering scales</summary>
+  <summary xml:lang="ca">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per escalar en roca, a plom i en bloc</summary>
+  <summary xml:lang="ca-valencia">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per escalar en roca, a plom i en bloc</summary>
+  <summary xml:lang="pt">Pequena aplicação para converter rapidamente as cotações de dificuldade de escaladas, bem como escalas de montanhismo e de liderança</summary>
+  <summary xml:lang="sv">Litet program för att snabbt konvertera svåra lutningar vid bergsbestigning och klippbestigning</summary>
+  <summary xml:lang="uk">Невеличка програма для швидкого перетворення оцінок складності для скелелазання, оцінок лідерства та техніки скелелазання</summary>
+  <summary xml:lang="x-test">xxSmall application to quickly convert difficulty grades for rock climbing, lead and bouldering scalesxx</summary>
   <description>
     <p>
-        <ul>
-            <li>Lead: French, YDS, UIAA, British Tech, British Adjectival</li>
-            <li>Boulder: Fontainebleu, Hueco, B Grade</li>
-        </ul>
+      <ul>
+        <li>Lead: French, YDS, UIAA, British Tech, British Adjectival</li>
+        <li xml:lang="ca">Lead (a plom): francès, YDS, UIAA, tecnologia britànica, adjectiu britànic</li>
+        <li xml:lang="ca-valencia">Lead (a plom): francés, YDS, UIAA, tecnologia britànica, adjectiu britànic</li>
+        <li xml:lang="pt">Liderança: Francês, YDS, UIAA, Inglês Técnico, Inglês Adjectivado</li>
+        <li xml:lang="sv">Ledare: French, YDS, UIAA, British Tech, British Adjectival</li>
+        <li xml:lang="uk">Складність: French, YDS, UIAA, British Tech, British Adjectival</li>
+        <li xml:lang="x-test">xxLead: French, YDS, UIAA, British Tech, British Adjectivalxx</li>
+        <li>Boulder: Fontainebleu, Hueco, B Grade</li>
+        <li xml:lang="ca">Boulder (en bloc): Fontainebleu, Hueco, grau B</li>
+        <li xml:lang="ca-valencia">Boulder (en bloc): Fontainebleu, Hueco, grau B</li>
+        <li xml:lang="pt">Montanhismo: Fontainebleu, Hueco, Escala B</li>
+        <li xml:lang="sv">Klippa: Fontainebleu, Hueco, B Grade</li>
+        <li xml:lang="uk">Техніка скелелазання: Fontainebleu, Hueco, B Grade</li>
+        <li xml:lang="x-test">xxBoulder: Fontainebleu, Hueco, B Gradexx</li>
+      </ul>
     </p>
     <p>Example application to demonstrate KDE's Kirigami Qt-based framework for building cross-platform applications.</p>
+    <p xml:lang="uk">Приклад програми для демонстрації оболонки Kirigami на основі Qt та технологій KDE для побудови багатоплатформових програм.</p>
   </description>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=klimbgrades</url>
   <screenshots>
