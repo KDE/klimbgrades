@@ -8,6 +8,7 @@
   <name xml:lang="ca-valencia">Klimbgrades</name>
   <name xml:lang="cs">Klimbgrades</name>
   <name xml:lang="fr">Klimbgrades</name>
+  <name xml:lang="nl">Klimbgrades</name>
   <name xml:lang="pt">Klimbgrades</name>
   <name xml:lang="sk">Klimbgrades</name>
   <name xml:lang="sv">Klimbgrades</name>
@@ -17,6 +18,7 @@
   <summary xml:lang="ca">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per escalar en roca, a plom i en bloc</summary>
   <summary xml:lang="ca-valencia">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per escalar en roca, a plom i en bloc</summary>
   <summary xml:lang="fr">Petite application permettant de convertir rapidement les cotations des murs, des voies d'escalade libre et des blocs</summary>
+  <summary xml:lang="nl">Een kleine toepassing om snel moeilijke schalen voor graden van gezekerde en niet-gezekerde rotsbeklimming te converteren</summary>
   <summary xml:lang="pt">Pequena aplicação para converter rapidamente as cotações de dificuldade de escaladas, bem como escalas de montanhismo e de liderança</summary>
   <summary xml:lang="sv">Litet program för att snabbt konvertera svåra lutningar vid bergsbestigning och klippbestigning</summary>
   <summary xml:lang="uk">Невеличка програма для швидкого перетворення оцінок складності для скелелазання, оцінок лідерства та техніки скелелазання</summary>
@@ -28,6 +30,7 @@
         <li xml:lang="ca">Lead (a plom): francès, YDS, UIAA, tecnologia britànica, adjectiu britànic</li>
         <li xml:lang="ca-valencia">Lead (a plom): francés, YDS, UIAA, tecnologia britànica, adjectiu britànic</li>
         <li xml:lang="fr">Escalade libre : française, YDS, UIAA, anglaise technique, anglaise engagement</li>
+        <li xml:lang="nl">Lead: Frans, YDS, UIAA, Brits Tech, Brits Adjectival</li>
         <li xml:lang="pt">Liderança: Francês, YDS, UIAA, Inglês Técnico, Inglês Adjectivado</li>
         <li xml:lang="sv">Ledare: French, YDS, UIAA, British Tech, British Adjectival</li>
         <li xml:lang="uk">Складність: French, YDS, UIAA, British Tech, British Adjectival</li>
@@ -36,6 +39,7 @@
         <li xml:lang="ca">Boulder (en bloc): Fontainebleu, Hueco, grau B</li>
         <li xml:lang="ca-valencia">Boulder (en bloc): Fontainebleu, Hueco, grau B</li>
         <li xml:lang="fr">Bloc : Fontainebleu, Hueco, Cotation B</li>
+        <li xml:lang="nl">Boulder: Fontainebleu, Hueco, B Grade</li>
         <li xml:lang="pt">Montanhismo: Fontainebleu, Hueco, Escala B</li>
         <li xml:lang="sv">Klippa: Fontainebleu, Hueco, B Grade</li>
         <li xml:lang="uk">Техніка скелелазання: Fontainebleu, Hueco, B Grade</li>
