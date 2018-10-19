@@ -50,6 +50,7 @@
     <p xml:lang="ca">Aplicació d'exemple per a demostrar el marc de treball basat en les Qt i el Kirigami del KDE per a la creació d'aplicacions multiplataforma.</p>
     <p xml:lang="ca-valencia">Aplicació d'exemple per a demostrar el marc de treball basat en les Qt i el Kirigami del KDE per a la creació d'aplicacions multiplataforma.</p>
     <p xml:lang="fr">Exemple d'application pour démontrer l'utilisation du framework Qt Kirigama de KDE pour le développement d'applications multi-plateformes.</p>
+    <p xml:lang="nl">Voorbeeldtoepassing om KDE's Kirigami Qt-based framework te demonstreren voor het bouwen van cross-platform toepassingen.</p>
     <p xml:lang="pt">Aplicação de exemplo para demonstrar a plataforma Kirigami do KDE, baseada no Qt, para criar aplicações multi-plataforma.</p>
     <p xml:lang="sv">Exempelprogram för att demonstrera KDE:s Kirigami Qt-baserade ramverk för att bygga program för flera plattformar.</p>
     <p xml:lang="uk">Приклад програми для демонстрації оболонки Kirigami на основі Qt та технологій KDE для побудови багатоплатформових програм.</p>
