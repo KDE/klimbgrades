@@ -7,6 +7,7 @@
   <name xml:lang="ca">Klimbgrades</name>
   <name xml:lang="ca-valencia">Klimbgrades</name>
   <name xml:lang="cs">Klimbgrades</name>
+  <name xml:lang="de">Klimbgrades</name>
   <name xml:lang="es">Klimbgrades</name>
   <name xml:lang="fr">Klimbgrades</name>
   <name xml:lang="gl">Klimbgrades</name>
@@ -19,6 +20,7 @@
   <summary>Small application to quickly convert difficulty grades for rock climbing, lead and bouldering scales</summary>
   <summary xml:lang="ca">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per escalar en roca, a plom i en bloc</summary>
   <summary xml:lang="ca-valencia">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per escalar en roca, a plom i en bloc</summary>
+  <summary xml:lang="de">Anwendung zum Umwandeln von Schwierigkeitsskalen für Felsklettern, Vorstieg und Bouldern</summary>
   <summary xml:lang="fr">Petite application permettant de convertir rapidement les cotations des murs, des voies d'escalade libre et des blocs</summary>
   <summary xml:lang="gl">Pequeno aplicativo para converter rapidamente graos de dificultade de escalada de rochas, chumbo e escalas de rochas</summary>
   <summary xml:lang="nl">Een kleine toepassing om snel moeilijke schalen voor graden van gezekerde en niet-gezekerde rotsbeklimming te converteren</summary>
