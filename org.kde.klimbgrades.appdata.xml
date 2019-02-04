@@ -12,6 +12,7 @@
   <name xml:lang="fr">Klimbgrades</name>
   <name xml:lang="gl">Klimbgrades</name>
   <name xml:lang="nl">Klimbgrades</name>
+  <name xml:lang="pl">Klimbgrades</name>
   <name xml:lang="pt">Klimbgrades</name>
   <name xml:lang="sk">Klimbgrades</name>
   <name xml:lang="sv">Klimbgrades</name>
@@ -25,6 +26,7 @@
   <summary xml:lang="fr">Petite application permettant de convertir rapidement les cotations des murs, des voies d'escalade libre et des blocs</summary>
   <summary xml:lang="gl">Pequeno aplicativo para converter rapidamente graos de dificultade de escalada de rochas, chumbo e escalas de rochas</summary>
   <summary xml:lang="nl">Een kleine toepassing om snel moeilijke schalen voor graden van gezekerde en niet-gezekerde rotsbeklimming te converteren</summary>
+  <summary xml:lang="pl">Mała aplikacja do przekształcania trudnych stopni we wspinaczce górskiej, skale lead i boulder</summary>
   <summary xml:lang="pt">Pequena aplicação para converter rapidamente as cotações de dificuldade de escaladas, bem como escalas de montanhismo e de liderança</summary>
   <summary xml:lang="sv">Litet program för att snabbt konvertera svåra lutningar vid bergsbestigning och klippbestigning</summary>
   <summary xml:lang="uk">Невеличка програма для швидкого перетворення оцінок складності для скелелазання, оцінок лідерства та техніки скелелазання</summary>
@@ -38,6 +40,7 @@
         <li xml:lang="fr">Escalade libre : française, YDS, UIAA, anglaise technique, anglaise engagement</li>
         <li xml:lang="gl">Chumbo: francesa, YDS, UIAA, British Tech, British Adjectival</li>
         <li xml:lang="nl">Lead: Frans, YDS, UIAA, Brits Tech, Brits Adjectival</li>
+        <li xml:lang="pl">Lead: French, YDS, UIAA, British Tech, British Adjectival</li>
         <li xml:lang="pt">Liderança: Francês, YDS, UIAA, Inglês Técnico, Inglês Adjectivado</li>
         <li xml:lang="sv">Ledare: French, YDS, UIAA, British Tech, British Adjectival</li>
         <li xml:lang="uk">Складність: French, YDS, UIAA, British Tech, British Adjectival</li>
@@ -48,6 +51,7 @@
         <li xml:lang="fr">Bloc : Fontainebleu, Hueco, Cotation B</li>
         <li xml:lang="gl">Rocha: Fontainebleu, Hueco, B Grade</li>
         <li xml:lang="nl">Boulder: Fontainebleu, Hueco, B Grade</li>
+        <li xml:lang="pl">Boulder: Fontainebleu, Hueco, B Grade</li>
         <li xml:lang="pt">Montanhismo: Fontainebleu, Hueco, Escala B</li>
         <li xml:lang="sv">Klippa: Fontainebleu, Hueco, B Grade</li>
         <li xml:lang="uk">Техніка скелелазання: Fontainebleu, Hueco, B Grade</li>
@@ -61,6 +65,7 @@
     <p xml:lang="fr">Exemple d'application pour démontrer l'utilisation du framework Qt Kirigama de KDE pour le développement d'applications multi-plateformes.</p>
     <p xml:lang="gl">Aplicativo de exemplo que demostra a infraestrutura Kirigami de KDE, baseada en Qt, para construír aplicativos para múltiples plataformas.</p>
     <p xml:lang="nl">Voorbeeldtoepassing om KDE's Kirigami Qt-based framework te demonstreren voor het bouwen van cross-platform toepassingen.</p>
+    <p xml:lang="pl">Przykładowa aplikacja do przestawienia szkieletu KDE Kirigami opartego na Qt do tworzenia wieloplatformowych aplikacji.</p>
     <p xml:lang="pt">Aplicação de exemplo para demonstrar a plataforma Kirigami do KDE, baseada no Qt, para criar aplicações multi-plataforma.</p>
     <p xml:lang="sv">Exempelprogram för att demonstrera KDE:s Kirigami Qt-baserade ramverk för att bygga program för flera plattformar.</p>
     <p xml:lang="uk">Приклад програми для демонстрації оболонки Kirigami на основі Qt та технологій KDE для побудови багатоплатформових програм.</p>
