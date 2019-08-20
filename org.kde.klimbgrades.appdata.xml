@@ -71,6 +71,7 @@
     <p>Example application to demonstrate KDE's Kirigami Qt-based framework for building cross-platform applications.</p>
     <p xml:lang="ca">Aplicació d'exemple per a demostrar el marc de treball basat en les Qt i el Kirigami del KDE per a la creació d'aplicacions multiplataforma.</p>
     <p xml:lang="ca-valencia">Aplicació d'exemple per a demostrar el marc de treball basat en les Qt i el Kirigami del KDE per a la creació d'aplicacions multiplataforma.</p>
+    <p xml:lang="de">Beispielanwendung zur Demonstration von KDE-Kirigami, einem Qt-basierten Framework für die Entwicklung plattformübergreifender Anwendungen.</p>
     <p xml:lang="es">Aplicación de ejemplo para probar la infraestructura Kirigami de KDE, basada en Qt, para crear aplicaciones multiplataforma.</p>
     <p xml:lang="fr">Exemple d'application pour démontrer l'utilisation du framework Qt Kirigama de KDE pour le développement d'applications multi-plateformes.</p>
     <p xml:lang="gl">Aplicativo de exemplo que demostra a infraestrutura Kirigami de KDE, baseada en Qt, para construír aplicativos para múltiples plataformas.</p>
