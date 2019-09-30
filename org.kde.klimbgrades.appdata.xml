@@ -26,7 +26,7 @@
   <summary xml:lang="ca-valencia">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per escalar en roca, a plom i en bloc</summary>
   <summary xml:lang="de">Anwendung zum Umwandeln von Schwierigkeitsskalen für Felsklettern, Vorstieg und Bouldern</summary>
   <summary xml:lang="fr">Petite application permettant de convertir rapidement les cotations des murs, des voies d'escalade libre et des blocs</summary>
-  <summary xml:lang="gl">Pequeno aplicativo para converter rapidamente graos de dificultade de escalada de rochas, chumbo e escalas de rochas</summary>
+  <summary xml:lang="gl">Pequeno aplicación para converter rapidamente graos de dificultade de escalada de rochas, chumbo e escalas de rochas</summary>
   <summary xml:lang="id">Aplikasi kecil untuk secara cepat mengkonversi nilai kesulitan untuk panjat tebing, timbal, dan timbangan batu</summary>
   <summary xml:lang="ko">암벽 등반, 리드, 볼더링 등급을 변환하는 간편한 도구</summary>
   <summary xml:lang="nl">Een kleine toepassing om snel moeilijke schalen voor graden van gezekerde en niet-gezekerde rotsbeklimming te converteren</summary>
@@ -74,7 +74,7 @@
     <p xml:lang="de">Beispielanwendung zur Demonstration von KDE-Kirigami, einem Qt-basierten Framework für die Entwicklung plattformübergreifender Anwendungen.</p>
     <p xml:lang="es">Aplicación de ejemplo para probar la infraestructura Kirigami de KDE, basada en Qt, para crear aplicaciones multiplataforma.</p>
     <p xml:lang="fr">Exemple d'application pour démontrer l'utilisation du framework Qt Kirigama de KDE pour le développement d'applications multi-plateformes.</p>
-    <p xml:lang="gl">Aplicativo de exemplo que demostra a infraestrutura Kirigami de KDE, baseada en Qt, para construír aplicativos para múltiples plataformas.</p>
+    <p xml:lang="gl">Aplicación de exemplo que demostra a infraestrutura Kirigami de KDE, baseada en Qt, para construír aplicacións para múltiples plataformas.</p>
     <p xml:lang="id">Contoh aplikasi untuk menunjukkan kerangka kerja Kirigami KDE berbasiskan Qt untuk membangun aplikasi lintas platform.</p>
     <p xml:lang="ko">KDE의 Kirigami Qt 기반 프레임워크로 크로스 플랫폼 프로그램을 개발하는 예제 프로그램입니다.</p>
     <p xml:lang="nl">Voorbeeldtoepassing om KDE's Kirigami Qt-based framework te demonstreren voor het bouwen van cross-platform toepassingen.</p>
