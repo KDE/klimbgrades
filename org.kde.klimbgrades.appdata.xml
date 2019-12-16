@@ -25,6 +25,7 @@
   <summary xml:lang="ca">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per escalar en roca, a plom i en bloc</summary>
   <summary xml:lang="ca-valencia">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per escalar en roca, a plom i en bloc</summary>
   <summary xml:lang="de">Anwendung zum Umwandeln von Schwierigkeitsskalen für Felsklettern, Vorstieg und Bouldern</summary>
+  <summary xml:lang="es">Pequeña aplicación para convertir rápidamente grados de dificultad de escalada según las escalas de líder y de bloques</summary>
   <summary xml:lang="fr">Petite application permettant de convertir rapidement les cotations des murs, des voies d'escalade libre et des blocs</summary>
   <summary xml:lang="gl">Pequeno aplicación para converter rapidamente graos de dificultade de escalada de rochas, chumbo e escalas de rochas</summary>
   <summary xml:lang="id">Aplikasi kecil untuk secara cepat mengkonversi nilai kesulitan untuk panjat tebing, timbal, dan timbangan batu</summary>
@@ -42,6 +43,7 @@
         <li xml:lang="ca">Lead (a plom): francès, YDS, UIAA, tecnologia britànica, adjectiu britànic</li>
         <li xml:lang="ca-valencia">Lead (a plom): francés, YDS, UIAA, tecnologia britànica, adjectiu britànic</li>
         <li xml:lang="de">Vorstieg: French, YDS, UIAA, British Tech, British Adjectival</li>
+        <li xml:lang="es">Líder: francés, YDS, UIAA, británico técnico, británico adjetival</li>
         <li xml:lang="fr">Escalade libre : française, YDS, UIAA, anglaise technique, anglaise engagement</li>
         <li xml:lang="gl">Chumbo: francesa, YDS, UIAA, British Tech, British Adjectival</li>
         <li xml:lang="id">Timah: French, YDS, UIAA, British Tech, British Adjectival</li>
@@ -56,6 +58,7 @@
         <li xml:lang="ca">Boulder (en bloc): Fontainebleu, Hueco, grau B</li>
         <li xml:lang="ca-valencia">Boulder (en bloc): Fontainebleu, Hueco, grau B</li>
         <li xml:lang="de">Bouldern: Fontainebleu, Hueco, B Grade</li>
+        <li xml:lang="es">En bloque: Fontainebleu, Hueco, Grado B</li>
         <li xml:lang="fr">Bloc : Fontainebleu, Hueco, Cotation B</li>
         <li xml:lang="gl">Rocha: Fontainebleu, Hueco, grao B</li>
         <li xml:lang="id">Bebatuan: Fontainebleu, Hueco, B Grade</li>
