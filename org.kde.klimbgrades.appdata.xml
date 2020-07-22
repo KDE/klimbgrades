@@ -25,8 +25,8 @@
   <name xml:lang="x-test">xxKlimbgradesxx</name>
   <name xml:lang="zh-TW">Klimbgrades</name>
   <summary>Small application to quickly convert difficulty grades for rock climbing, lead and bouldering scales</summary>
-  <summary xml:lang="ca">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per escalar en roca, a plom i en bloc</summary>
-  <summary xml:lang="ca-valencia">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per escalar en roca, a plom i en bloc</summary>
+  <summary xml:lang="ca">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per a escalar en roca, a plom i en bloc</summary>
+  <summary xml:lang="ca-valencia">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per a escalar en roca, a plom i en bloc</summary>
   <summary xml:lang="de">Anwendung zum Umwandeln von Schwierigkeitsskalen für Felsklettern, Vorstieg und Bouldern</summary>
   <summary xml:lang="es">Pequeña aplicación para convertir rápidamente grados de dificultad de escalada según las escalas de líder y de bloques</summary>
   <summary xml:lang="fr">Petite application permettant de convertir rapidement les cotations des murs, des voies d'escalade libre et des blocs</summary>
