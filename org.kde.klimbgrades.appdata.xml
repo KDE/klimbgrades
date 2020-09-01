@@ -16,6 +16,7 @@
   <name xml:lang="id">Klimbgrades</name>
   <name xml:lang="ko">Klimbgrades</name>
   <name xml:lang="nl">Klimbgrades</name>
+  <name xml:lang="nn">Klimbgrades</name>
   <name xml:lang="pl">Klimbgrades</name>
   <name xml:lang="pt">Klimbgrades</name>
   <name xml:lang="ru">Klimbgrades</name>
@@ -35,6 +36,7 @@
   <summary xml:lang="id">Aplikasi kecil untuk secara cepat mengkonversi nilai kesulitan untuk panjat tebing, timbal, dan timbangan batu</summary>
   <summary xml:lang="ko">암벽 등반, 리드, 볼더링 등급을 변환하는 간편한 도구</summary>
   <summary xml:lang="nl">Een kleine toepassing om snel moeilijke schalen voor graden van gezekerde en niet-gezekerde rotsbeklimming te converteren</summary>
+  <summary xml:lang="nn">Lite program for å rekna graderingar for fjell­klatring, led­klatring og buldring om til ulike graderings­system</summary>
   <summary xml:lang="pl">Mała aplikacja do przekształcania trudnych stopni we wspinaczce górskiej, skale lead i boulder</summary>
   <summary xml:lang="pt">Pequena aplicação para converter rapidamente as cotações de dificuldade de escaladas, bem como escalas de montanhismo e de liderança</summary>
   <summary xml:lang="sl">Majhna aplikacija za hitro pretvorbo težavnostnih razredov za skalno plezanje, vodilne in balvanske lestvice</summary>
@@ -55,6 +57,7 @@
         <li xml:lang="id">Timah: French, YDS, UIAA, British Tech, British Adjectival</li>
         <li xml:lang="ko">리드: 프랑스식, YDS, UIAA, 영국식 기술, 영국식 목표</li>
         <li xml:lang="nl">Lead: Frans, YDS, UIAA, Brits Tech, Brits Adjectival</li>
+        <li xml:lang="nn">Led: Fransk, YDS, UIAA, British Tech, British Adjectival</li>
         <li xml:lang="pl">Lead: French, YDS, UIAA, British Tech, British Adjectival</li>
         <li xml:lang="pt">Liderança: Francês, YDS, UIAA, Inglês Técnico, Inglês Adjectivado</li>
         <li xml:lang="sl">Vodilne: Francoska, YDS, UIAA, British Tech, British Adjectival</li>
@@ -72,6 +75,7 @@
         <li xml:lang="id">Bebatuan: Fontainebleu, Hueco, B Grade</li>
         <li xml:lang="ko">볼더링: 퐁텐블로, 후에코, B 등급</li>
         <li xml:lang="nl">Boulder: Fontainebleu, Hueco, B Grade</li>
+        <li xml:lang="nn">Buldring: Fontainebleu, Hueco, B Grade</li>
         <li xml:lang="pl">Boulder: Fontainebleu, Hueco, B Grade</li>
         <li xml:lang="pt">Montanhismo: Fontainebleu, Hueco, Escala B</li>
         <li xml:lang="sl">Balvanske: Fontainebleu, Hueco, B Grade</li>
@@ -90,6 +94,7 @@
     <p xml:lang="id">Contoh aplikasi untuk menunjukkan kerangka kerja Kirigami KDE berbasiskan Qt untuk membangun aplikasi lintas platform.</p>
     <p xml:lang="ko">KDE의 Kirigami Qt 기반 프레임워크로 크로스 플랫폼 프로그램을 개발하는 예제 프로그램입니다.</p>
     <p xml:lang="nl">Voorbeeldtoepassing om KDE's Kirigami Qt-based framework te demonstreren voor het bouwen van cross-platform toepassingen.</p>
+    <p xml:lang="nn">Eksempelprogram for å demonstrera KDE sitt Kirigami Qt-baserte rammeverk for bygging av kryssplattform­program.</p>
     <p xml:lang="pl">Przykładowa aplikacja do przestawienia szkieletu KDE Kirigami opartego na Qt do tworzenia wieloplatformowych aplikacji.</p>
     <p xml:lang="pt">Aplicação de exemplo para demonstrar a plataforma Kirigami do KDE, baseada no Qt, para criar aplicações multi-plataforma.</p>
     <p xml:lang="sl">Primer aplikacije za prikaz razvojnega okvirja na KDE Kirigami Qt za izdelavo aplikacij za več platform.</p>
