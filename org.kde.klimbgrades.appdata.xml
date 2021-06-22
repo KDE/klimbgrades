@@ -8,6 +8,7 @@
   <name xml:lang="ca-valencia">Klimbgrades</name>
   <name xml:lang="cs">Klimbgrades</name>
   <name xml:lang="de">Klimbgrades</name>
+  <name xml:lang="el">Klimbgrades</name>
   <name xml:lang="en-GB">Klimbgrades</name>
   <name xml:lang="es">Klimbgrades</name>
   <name xml:lang="fr">Klimbgrades</name>
@@ -32,6 +33,7 @@
   <summary xml:lang="ca">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per a escalar en roca, a plom i en bloc</summary>
   <summary xml:lang="ca-valencia">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per a escalar en roca, a plom i en bloc</summary>
   <summary xml:lang="de">Anwendung zum Umwandeln von Schwierigkeitsskalen für Felsklettern, Vorstieg und Bouldern</summary>
+  <summary xml:lang="el">Μικρή εφαρμογή γρήγορης μετατροπής βαθμών δυσκολίας για ορειβασία, καθοδήγηση και αναρριχητικές κλίμακες</summary>
   <summary xml:lang="en-GB">Small application to quickly convert difficulty grades for rock climbing, lead and bouldering scales</summary>
   <summary xml:lang="es">Pequeña aplicación para convertir rápidamente grados de dificultad de escalada según las escalas de líder y de bloques</summary>
   <summary xml:lang="fr">Petite application permettant de convertir rapidement les cotations des murs, des voies d'escalade libre et des blocs</summary>
@@ -53,6 +55,7 @@
         <li xml:lang="ca">Lead (a plom): francès, YDS, UIAA, tecnologia britànica, adjectiu britànic</li>
         <li xml:lang="ca-valencia">Lead (a plom): francés, YDS, UIAA, tecnologia britànica, adjectiu britànic</li>
         <li xml:lang="de">Vorstieg: French, YDS, UIAA, British Tech, British Adjectival</li>
+        <li xml:lang="el">Καθοδήγηση: French, YDS, UIAA, British Tech, British Adjectival</li>
         <li xml:lang="en-GB">Lead: French, YDS, UIAA, British Tech, British Adjectival</li>
         <li xml:lang="es">Líder: francés, YDS, UIAA, británico técnico, británico adjetival</li>
         <li xml:lang="fr">Escalade libre : française, YDS, UIAA, anglaise technique, anglaise engagement</li>
@@ -73,6 +76,7 @@
         <li xml:lang="ca">Boulder (en bloc): Fontainebleu, Hueco, grau B</li>
         <li xml:lang="ca-valencia">Boulder (en bloc): Fontainebleu, Hueco, grau B</li>
         <li xml:lang="de">Bouldern: Fontainebleu, Hueco, B Grade</li>
+        <li xml:lang="el">Αναρρίχηση: Fontainebleu, Hueco, B Grade</li>
         <li xml:lang="en-GB">Boulder: Fontainebleu, Hueco, B Grade</li>
         <li xml:lang="es">En bloque: Fontainebleu, Hueco, Grado B</li>
         <li xml:lang="fr">Bloc : Fontainebleu, Hueco, Cotation B</li>
@@ -95,6 +99,7 @@
     <p xml:lang="ca">Aplicació d'exemple per a demostrar el marc de treball basat en les Qt i el Kirigami del KDE per a la creació d'aplicacions multiplataforma.</p>
     <p xml:lang="ca-valencia">Aplicació d'exemple per a demostrar el marc de treball basat en les Qt i el Kirigami del KDE per a la creació d'aplicacions multiplataforma.</p>
     <p xml:lang="de">Beispielanwendung zur Demonstration von KDE-Kirigami, einem Qt-basierten Framework für die Entwicklung plattformübergreifender Anwendungen.</p>
+    <p xml:lang="el">Παράδειγμα εφαρμογής για επίδειξη του KDE Kirigami πλαισίου με βάση το Qt για κατασκευή εφαρμογών ανεξάρτητων από πλατφόρμες.</p>
     <p xml:lang="en-GB">Example application to demonstrate KDE's Kirigami Qt-based framework for building cross-platform applications.</p>
     <p xml:lang="es">Aplicación de ejemplo para probar la infraestructura Kirigami de KDE, basada en Qt, para crear aplicaciones multiplataforma.</p>
     <p xml:lang="fr">Exemple d'application pour démontrer l'utilisation du framework Qt Kirigami de KDE pour le développement d'applications multi-plate-formes.</p>
