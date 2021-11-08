@@ -31,7 +31,7 @@
   <name xml:lang="x-test">xxKlimbgradesxx</name>
   <name xml:lang="zh-TW">Klimbgrades</name>
   <summary>Small application to quickly convert difficulty grades for rock climbing, lead and bouldering scales</summary>
-  <summary xml:lang="ca">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per a escalar en roca, a plom i en bloc</summary>
+  <summary xml:lang="ca">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per a escalar en roca, amb líder i en bloc</summary>
   <summary xml:lang="ca-valencia">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per a escalar en roca, a plom i en bloc</summary>
   <summary xml:lang="de">Anwendung zum Umwandeln von Schwierigkeitsskalen für Felsklettern, Vorstieg und Bouldern</summary>
   <summary xml:lang="el">Μικρή εφαρμογή γρήγορης μετατροπής βαθμών δυσκολίας για ορειβασία, καθοδήγηση και αναρριχητικές κλίμακες</summary>
@@ -54,7 +54,7 @@
     <p>
       <ul>
         <li>Lead: French, YDS, UIAA, British Tech, British Adjectival</li>
-        <li xml:lang="ca">Lead (a plom): francès, YDS, UIAA, tecnologia britànica, adjectiu britànic</li>
+        <li xml:lang="ca">Lead (líder): francès, YDS, UIAA, tecnologia britànica, adjectiu britànic</li>
         <li xml:lang="ca-valencia">Lead (a plom): francés, YDS, UIAA, tecnologia britànica, adjectiu britànic</li>
         <li xml:lang="de">Vorstieg: French, YDS, UIAA, British Tech, British Adjectival</li>
         <li xml:lang="el">Καθοδήγηση: French, YDS, UIAA, British Tech, British Adjectival</li>
