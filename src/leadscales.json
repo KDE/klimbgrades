@@ -6,17 +6,7 @@
 },
 {
     "name": "YDS",
-    "description": "The system was initially developed as the Sierra Club grading system in the 1930s to classify hikes and climbs in the Sierra Nevada. Previously, these were described relative to others. For example, Z is harder than X but easier than Y. This primitive system was difficult to learn for those who did not yet have experience of X or Y. The club adapted a numerical system of classification that was easy to learn and which seemed practical in its application.
-
-The system now divides all hikes and climbs into five classes: The exact definition of the classes is somewhat controversial, and updated versions of these classifications have been proposed.
-
-    Class 1: Walking with a low chance of injury, hiking boots a good idea.
-    Class 2: Simple scrambling, with the possibility of occasional use of the hands. Little potential danger is encountered. Hiking Boots highly recommended.
-    Class 3: Scrambling with increased exposure. Handholds are necessary. A rope should be available for learning climbers, or if you just choose to use one that day, but is usually not required. Falls could easily be fatal.
-    Class 4: Simple climbing, with exposure. A rope is often used. Natural protection can be easily found. Falls may well be fatal.
-    Class 5: Is considered technical roped free (without hanging on the rope, pulling on, or stepping on anchors) climbing; belaying, and other protection hardware is used for safety. Un-roped falls can result in severe injury or death.
-        Class 5.0 to 5.15c[5] is used to define progressively more difficult free moves.
-    Class 6: Is considered Aid (often broken into A.0 to A.5) climbing. Equipment (Etriers, aiders, or stirrups are often used to stand in, and the equipment is used for hand holds) is used for more than just safety.",
+    "description": "The system was initially developed as the Sierra Club grading system in the 1930s to classify hikes and climbs in the Sierra Nevada. Previously, these were described relative to others. For example, Z is harder than X but easier than Y. This primitive system was difficult to learn for those who did not yet have experience of X or Y. The club adapted a numerical system of classification that was easy to learn and which seemed practical in its application.\n\nThe system now divides all hikes and climbs into five classes: The exact definition of the classes is somewhat controversial, and updated versions of these classifications have been proposed.\n\nClass 1: Walking with a low chance of injury, hiking boots a good idea.\nClass 2: Simple scrambling, with the possibility of occasional use of the hands. Little potential danger is encountered. Hiking Boots highly recommended.\nClass 3: Scrambling with increased exposure. Handholds are necessary. A rope should be available for learning climbers, or if you just choose to use one that day, but is usually not required. Falls could easily be fatal.\nClass 4: Simple climbing, with exposure. A rope is often used. Natural protection can be easily found. Falls may well be fatal.\nClass 5: Is considered technical roped free (without hanging on the rope, pulling on, or stepping on anchors) climbing; belaying, and other protection hardware is used for safety. Un-roped falls can result in severe injury or death.\nClass 5.0 to 5.15c[5] is used to define progressively more difficult free moves.\nClass 6: Is considered Aid (often broken into A.0 to A.5) climbing. Equipment (Etriers, aiders, or stirrups are often used to stand in, and the equipment is used for hand holds) is used for more than just safety.",
     "url": "https://en.wikipedia.org/wiki/Yosemite_Decimal_System"
 },
 {
@@ -33,27 +23,7 @@ Usually the technical grade increases with the adjectival grade, but a hard tech
 },
 {
     "name": "British Adjectival",
-    "description": "The adjectival grade attempts to assess the overall difficulty of the climb - taking into account all factors which lend difficulty to a pitch including technical difficulty, sustaindness, protection quality, rock quality, exposure and other less tangible aspects - for a climber leading the route on sight in traditional style.[11] It thus resembles mountaineering grades such as the International French Adjectival System. The adjectival grade appears to have been introduced by O. G. Jones in the early 20th century who classified climbs as “Easy”; “Moderate”; “Difficult” or “Exceptionally Severe”.[12] Increasing standards have several times led to extra grades being added. The adjectival grades are as follows:
-
-    * Easy (rarely used)
-    * Moderate (M, or \"Mod\")
-    * Difficult (D, or \"Diff\")
-    * Hard Difficult (HD, or \"Hard Diff\" - often omitted)
-    * Very Difficult (VD, or \"V Diff\")
-    * Hard Very Difficult (HVD, or \"Hard V Diff\" - sometimes omitted)
-    * Mild Severe (MS - often omitted)
-    * Severe (S)
-    * Hard Severe (HS)
-    * Mild Very Severe (MVS - often omitted)
-    * Very Severe (VS)
-    * Hard Very Severe (HVS)
-    * Extremely Severe (E1, E2, E3, ...)
-
-Increasing standards in the 1970s resulted in the adoption of Pete Botterill's proposal that the Extremely Severe grade be subdivided in an open-ended fashion into E1 (easiest), E2, E3 and so on.[12] The E-grade is still an estimation of overall difficulty experienced by a climber leading a route on-sight.
-
-In 2006 the hardest grade claimed was E11 for Rhapsody on Dumbarton Rock, climbed by Dave MacLeod, featured French 8c/+ climbing with the potential of a 20-metre fall onto a small wire.[13] In August 2008, MacLeod completed a new project close to Tower Ridge on Ben Nevis called 'Echo Wall'. He left the route ungraded, saying only that it was 'harder than Rhapsody'. Many climbers consider such high grades provisional, as the climbs have not yet been achieved on sight/ground up[citation needed].
-
-The grade \"XS\" (occasionally qualified by Mild [MXS] and Hard [HXS]) is sometimes used for Extremely Severe rock climbs when a high proportion of the challenge is due to objective dangers, typically loose or crumbling rock, rather than technical difficulty.[14]",
+    "description": "The adjectival grade attempts to assess the overall difficulty of the climb - taking into account all factors which lend difficulty to a pitch including technical difficulty, sustaindness, protection quality, rock quality, exposure and other less tangible aspects - for a climber leading the route on sight in traditional style.[11] It thus resembles mountaineering grades such as the International French Adjectival System. The adjectival grade appears to have been introduced by O. G. Jones in the early 20th century who classified climbs as “Easy”; “Moderate”; “Difficult” or “Exceptionally Severe”.[12] Increasing standards have several times led to extra grades being added. The adjectival grades are as follows:\n\n* Easy (rarely used)\n* Moderate (M, or \"Mod\")\n* Difficult (D, or \"Diff\")\n* Hard Difficult (HD, or \"Hard Diff\" - often omitted)\n* Very Difficult (VD, or \"V Diff\")\n* Hard Very Difficult (HVD, or \"Hard V Diff\" - sometimes omitted)\n* Mild Severe (MS - often omitted)\n* Severe (S)\n* Hard Severe (HS)\n* Mild Very Severe (MVS - often omitted)\n* Very Severe (VS)\n* Hard Very Severe (HVS)\n* Extremely Severe (E1, E2, E3, ...)\n\nIncreasing standards in the 1970s resulted in the adoption of Pete Botterill's proposal that the Extremely Severe grade be subdivided in an open-ended fashion into E1 (easiest), E2, E3 and so on.[12] The E-grade is still an estimation of overall difficulty experienced by a climber leading a route on-sight.\n\nIn 2006 the hardest grade claimed was E11 for Rhapsody on Dumbarton Rock, climbed by Dave MacLeod, featured French 8c/+ climbing with the potential of a 20-metre fall onto a small wire.[13] In August 2008, MacLeod completed a new project close to Tower Ridge on Ben Nevis called 'Echo Wall'. He left the route ungraded, saying only that it was 'harder than Rhapsody'. Many climbers consider such high grades provisional, as the climbs have not yet been achieved on sight/ground up[citation needed].\n\nThe grade \"XS\" (occasionally qualified by Mild [MXS] and Hard [HXS]) is sometimes used for Extremely Severe rock climbs when a high proportion of the challenge is due to objective dangers, typically loose or crumbling rock, rather than technical difficulty.[14]",
     "url": "https://en.wikipedia.org/wiki/Grade_%28climbing%29#Adjectival_grade"
 }
 ]
