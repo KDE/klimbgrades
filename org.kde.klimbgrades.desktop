@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Klimbgrades
+Name[ar]=درجات التسلق
 Name[ca]=Klimbgrades
 Name[ca@valencia]=Klimbgrades
 Name[cs]=Klimbgrades
@@ -27,6 +28,7 @@ Name[uk]=Klimbgrades
 Name[x-test]=xxKlimbgradesxx
 Name[zh_TW]=Klimbgrades
 Comment=Small application to quickly convert difficulty grades for rock climbing, lead and bouldering scales
+Comment[ar]=تطبيق صغير لتحويل درجات الصعوبة بين تسلق الصخور والتسلق الحر و التسلق القائد
 Comment[ca]=Petita aplicació per a convertir ràpidament els graus de dificultat a escales per a escalar en roca, amb líder i en bloc
 Comment[ca@valencia]=Petita aplicació per a convertir ràpidament els graus de dificultat a escales per a escalar en roca, amb líder i en bloc
 Comment[de]=Anwendung zum Umwandeln von Schwierigkeitsskalen für Felsklettern, Vorstieg und Bouldern
