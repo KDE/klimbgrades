@@ -4,6 +4,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
   <name>Klimbgrades</name>
+  <name xml:lang="ar">درجات التسلق</name>
   <name xml:lang="ca">Klimbgrades</name>
   <name xml:lang="ca-valencia">Klimbgrades</name>
   <name xml:lang="cs">Klimbgrades</name>
@@ -31,6 +32,7 @@
   <name xml:lang="x-test">xxKlimbgradesxx</name>
   <name xml:lang="zh-TW">Klimbgrades</name>
   <summary>Small application to quickly convert difficulty grades for rock climbing, lead and bouldering scales</summary>
+  <summary xml:lang="ar">تطبيق صغير لتحويل درجات الصعوبة بين تسلق الصخور والتسلق الحر و التسلق القائد</summary>
   <summary xml:lang="ca">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per a escalar en roca, amb líder i en bloc</summary>
   <summary xml:lang="ca-valencia">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per a escalar en roca, amb líder i en bloc</summary>
   <summary xml:lang="de">Anwendung zum Umwandeln von Schwierigkeitsskalen für Felsklettern, Vorstieg und Bouldern</summary>
@@ -55,6 +57,7 @@
     <p>
       <ul>
         <li>Lead: French, YDS, UIAA, British Tech, British Adjectival</li>
+        <li xml:lang="ar">النمط القائد: الفرنسي،  YDS ،UIAA ، تك البريطاني، الوصفي البريطاني</li>
         <li xml:lang="ca">Lead (líder): francès, YDS, UIAA, tecnologia britànica, adjectiu britànic</li>
         <li xml:lang="ca-valencia">Lead (líder): francés, YDS, UIAA, tecnologia britànica, adjectiu britànic</li>
         <li xml:lang="de">Vorstieg: French, YDS, UIAA, British Tech, British Adjectival</li>
@@ -76,6 +79,7 @@
         <li xml:lang="uk">Складність: French, YDS, UIAA, British Tech, British Adjectival</li>
         <li xml:lang="x-test">xxLead: French, YDS, UIAA, British Tech, British Adjectivalxx</li>
         <li>Boulder: Fontainebleu, Hueco, B Grade</li>
+        <li xml:lang="ar">النمط الحر: فونتينبلو، هويكو ، مستوى ب</li>
         <li xml:lang="ca">Boulder (en bloc): Fontainebleu, Hueco, grau B</li>
         <li xml:lang="ca-valencia">Boulder (en bloc): Fontainebleu, Hueco, grau B</li>
         <li xml:lang="cs">Boulder: Fontainebleu, Hueco, B Grade</li>
@@ -100,6 +104,7 @@
       </ul>
     </p>
     <p>Example application to demonstrate KDE's Kirigami Qt-based framework for building cross-platform applications.</p>
+    <p xml:lang="ar">تطبيق مثال لإثبات إطار عمل Kirigami Qt القائم على كدي لبناء تطبيقات عبر الأنظمة الأساسية.</p>
     <p xml:lang="ca">Aplicació d'exemple per a demostrar el marc de treball basat en les Qt i el Kirigami del KDE per a la creació d'aplicacions multiplataforma.</p>
     <p xml:lang="ca-valencia">Aplicació d'exemple per a demostrar el marc de treball basat en les Qt i el Kirigami del KDE per a la creació d'aplicacions multiplataforma.</p>
     <p xml:lang="de">Beispielanwendung zur Demonstration von KDE-Kirigami, einem Qt-basierten Framework für die Entwicklung plattformübergreifender Anwendungen.</p>
