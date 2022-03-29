@@ -34,7 +34,7 @@
   <summary>Small application to quickly convert difficulty grades for rock climbing, lead and bouldering scales</summary>
   <summary xml:lang="ar">تطبيق صغير لتحويل درجات الصعوبة بين تسلق الصخور والتسلق الحر و التسلق القائد</summary>
   <summary xml:lang="ca">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per a escalar en roca, amb líder i en bloc</summary>
-  <summary xml:lang="ca-valencia">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per a escalar en roca, amb líder i en bloc</summary>
+  <summary xml:lang="ca-valencia">Xicoteta aplicació per a convertir ràpidament els graus de dificultat a escales per a escalar en roca, amb líder i en bloc</summary>
   <summary xml:lang="de">Anwendung zum Umwandeln von Schwierigkeitsskalen für Felsklettern, Vorstieg und Bouldern</summary>
   <summary xml:lang="el">Μικρή εφαρμογή γρήγορης μετατροπής βαθμών δυσκολίας για ορειβασία, καθοδήγηση και αναρριχητικές κλίμακες</summary>
   <summary xml:lang="en-GB">Small application to quickly convert difficulty grades for rock climbing, lead and bouldering scales</summary>
@@ -106,7 +106,7 @@
     <p>Example application to demonstrate KDE's Kirigami Qt-based framework for building cross-platform applications.</p>
     <p xml:lang="ar">تطبيق مثال لإثبات إطار عمل Kirigami Qt القائم على كدي لبناء تطبيقات عبر الأنظمة الأساسية.</p>
     <p xml:lang="ca">Aplicació d'exemple per a demostrar el marc de treball basat en les Qt i el Kirigami del KDE per a la creació d'aplicacions multiplataforma.</p>
-    <p xml:lang="ca-valencia">Aplicació d'exemple per a demostrar el marc de treball basat en les Qt i el Kirigami de KDE per a la creació d'aplicacions multiplataforma.</p>
+    <p xml:lang="ca-valencia">Aplicació d'exemple per a demostrar el marc de treball basat en les Qt i Kirigami de KDE per a la creació d'aplicacions multiplataforma.</p>
     <p xml:lang="de">Beispielanwendung zur Demonstration von KDE-Kirigami, einem Qt-basierten Framework für die Entwicklung plattformübergreifender Anwendungen.</p>
     <p xml:lang="el">Παράδειγμα εφαρμογής για επίδειξη του KDE Kirigami πλαισίου με βάση το Qt για κατασκευή εφαρμογών ανεξάρτητων από πλατφόρμες.</p>
     <p xml:lang="en-GB">Example application to demonstrate KDE's Kirigami Qt-based framework for building cross-platform applications.</p>
