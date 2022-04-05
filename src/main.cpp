@@ -17,6 +17,8 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
+#include <QtGlobal>
+
 #ifdef Q_OS_ANDROID
 #include <QGuiApplication>
 #else
