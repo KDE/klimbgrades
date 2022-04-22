@@ -9,10 +9,14 @@ set(klimbgrades_SRCS
     main.cpp
     )
 
-qt5_add_resources(RESOURCES resources.qrc)
+qt_add_resources(RESOURCES resources.qrc)
 
 add_executable(klimbgrades ${klimbgrades_SRCS} ${RESOURCES})
-target_link_libraries(klimbgrades Qt5::Core  Qt5::Qml Qt5::Quick Qt5::Svg KF5::ConfigCore)
+target_link_libraries(klimbgrades Qt::Core Qt::Qml Qt::Quick Qt::Svg KF5::ConfigCore)
+
+if(NOT ANDROID)
+    target_link_libraries(klimbgrades Qt::Widgets)
+endif()
 
 install(TARGETS klimbgrades ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
 

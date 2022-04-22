@@ -46,7 +46,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCoreApplication::setApplicationName("Climbing Grades");
 
     //qputenv("QML_IMPORT_TRACE", "1");
-    qmlRegisterType<AvailableGradesModel>();
+    qRegisterMetaType<AvailableGradesModel*>();
     QQmlApplicationEngine engine;
 
     Data *data = new Data;
