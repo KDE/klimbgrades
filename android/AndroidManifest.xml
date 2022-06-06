@@ -5,8 +5,8 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="org.kde.klimbgrades"
-          android:versionName="0.1"
-          android:versionCode="1"
+          android:versionName="${versionName}"
+          android:versionCode="${versionCode}"
           android:installLocation="auto">
     <application android:name="org.qtproject.qt5.android.bindings.QtApplication" android:label="Klimbgrades">
         <activity android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|layoutDirection|locale|fontScale|keyboard|keyboardHidden|navigation"
