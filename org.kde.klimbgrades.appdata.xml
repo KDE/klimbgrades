@@ -12,6 +12,7 @@
   <name xml:lang="el">Klimbgrades</name>
   <name xml:lang="en-GB">Klimbgrades</name>
   <name xml:lang="es">Klimbgrades</name>
+  <name xml:lang="eu">Klimbgrades</name>
   <name xml:lang="fr">Klimbgrades</name>
   <name xml:lang="gl">Klimbgrades</name>
   <name xml:lang="hi">क्लाइंबग्रेड्स</name>
@@ -40,6 +41,7 @@
   <summary xml:lang="el">Μικρή εφαρμογή γρήγορης μετατροπής βαθμών δυσκολίας για ορειβασία, καθοδήγηση και αναρριχητικές κλίμακες</summary>
   <summary xml:lang="en-GB">Small application to quickly convert difficulty grades for rock climbing, lead and bouldering scales</summary>
   <summary xml:lang="es">Pequeña aplicación para convertir rápidamente grados de dificultad de escalada según las escalas de líder y de bloques</summary>
+  <summary xml:lang="eu">Arroka eskalada, liderra eta bloke eskalen zailtasun graduak azkar bihurtzeko aplikazio txikia</summary>
   <summary xml:lang="fr">Petite application permettant de convertir rapidement les cotations des murs, des voies d'escalade libre et des blocs</summary>
   <summary xml:lang="gl">Pequeno aplicación para converter rapidamente graos de dificultade de escalada de rochas, chumbo e escalas de rochas</summary>
   <summary xml:lang="hi">पत्थर की चढ़ाई हेतु कठिनाई पदक्रम को आसानी से परिवर्तित करने के लिए एक छोटा अनुप्रयोग</summary>
@@ -66,6 +68,7 @@
         <li xml:lang="el">Καθοδήγηση: French, YDS, UIAA, British Tech, British Adjectival</li>
         <li xml:lang="en-GB">Lead: French, YDS, UIAA, British Tech, British Adjectival</li>
         <li xml:lang="es">Líder: francés, YDS, UIAA, británico técnico, británico adjetival</li>
+        <li xml:lang="eu">Liderra: Frantsesa, YDS, UIAA, «British Tech», «British Adjectival»</li>
         <li xml:lang="fr">Escalade libre : française, YDS, UIAA, anglaise technique, anglaise engagement</li>
         <li xml:lang="gl">Chumbo: francesa, YDS, UIAA, British Tech, British Adjectival</li>
         <li xml:lang="hi">लीड: फ्रेंच, वाइडीएस, यूआइएए, ब्रिटिश टेक, ब्रिटिश विशेषण </li>
@@ -90,6 +93,7 @@
         <li xml:lang="el">Αναρρίχηση: Fontainebleu, Hueco, B Grade</li>
         <li xml:lang="en-GB">Boulder: Fontainebleu, Hueco, B Grade</li>
         <li xml:lang="es">En bloque: Fontainebleu, Hueco, Grado B</li>
+        <li xml:lang="eu">Blokea: Fontainebleu, Hueco, B Grade</li>
         <li xml:lang="fr">Bloc : Fontainebleu, Hueco, Cotation B</li>
         <li xml:lang="gl">Rocha: Fontainebleu, Hueco, grao B</li>
         <li xml:lang="hi">शिलाखंड: फॉनटेनब्लियू, ह्यूको, बी ग्रेड</li>
@@ -115,6 +119,7 @@
     <p xml:lang="el">Παράδειγμα εφαρμογής για επίδειξη του KDE Kirigami πλαισίου με βάση το Qt για κατασκευή εφαρμογών ανεξάρτητων από πλατφόρμες.</p>
     <p xml:lang="en-GB">Example application to demonstrate KDE's Kirigami Qt-based framework for building cross-platform applications.</p>
     <p xml:lang="es">Aplicación de ejemplo para probar la infraestructura Kirigami de KDE, basada en Qt, para crear aplicaciones multiplataforma.</p>
+    <p xml:lang="eu">KDEren Kirigami, plataforma anitzeko aplikazioak sortzeko Qt-oinarriko azpiegitura agertzeko aplikazio adibidea.</p>
     <p xml:lang="fr">Exemple d'application pour démontrer l'utilisation du framework Qt Kirigami de KDE pour le développement d'applications multi-plate-formes.</p>
     <p xml:lang="gl">Aplicación de exemplo que demostra a infraestrutura Kirigami de KDE, baseada en Qt, para construír aplicacións para múltiples plataformas.</p>
     <p xml:lang="hi">केडीई का क्यूट पर आधारित किरिगामी, का क्रॉस-प्लैटफ़ॉर्म अनुप्रयोग बनाने की क्षमता दिखाने के लिए एक उदाहरण</p>
