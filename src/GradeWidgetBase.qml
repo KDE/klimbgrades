@@ -18,6 +18,7 @@
  */
 
 import QtQuick 2.0
+import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.2
 import QtGraphicalEffects 1.0
 import org.kde.kirigami 2.0 as Kirigami
@@ -70,7 +71,7 @@ Rectangle {
             left: parent.left
             margins: Kirigami.Units.gridUnit
         }
-        Kirigami.Label {
+        Controls.Label {
             id: scaleNameLabel
         }
         RowLayout {
@@ -96,7 +97,7 @@ Rectangle {
     
         RowLayout {
             width: parent.width
-            Kirigami.Label {
+            Controls.Label {
                 Layout.fillWidth: true
                 text: page.model.personalRecord > 0 ? (qsTr("Record: ") + format(page.model.personalRecord)) : "";
             }

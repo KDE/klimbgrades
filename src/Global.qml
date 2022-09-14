@@ -69,7 +69,7 @@ Kirigami.ScrollablePage {
         property string url
         ColumnLayout {
             property int implicitWidth: Kirigami.Units.gridUnit * 25
-            Kirigami.Label {
+            Controls.Label {
                 id: descrLabel
                 Layout.fillWidth: true
                 wrapMode: Text.WordWrap
