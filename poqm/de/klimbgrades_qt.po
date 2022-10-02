@@ -1,0 +1,63 @@
+# Burkhard Lück <lueck@hube-lueck.de>, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2018-11-22 07:05+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Qt-Contexts: true\n"
+
+#: Global.qml:42
+msgctxt "Global|"
+msgid "Reset"
+msgstr "Zurücksetzen"
+
+#: Global.qml:47
+msgctxt "Global|"
+msgid "Set Record"
+msgstr "Rekord festlegen"
+
+#: Global.qml:48
+msgctxt "Global|"
+msgid "Set Grade As Personal Record"
+msgstr "Schwierigkeitsskala als persönlichen Rekord festlegen"
+
+#: Global.qml:55
+msgctxt "Global|"
+msgid "Clear"
+msgstr "Löschen"
+
+#: Global.qml:56
+msgctxt "Global|"
+msgid "Clear Personal Record"
+msgstr "Persönlichen Rekord löschen"
+
+#: Global.qml:79
+msgctxt "Global|"
+msgid "Source: Wikipedia"
+msgstr "Quelle: Wikipedia "
+
+#: GradeWidgetBase.qml:101
+msgctxt "GradeWidgetBase|"
+msgid "Record: "
+msgstr "Rekord:"
+
+#: Main.qml:46 Main.qml:164
+msgctxt "Main|"
+msgid "Lead"
+msgstr "Vorstieg"
+
+#: Main.qml:77 Main.qml:172
+msgctxt "Main|"
+msgid "Boulder"
+msgstr "Bouldern"
+
+#: Main.qml:118
+msgctxt "Main|"
+msgid "Link Lead and Boulder"
+msgstr "Vorstieg und Boldern verknüpfen"

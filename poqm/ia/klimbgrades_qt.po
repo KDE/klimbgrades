@@ -1,0 +1,64 @@
+# Giovanni Sora <g.sora@tiscali.it>, 2020, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2022-02-05 22:51+0100\n"
+"Last-Translator: giovanni <g.sora@tiscali.it>\n"
+"Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
+"Language: ia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 21.12.2\n"
+
+#: Global.qml:42
+msgctxt "Global|"
+msgid "Reset"
+msgstr "Reinitialisa"
+
+#: Global.qml:47
+msgctxt "Global|"
+msgid "Set Record"
+msgstr "Fixa Record"
+
+#: Global.qml:48
+msgctxt "Global|"
+msgid "Set Grade As Personal Record"
+msgstr ""
+
+#: Global.qml:55
+msgctxt "Global|"
+msgid "Clear"
+msgstr "Netta"
+
+#: Global.qml:56
+msgctxt "Global|"
+msgid "Clear Personal Record"
+msgstr "Clara Record personal"
+
+#: Global.qml:79
+msgctxt "Global|"
+msgid "Source: Wikipedia"
+msgstr "Fonte: Wikipedia"
+
+#: GradeWidgetBase.qml:101
+msgctxt "GradeWidgetBase|"
+msgid "Record: "
+msgstr "Registra: "
+
+#: Main.qml:46 Main.qml:164
+msgctxt "Main|"
+msgid "Lead"
+msgstr ""
+
+#: Main.qml:77 Main.qml:172
+msgctxt "Main|"
+msgid "Boulder"
+msgstr ""
+
+#: Main.qml:118
+msgctxt "Main|"
+msgid "Link Lead and Boulder"
+msgstr ""

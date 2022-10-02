@@ -1,0 +1,64 @@
+# Emir SARI <emir_sari@icloud.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2022-04-12 10:55+0300\n"
+"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
+"Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 21.12.3\n"
+
+#: Global.qml:42
+msgctxt "Global|"
+msgid "Reset"
+msgstr "Sıfırla"
+
+#: Global.qml:47
+msgctxt "Global|"
+msgid "Set Record"
+msgstr "Rekor Ayarla"
+
+#: Global.qml:48
+msgctxt "Global|"
+msgid "Set Grade As Personal Record"
+msgstr "Dereceyi Kişisel Rekor Olarak Ayarla"
+
+#: Global.qml:55
+msgctxt "Global|"
+msgid "Clear"
+msgstr "Temizle"
+
+#: Global.qml:56
+msgctxt "Global|"
+msgid "Clear Personal Record"
+msgstr "Kişisel Rekoru Temizle"
+
+#: Global.qml:79
+msgctxt "Global|"
+msgid "Source: Wikipedia"
+msgstr "Kaynak: Vikipedi"
+
+#: GradeWidgetBase.qml:101
+msgctxt "GradeWidgetBase|"
+msgid "Record: "
+msgstr "Rekor:"
+
+#: Main.qml:46 Main.qml:164
+msgctxt "Main|"
+msgid "Lead"
+msgstr "Öncü:"
+
+#: Main.qml:77 Main.qml:172
+msgctxt "Main|"
+msgid "Boulder"
+msgstr "Kaya:"
+
+#: Main.qml:118
+msgctxt "Main|"
+msgid "Link Lead and Boulder"
+msgstr "Öncü ve Kaya'yı Birbirine Bağla"

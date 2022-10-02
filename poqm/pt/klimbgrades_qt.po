@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: klimbgrades_qt\n"
+"PO-Revision-Date: 2018-08-29 12:16+0100\n"
+"Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
+"Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Qt-Contexts: true\n"
+"X-POFile-SpellExtra: Wikipedia\n"
+
+#: Global.qml:42
+msgctxt "Global|"
+msgid "Reset"
+msgstr "Reiniciar"
+
+#: Global.qml:47
+msgctxt "Global|"
+msgid "Set Record"
+msgstr "Definir como Recorde"
+
+#: Global.qml:48
+msgctxt "Global|"
+msgid "Set Grade As Personal Record"
+msgstr "Definir a Cotação como Recorde Pessoal"
+
+#: Global.qml:55
+msgctxt "Global|"
+msgid "Clear"
+msgstr "Limpar"
+
+#: Global.qml:56
+msgctxt "Global|"
+msgid "Clear Personal Record"
+msgstr "Limpar o Recorde Pessoal"
+
+#: Global.qml:79
+msgctxt "Global|"
+msgid "Source: Wikipedia"
+msgstr "Origem: Wikipedia"
+
+#: GradeWidgetBase.qml:101
+msgctxt "GradeWidgetBase|"
+msgid "Record: "
+msgstr "Recorde: "
+
+#: Main.qml:46 Main.qml:164
+msgctxt "Main|"
+msgid "Lead"
+msgstr "Líder"
+
+#: Main.qml:77 Main.qml:172
+msgctxt "Main|"
+msgid "Boulder"
+msgstr "Auxiliar"
+
+#: Main.qml:118
+msgctxt "Main|"
+msgid "Link Lead and Boulder"
+msgstr "Líder de Ligação e Auxiliar"

@@ -1,0 +1,65 @@
+# Sameer Singh <lumarzeli30@gmail.com>, 2021.
+# Raghavendra Kamath <raghu@raghukamath.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2021-06-27 14:24+0530\n"
+"Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
+"Language-Team: kde-hindi\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"X-Generator: Lokalize 21.04.2\n"
+
+#: Global.qml:42
+msgctxt "Global|"
+msgid "Reset"
+msgstr "रीसेट"
+
+#: Global.qml:47
+msgctxt "Global|"
+msgid "Set Record"
+msgstr "रिकॉर्ड सेट करें"
+
+#: Global.qml:48
+msgctxt "Global|"
+msgid "Set Grade As Personal Record"
+msgstr "ग्रेड को व्यक्तिगत रिकॉर्ड में सेट करें"
+
+#: Global.qml:55
+msgctxt "Global|"
+msgid "Clear"
+msgstr "साफ करें"
+
+#: Global.qml:56
+msgctxt "Global|"
+msgid "Clear Personal Record"
+msgstr "व्यक्तिगत रिकॉर्ड साफ करें"
+
+#: Global.qml:79
+msgctxt "Global|"
+msgid "Source: Wikipedia"
+msgstr "स्त्रोत: विकिपीडिया"
+
+#: GradeWidgetBase.qml:101
+msgctxt "GradeWidgetBase|"
+msgid "Record: "
+msgstr "रिकॉर्ड: "
+
+#: Main.qml:46 Main.qml:164
+msgctxt "Main|"
+msgid "Lead"
+msgstr "लीड"
+
+#: Main.qml:77 Main.qml:172
+msgctxt "Main|"
+msgid "Boulder"
+msgstr "शिलाखंड"
+
+#: Main.qml:118
+msgctxt "Main|"
+msgid "Link Lead and Boulder"
+msgstr "लीड एवं शिलाखंड को जोड़ें"
