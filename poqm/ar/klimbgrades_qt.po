@@ -44,7 +44,7 @@ msgctxt "Global|"
 msgid "Source: Wikipedia"
 msgstr "المصدر: ويكيبيديا"
 
-#: GradeWidgetBase.qml:101
+#: GradeWidgetBase.qml:102
 msgctxt "GradeWidgetBase|"
 msgid "Record: "
 msgstr "الدرجة"

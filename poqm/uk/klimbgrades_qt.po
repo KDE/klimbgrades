@@ -50,7 +50,7 @@ msgctxt "Global|"
 msgid "Source: Wikipedia"
 msgstr "Джерело: Вікіпедія"
 
-#: GradeWidgetBase.qml:101
+#: GradeWidgetBase.qml:102
 msgctxt "GradeWidgetBase|"
 msgid "Record: "
 msgstr "Запис:"
