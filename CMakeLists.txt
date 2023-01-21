@@ -4,6 +4,9 @@ project(klimbgrades VERSION 0.1)
 
 set(KF5_MIN_VERSION "5.18.0")
 set(QT_MIN_VERSION "5.15.0")
+if (ANDROID)
+    set(QT_MIN_VERSION "5.15.8")
+endif()
 
 find_package(ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
 
