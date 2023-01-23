@@ -31,10 +31,6 @@ set (CMAKE_CXX_STANDARD 11)
 
 add_subdirectory(src)
 
-if (ANDROID)
-    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/android/version.gradle.in ${CMAKE_BINARY_DIR}/version.gradle)
-endif()
-
 if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
     ecm_install_po_files_as_qm(po)
 endif()
