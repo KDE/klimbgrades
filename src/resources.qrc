@@ -3,15 +3,12 @@
         <file alias="leadscales.json">leadscales.json</file>
         <file alias="boulderscales.json">boulderscales.json</file>
         <file alias="data.csv">data.csv</file>
-        <file alias="desktopmain.qml">desktopmain.qml</file>
-        <file alias="mobilemain.qml">mobilemain.qml</file>
         <file alias="Main.qml">Main.qml</file>
         <file alias="IconButton.qml">IconButton.qml</file>
         <file alias="Global.qml">Global.qml</file>
         <file alias="GradeWidgetBase.qml">GradeWidgetBase.qml</file>
         <file alias="HeuristicConverter.js">HeuristicConverter.js</file>
         <file alias="halfdome.jpg">halfdome.jpg</file>
-        <file alias="qtquickcontrols2.conf">android/qtquickcontrols2.conf</file>
         <file alias="icons/klimbgrades.svg">klimbgrades.svg</file>
     </qresource>
 </RCC>

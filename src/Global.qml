@@ -18,15 +18,26 @@
  */
 
 import QtQuick 2.0
-import QtQuick.Layouts 1.2
+import QtQuick.Layouts 1.15
 import QtQuick.Controls 2.0 as Controls
-import org.kde.kirigami 2.0 as Kirigami
+import org.kde.kirigami 2.19 as Kirigami
+import org.kde.kirigamiaddons.labs.mobileform 0.1 as MobileForm
 
 Kirigami.ScrollablePage {
     id: root
 
-    property alias model: mainRepeater.model
-    property int defaultGrade
+    required property var leadModel
+    required property var boulderModel
+
+    readonly property var model: isLead ? leadModel : boulderModel
+    readonly property int defaultGrade: isLead ? 45 : 66
+
+    property bool isLead: true
+
+    leftPadding: 0
+    rightPadding: 0
+
+    title: isLead ? qsTr("Lead") : qsTr("Bouldering")
 
     //Close the drawer with the back button
     onBackRequested: {
@@ -62,6 +73,22 @@ Kirigami.ScrollablePage {
             }
         ]
     }
+
+    header: Kirigami.NavigationTabBar {
+        actions: [
+            Kirigami.Action {
+                text: qsTr("Lead")
+                checked: root.isLead
+                onTriggered: root.isLead = true
+            },
+            Kirigami.Action {
+                text: qsTr("Boulder")
+                checked: !root.isLead
+                onTriggered: root.isLead = false
+            }
+        ]
+    }
+
     Kirigami.OverlaySheet {
         id: sheet
         parent: applicationWindow().overlay
@@ -75,7 +102,7 @@ Kirigami.ScrollablePage {
                 wrapMode: Text.WordWrap
             }
             Controls.Button {
-                anchors.horizontalCenter: parent.horizontalCenter
+                Layout.alignment: Qt.AlignHCenter
                 text: qsTr("Source: Wikipedia")
                 onClicked: {
                     Qt.openUrlExternally(sheet.url);
@@ -85,20 +112,36 @@ Kirigami.ScrollablePage {
         }
     }
 
-    Column {
+    ColumnLayout {
         id: mainLayout
-        anchors.horizontalCenter: parent.horizontalCenter
-        spacing: Kirigami.Units.gridUnit * 2
-        Repeater {
-            id: mainRepeater
-            delegate: GradeWidgetBase {
-                page: root
-                availableGradesModel: root.model
-                anchors.horizontalCenter: parent.horizontalCenter
-                visible: model.enabledRole
-                scaleName: model.nameRole
-                url: model.urlRole
-                description: model.descriptionRole
+        spacing: 0
+
+        MobileForm.FormCard {
+            Layout.topMargin: Kirigami.Units.largeSpacing
+            Layout.fillWidth: true
+            contentItem: ColumnLayout {
+                spacing: 0
+                Repeater {
+                    model: root.model
+                    delegate: ColumnLayout {
+                        id: gradeDelegate
+
+                        required property string name
+                        required property string url
+                        required property string description
+
+                        spacing: 0
+                        GradeWidgetBase {
+                            page: root
+                            availableGradesModel: root.model
+                            name: gradeDelegate.name
+                            url: gradeDelegate.url
+                            description: gradeDelegate.description
+                        }
+
+                        MobileForm.FormDelegateSeparator {}
+                    }
+                }
             }
         }
     }

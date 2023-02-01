@@ -37,10 +37,10 @@ AvailableGradesModel::AvailableGradesModel(Data *parent)
       m_data(parent),
       m_personalRecord(0)
 {
-    m_roleNames.insert(NameRole, "nameRole");
-    m_roleNames.insert(EnabledRole, "enabledRole");
-    m_roleNames.insert(DescriptionRole, "descriptionRole");
-    m_roleNames.insert(UrlRole, "urlRole");
+    m_roleNames.insert(NameRole, "name");
+    m_roleNames.insert(EnabledRole, "enabled");
+    m_roleNames.insert(DescriptionRole, "description");
+    m_roleNames.insert(UrlRole, "url");
 }
 
 AvailableGradesModel::~AvailableGradesModel()
@@ -75,7 +75,7 @@ void AvailableGradesModel::setScaleEnabled(int row, bool enabled)
 QVariant AvailableGradesModel::data(const QModelIndex &index, int role) const
 {
     if (!index.isValid() || index.row() < 0 || index.row() > m_jsonDoc.array().size()) {
-        return QVariant();
+        return {};
     }
 
     const QVariantMap value = m_jsonDoc.array().at(index.row()).toObject().toVariantMap();

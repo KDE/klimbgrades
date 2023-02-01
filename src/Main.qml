@@ -17,10 +17,10 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-import QtQuick 2.1
-import QtQuick.Layouts 1.2
-import QtQuick.Controls 2.0 as Controls
-import org.kde.kirigami 2.0 as Kirigami
+import QtQuick 2.15
+import QtQuick.Layouts 1.15
+import QtQuick.Controls 2.15 as Controls
+import org.kde.kirigami 2.19 as Kirigami
 
 Kirigami.ApplicationWindow {
     id: root
@@ -29,120 +29,128 @@ Kirigami.ApplicationWindow {
     property bool yds: true
     property bool uiaa: true
 
-    globalDrawer: Kirigami.GlobalDrawer {
-        id: drawer
-        title: "Klimbgrades"
-        titleIcon: "klimbgrades"
-        bannerImageSource: "halfdome.jpg"
-        contentItem.implicitWidth: Math.min (Kirigami.Units.gridUnit * 15, root.width * 0.8)
+    minimumWidth: Kirigami.Units.gridUnit * 15
+    minimumHeight: Kirigami.Units.gridUnit * 20
 
-        topContent: Column {
-            anchors {
-                left: parent.left
-                right: parent.right
-                margins: -Kirigami.Units.smallSpacing
+    pageStack {
+        defaultColumnWidth: Kirigami.Units.gridUnit * 30
+        globalToolBar {
+            canContainHandles: true
+            style: Kirigami.ApplicationHeaderStyle.ToolBar
+            showNavigationButtons: applicationWindow().pageStack.currentIndex > 0 ? Kirigami.ApplicationHeaderStyle.ShowBackButton : 0
+        }
+    }
+
+    globalDrawer: Kirigami.OverlayDrawer {
+        id: drawer
+
+        edge: Qt.application.layoutDirection === Qt.RightToLeft ? Qt.RightEdge : Qt.LeftEdge
+        modal: Kirigami.Settings.isMobile || (applicationWindow().width < Kirigami.Units.gridUnit * 50 && !collapsed) // Only modal when not collapsed, otherwise collapsed won't show.
+        z: modal ? Math.round(position * 10000000) : 100
+        drawerOpen: !Kirigami.Settings.isMobile && enabled
+        width: Kirigami.Units.gridUnit * 16
+        Behavior on width {
+            NumberAnimation {
+                duration: Kirigami.Units.longDuration
+                easing.type: Easing.InOutQuad
+            }
+        }
+        Kirigami.Theme.colorSet: Kirigami.Theme.Window
+
+        handleClosedIcon.source: modal ? null : "sidebar-expand-left"
+        handleOpenIcon.source: modal ? null : "sidebar-collapse-left"
+        handleVisible: modal
+
+        onModalChanged: if (!modal) {
+            drawerOpen = true;
+        }
+
+        leftPadding: 0
+        rightPadding: 0
+        topPadding: 0
+        bottomPadding: 0
+
+        contentItem: ColumnLayout {
+            Controls.ToolBar {
+                Layout.fillWidth: true
+                Layout.preferredHeight: pageStack.globalToolBar.preferredHeight
+
+                leftPadding: 3
+                rightPadding: 3
+                topPadding: 3
+                bottomPadding: 3
+
+                contentItem: Kirigami.Heading {
+                    text: qsTr("Klimbgrades")
+                }
             }
             Kirigami.Heading {
                 text: qsTr("Lead")
-                anchors {
-                    left: parent.left
-                    margins: Kirigami.Units.smallSpacing
-                }
+                level: 2
+                Layout.fillWidth: true
+                Layout.leftMargin: Kirigami.Units.smallSpacing
+                Layout.rightMargin: Kirigami.Units.smallSpacing
             }
-            Rectangle {
-                anchors {
-                    left: parent.left
-                    right: parent.right
-                }
-                color: Kirigami.Theme.textColor
-                opacity: 0.2
-                height: Math.floor(Kirigami.Units.devicePixelRatio)
+            Kirigami.Separator {
+                Layout.fillWidth: true
             }
             Repeater {
                 model: dataStore.availableLeadModel
                 delegate: Controls.CheckDelegate {
-                    width: drawer.width
-                    text: model.nameRole
-                    checkState: model.enabledRole ? Qt.Checked : Qt.Unchecked
-                    onCheckStateChanged: {
-                        dataStore.availableLeadModel.setScaleEnabled(index, checkState == Qt.Checked);
-                    }
+                    required property int index
+                    required property string name
+
+                    Layout.fillWidth: true
+                    text: name
+                    checkState: enabled ? Qt.Checked : Qt.Unchecked
+                    onCheckStateChanged: dataStore.availableLeadModel.setScaleEnabled(index, checkState == Qt.Checked)
                 }
-            }
-            Item {
-                width: 1
-                height: Kirigami.Units.largeSpacing
             }
             Kirigami.Heading {
                 text: qsTr("Boulder")
-                anchors {
-                    left: parent.left
-                    margins: Kirigami.Units.smallSpacing
-                }
+                level: 2
+                Layout.fillWidth: true
+                Layout.leftMargin: Kirigami.Units.smallSpacing
+                Layout.rightMargin: Kirigami.Units.smallSpacing
             }
-            Rectangle {
-                anchors {
-                    left: parent.left
-                    right: parent.right
-                }
-                color: Kirigami.Theme.textColor
-                opacity: 0.2
-                height: Math.floor(Kirigami.Units.devicePixelRatio)
+            Kirigami.Separator {
+                Layout.fillWidth: true
             }
             Repeater {
                 model: dataStore.availableBoulderModel
                 delegate: Controls.CheckDelegate {
-                    width: drawer.width
-                    text: model.nameRole
-                    checkState: model.enabledRole ? Qt.Checked : Qt.Unchecked
-                    onCheckStateChanged: {
-                        dataStore.availableBoulderModel.setScaleEnabled(index, checkState == Qt.Checked);
-                    }
+                    required property int index
+                    required property string name
+
+                    Layout.fillWidth: true
+                    text: name
+                    checkState: enabled ? Qt.Checked : Qt.Unchecked
+                    onCheckStateChanged: dataStore.availableBoulderModel.setScaleEnabled(index, checkState == Qt.Checked)
                 }
             }
-            Item {
-                width: 1
-                height: Kirigami.Units.largeSpacing
-            }
-            Rectangle {
-                anchors {
-                    left: parent.left
-                    right: parent.right
-                }
-                color: Kirigami.Theme.textColor
-                opacity: 0.2
-                height: Math.floor(Kirigami.Units.devicePixelRatio)
+            Kirigami.Separator {
+                Layout.fillWidth: true
             }
             Controls.SwitchDelegate {
-                width: drawer.width
+                Layout.fillWidth: true
                 text: qsTr("Link Lead and Boulder")
                 checked: dataStore.leadAndBoulderLinked
-                onCheckedChanged: {
-                    dataStore.leadAndBoulderLinked = checked;
-                }
+                onCheckedChanged: dataStore.leadAndBoulderLinked = checked
+            }
+            Item {
+                Layout.fillHeight: true
             }
         }
     }
 
-    pageStack.initialPage: [leadPageComponent, boulderPageComponent]
-    pageStack.onCurrentIndexChanged: {
-        if (loaded) {
-            dataStore.currentTab = pageStack.currentIndex;
-        }
-    }
-    //HACK: use this as semaphore, don't know other ways to make this not
-    //emit a signal otherwise
-    property bool loaded: false;
-
-
-    Component.onCompleted: {
-        pageStack.currentIndex = dataStore.currentTab;
-        loaded = true
+    pageStack.initialPage: Global {
+        leadModel: dataStore.availableLeadModel
+        boulderModel: dataStore.availableBoulderModel
     }
 
     Connections {
         target: dataStore.availableLeadModel
-        onCurrentGradeChanged: {
+        function onCurrentGradeChanged() {
             if (dataStore.leadAndBoulderLinked) {
                 dataStore.availableBoulderModel.currentGrade = dataStore.availableLeadModel.currentGrade;
             }
@@ -151,27 +159,10 @@ Kirigami.ApplicationWindow {
 
     Connections {
         target: dataStore.availableBoulderModel
-        onCurrentGradeChanged: {
+        function onCurrentGradeChanged() {
             if (dataStore.leadAndBoulderLinked) {
                 dataStore.availableLeadModel.currentGrade = dataStore.availableBoulderModel.currentGrade;
             }
-        }
-    }
-
-    Component {
-        id: leadPageComponent
-        Global {
-            title: qsTr("Lead")
-            model: dataStore.availableLeadModel
-            defaultGrade: 45
-        }
-    }
-    Component {
-        id: boulderPageComponent
-        Global {
-            title: qsTr("Boulder")
-            model: dataStore.availableBoulderModel
-            defaultGrade: 65
         }
     }
 }

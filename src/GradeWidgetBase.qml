@@ -21,21 +21,21 @@ import QtQuick 2.0
 import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.2
 import QtGraphicalEffects 1.0
-import org.kde.kirigami 2.0 as Kirigami
+import org.kde.kirigami 2.19 as Kirigami
+import org.kde.kirigamiaddons.labs.mobileform 0.1 as MobileForm
 import "HeuristicConverter.js" as HeuristicConverter
 
-Rectangle {
+MobileForm.AbstractFormDelegate {
     id: root
 
-    color: Kirigami.Theme.viewBackgroundColor
-    width: mainLayout.width + Kirigami.Units.gridUnit * 2
-    height: mainLayout.height + Kirigami.Units.gridUnit * 2
-
     property Item page
-    property QtObject availableGradesModel
-    property alias scaleName: scaleNameLabel.text
-    property string url
-    property string description
+    required property QtObject availableGradesModel
+    required property string name
+    required property string url
+    required property string description
+
+    visible: enabled
+    background: null
 
     function increment() {
         print("Decimal grade: " + availableGradesModel.currentGrade);
@@ -49,11 +49,11 @@ Rectangle {
     }
 
     function format(decimalGrade) {
-        var formattedGrade = dataStore.gradeName(scaleName, decimalGrade);
+        var formattedGrade = dataStore.gradeName(root.name, decimalGrade);
         if (formattedGrade) {
             return formattedGrade;
         }
-        var func = HeuristicConverter["format"+root.scaleName.replace(/\s+/g, '')]
+        var func = HeuristicConverter["format"+root.name.replace(/\s+/g, '')]
         if (func) {
             return func(decimalGrade);
         }
@@ -62,47 +62,38 @@ Rectangle {
 
     signal infoClicked
 
-    Column {
-        id: mainLayout
-        z: 2
-        width: Math.max(Kirigami.Units.gridUnit * 8, implicitWidth)
-        anchors {
-            top: parent.top
-            left: parent.left
-            margins: Kirigami.Units.gridUnit
-        }
-        Controls.Label {
-            id: scaleNameLabel
+    contentItem: ColumnLayout {
+        Kirigami.Heading {
+            Layout.alignment: Qt.AlignHCenter
+            level: 2
+            text: root.name
         }
         RowLayout {
-            anchors {
-                left: parent.left
-                right: parent.right
-            }
-            IconButton {
-                source: "go-previous"
+            Layout.fillWidth: true
+            Controls.ToolButton {
+                icon.name: "go-previous"
                 onClicked: availableGradesModel.currentGrade -= 2;
             }
             Kirigami.Heading {
                 Layout.fillWidth: true
                 horizontalAlignment: Text.AlignHCenter
-                color: availableGradesModel.currentGrade <= 100 ? Kirigami.Theme.viewTextColor : "red"
+                color: availableGradesModel.currentGrade <= 100 ? Kirigami.Theme.textColor : "red"
                 text: format(availableGradesModel.currentGrade);
             }
-            IconButton {
-                source: "go-next"
+            Controls.ToolButton {
+                icon.name: "go-next"
                 onClicked: availableGradesModel.currentGrade += 2;
             }
         }
-    
+
         RowLayout {
-            width: parent.width
+            Layout.fillWidth: true
             Controls.Label {
                 Layout.fillWidth: true
                 text: page.model.personalRecord > 0 ? (qsTr("Record: ") + format(page.model.personalRecord)) : "";
             }
-            IconButton {
-                source: "documentinfo"
+            Controls.ToolButton {
+                icon.name: "documentinfo"
 
                 onClicked: {
                     sheet.description = description
@@ -132,13 +123,5 @@ Rectangle {
                 decrement();
             }
         }
-    }
-    layer.enabled: true
-    layer.effect: DropShadow {
-        horizontalOffset: 0
-        verticalOffset: 0
-        radius: Kirigami.Units.gridUnit/1.6
-        samples: 32
-        color: Qt.rgba(0, 0, 0, 0.5)
     }
 }

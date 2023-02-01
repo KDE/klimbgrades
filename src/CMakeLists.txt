@@ -12,7 +12,7 @@ set(klimbgrades_SRCS
 qt_add_resources(RESOURCES resources.qrc)
 
 add_executable(klimbgrades ${klimbgrades_SRCS} ${RESOURCES})
-target_link_libraries(klimbgrades Qt::Core Qt::Qml Qt::Quick Qt::Svg KF5::ConfigCore)
+target_link_libraries(klimbgrades Qt::Core Qt::Qml Qt::Quick Qt::QuickControls2 Qt::Svg KF5::ConfigCore)
 
 if(NOT ANDROID)
     target_link_libraries(klimbgrades Qt::Widgets)

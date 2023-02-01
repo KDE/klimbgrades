@@ -27,20 +27,27 @@
 #include <QQmlApplicationEngine>
 #include <QtQml>
 #include <QUrl>
+#include <QQuickStyle>
 
 #include "data.h"
 #include "availablegradesmodel.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-    //qputenv("QT_QUICK_CONTROLS_STYLE", "Material");
-    //TODO: make it selectively a QAplpication or a QGuiApplication with ifdefs
+#endif
+
 #ifdef Q_OS_ANDROID
     QGuiApplication app(argc, argv);
+    QQuickStyle::setStyle(QStringLiteral("org.kde.breeze"));
 #else
     QApplication app(argc, argv);
+    if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
+        QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
+    }
 #endif
+
     QCoreApplication::setOrganizationName("KDE");
     QCoreApplication::setOrganizationDomain("kde.org");
     QCoreApplication::setApplicationName("Climbing Grades");
@@ -49,22 +56,14 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qRegisterMetaType<AvailableGradesModel*>();
     QQmlApplicationEngine engine;
 
-    Data *data = new Data;
+    Data data;
 
-    engine.rootContext()->setContextProperty(QLatin1String("dataStore"), data);
-    //we want different main files on desktop or mobile
-    //very small difference as they as they are subclasses of the same thing
-    if (QString::fromLatin1(qgetenv("QT_QUICK_CONTROLS_STYLE")) == QStringLiteral("org.kde.desktop")) {
-        engine.load(QUrl(QStringLiteral("qrc:///desktopmain.qml")));
-    } else {
-        engine.load(QUrl(QStringLiteral("qrc:///mobilemain.qml")));
-    }
+    engine.rootContext()->setContextProperty(QLatin1String("dataStore"), &data);
+    engine.load(QUrl(QStringLiteral("qrc:///Main.qml")));
 
     if (engine.rootObjects().isEmpty()) {
         return -1;
     }
 
-    int ret = app.exec();
-    delete data;
-    return ret;
+    return app.exec();
 }
