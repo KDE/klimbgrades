@@ -8,6 +8,7 @@ Dependencies:
     'frameworks/kirigami': '@stable'
     'frameworks/kconfig': '@stable'
     'frameworks/ki18n': '@stable'
+    'libraries/kirigami-addons': '@stable'
 
 Options:
   require-passing-tests-on: [ '@all' ]
