@@ -43,9 +43,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QQuickStyle::setStyle(QStringLiteral("org.kde.breeze"));
 #else
     QApplication app(argc, argv);
-    if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
-        QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
-    }
 #endif
 
     QCoreApplication::setOrganizationName("KDE");

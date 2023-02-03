@@ -35,10 +35,92 @@ Kirigami.ApplicationWindow {
     pageStack {
         defaultColumnWidth: Kirigami.Units.gridUnit * 30
         globalToolBar {
-            canContainHandles: true
-            style: Kirigami.ApplicationHeaderStyle.ToolBar
-            showNavigationButtons: applicationWindow().pageStack.currentIndex > 0 ? Kirigami.ApplicationHeaderStyle.ShowBackButton : 0
+            canContainHandles: !Kirigami.Settings.isMobile
+            style: Kirigami.Settings.isMobile ? Kirigami.ApplicationHeaderStyle.Titles : Kirigami.ApplicationHeaderStyle.ToolBar
+            showNavigationButtons: false//applicationWindow().pageStack.currentIndex > 0 ? Kirigami.ApplicationHeaderStyle.ShowBackButton : 0
+            // HACK: ApplicationHeaderStyle.None doesn't load fabs
+            preferredHeight: Kirigami.Settings.isMobile && !root.pageStack.wideMode ? 0 : (Kirigami.Units.gridUnit * 1.8) + Kirigami.Units.smallSpacing * 2
         }
+    }
+
+    pageStack.initialPage: [leadPageComponent, boulderPageComponent]
+
+    header: Controls.ToolBar {
+        //TODO: make the behavior of abstractapplicationheader sliding away work again
+        visible: Kirigami.Settings.isMobile && !root.pageStack.wideMode
+        height: visible ? implicitHeight : 0
+        contentItem: Kirigami.Heading {
+            text: qsTr("Climbing Grades")
+        }
+    }
+    footer: Controls.ToolBar {
+        id: bottomNavigation
+        //FIXME: Kirigami.NavigationTabBar needs the possibility of setting stuff on either side
+        position: Controls.TabBar.Footer
+        visible: Kirigami.Settings.isMobile && !root.pageStack.wideMode
+        height: visible ? implicitHeight : 0
+        Kirigami.Theme.inherit: false
+        Kirigami.Theme.colorSet: Kirigami.Theme.Header
+        contentItem: RowLayout {
+            Item {
+                id: leftAnchor
+                Layout.preferredWidth: Kirigami.Units.gridUnit * 2
+                Layout.preferredHeight: Layout.preferredWidth
+                Binding {
+                    target: globalDrawer.handle
+                    property: "handleAnchor"
+                    value: leftAnchor
+                    when: bottomNavigation.visible
+                }
+            }
+            Kirigami.NavigationTabBar {
+                Layout.fillWidth: true
+                background: null
+                actions: [
+                    Kirigami.Action {
+                        text: qsTr("Lead")
+                        checked: root.pageStack.currentIndex === 0
+                        onTriggered: root.pageStack.currentIndex = 0
+                    },
+                    Kirigami.Action {
+                        text: qsTr("Boulder")
+                        checked: root.pageStack.currentIndex === 1
+                        onTriggered: root.pageStack.currentIndex = 1
+                    }
+                ]
+            }
+            Item {
+                id: rightAnchor
+                Layout.preferredWidth: Kirigami.Units.gridUnit * 2
+                Layout.preferredHeight: Layout.preferredWidth
+                Binding {
+                    target: contextDrawer.handle
+                    property: "handleAnchor"
+                    value: rightAnchor
+                    when: bottomNavigation.visible
+                }
+            }
+        }
+    }
+    Component {
+        id: leadPageComponent
+        Global {
+            title: qsTr("Lead")
+            model: dataStore.availableLeadModel
+            defaultGrade: 45
+        }
+    }
+    Component {
+        id: boulderPageComponent
+        Global {
+            title: qsTr("Boulder")
+            model: dataStore.availableBoulderModel
+            defaultGrade: 65
+        }
+    }
+
+    contextDrawer: Kirigami.ContextDrawer {
+        id: contextDrawer
     }
 
     globalDrawer: Kirigami.OverlayDrawer {
@@ -49,13 +131,6 @@ Kirigami.ApplicationWindow {
         z: modal ? Math.round(position * 10000000) : 100
         drawerOpen: !Kirigami.Settings.isMobile && enabled
         width: Kirigami.Units.gridUnit * 16
-        Behavior on width {
-            NumberAnimation {
-                duration: Kirigami.Units.longDuration
-                easing.type: Easing.InOutQuad
-            }
-        }
-        Kirigami.Theme.colorSet: Kirigami.Theme.Window
 
         handleClosedIcon.source: modal ? null : "sidebar-expand-left"
         handleOpenIcon.source: modal ? null : "sidebar-collapse-left"
@@ -73,23 +148,32 @@ Kirigami.ApplicationWindow {
         contentItem: ColumnLayout {
             Controls.ToolBar {
                 Layout.fillWidth: true
-                Layout.preferredHeight: pageStack.globalToolBar.preferredHeight
+                Layout.preferredHeight: pageStack.globalToolBar.preferredHeight > 0 ? pageStack.globalToolBar.preferredHeight : undefined
 
                 leftPadding: 3
                 rightPadding: 3
                 topPadding: 3
                 bottomPadding: 3
 
-                contentItem: Kirigami.Heading {
-                    text: qsTr("Klimbgrades")
+                contentItem: Kirigami.SearchField {
+                    id: filterField
+                    placeholderText: qsTr("Filter…")
                 }
             }
-            Kirigami.Heading {
-                text: qsTr("Lead")
-                level: 2
+            Kirigami.AbstractListItem {
                 Layout.fillWidth: true
-                Layout.leftMargin: Kirigami.Units.smallSpacing
-                Layout.rightMargin: Kirigami.Units.smallSpacing
+                contentItem: Kirigami.Heading {
+                    text: qsTr("Lead")
+                    level: 2
+                    Layout.fillWidth: true
+                    Layout.leftMargin: Kirigami.Units.smallSpacing
+                    Layout.rightMargin: Kirigami.Units.smallSpacing
+                }
+                checkable: true
+                checked: root.pageStack.currentIndex == 0
+                onClicked: {
+                    root.pageStack.currentIndex = 0
+                }
             }
             Kirigami.Separator {
                 Layout.fillWidth: true
@@ -100,18 +184,27 @@ Kirigami.ApplicationWindow {
                     required property int index
                     required property string name
 
+                    visible: name.toUpperCase().indexOf(filterField.text.toUpperCase()) !== -1
                     Layout.fillWidth: true
                     text: name
                     checkState: enabled ? Qt.Checked : Qt.Unchecked
                     onCheckStateChanged: dataStore.availableLeadModel.setScaleEnabled(index, checkState == Qt.Checked)
                 }
             }
-            Kirigami.Heading {
-                text: qsTr("Boulder")
-                level: 2
+            Kirigami.AbstractListItem {
                 Layout.fillWidth: true
-                Layout.leftMargin: Kirigami.Units.smallSpacing
-                Layout.rightMargin: Kirigami.Units.smallSpacing
+                contentItem: Kirigami.Heading {
+                    text: qsTr("Boulder")
+                    level: 2
+                    Layout.fillWidth: true
+                    Layout.leftMargin: Kirigami.Units.smallSpacing
+                    Layout.rightMargin: Kirigami.Units.smallSpacing
+                }
+                checkable: true
+                checked: root.pageStack.currentIndex == 1
+                onClicked: {
+                    root.pageStack.currentIndex = 1
+                }
             }
             Kirigami.Separator {
                 Layout.fillWidth: true
@@ -122,6 +215,7 @@ Kirigami.ApplicationWindow {
                     required property int index
                     required property string name
 
+                    visible: name.toUpperCase().indexOf(filterField.text.toUpperCase()) !== -1
                     Layout.fillWidth: true
                     text: name
                     checkState: enabled ? Qt.Checked : Qt.Unchecked
@@ -141,11 +235,6 @@ Kirigami.ApplicationWindow {
                 Layout.fillHeight: true
             }
         }
-    }
-
-    pageStack.initialPage: Global {
-        leadModel: dataStore.availableLeadModel
-        boulderModel: dataStore.availableBoulderModel
     }
 
     Connections {

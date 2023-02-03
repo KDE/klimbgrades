@@ -26,18 +26,10 @@ import org.kde.kirigamiaddons.labs.mobileform 0.1 as MobileForm
 Kirigami.ScrollablePage {
     id: root
 
-    required property var leadModel
-    required property var boulderModel
+    property var model
+    property int defaultGrade
 
-    readonly property var model: isLead ? leadModel : boulderModel
-    readonly property int defaultGrade: isLead ? 45 : 66
-
-    property bool isLead: true
-
-    leftPadding: 0
-    rightPadding: 0
-
-    title: isLead ? qsTr("Lead") : qsTr("Bouldering")
+    Kirigami.ColumnView.fillWidth: true
 
     //Close the drawer with the back button
     onBackRequested: {
@@ -70,21 +62,6 @@ Kirigami.ScrollablePage {
                 onTriggered: {
                     root.model.personalRecord = 0;
                 }
-            }
-        ]
-    }
-
-    header: Kirigami.NavigationTabBar {
-        actions: [
-            Kirigami.Action {
-                text: qsTr("Lead")
-                checked: root.isLead
-                onTriggered: root.isLead = true
-            },
-            Kirigami.Action {
-                text: qsTr("Boulder")
-                checked: !root.isLead
-                onTriggered: root.isLead = false
             }
         ]
     }
