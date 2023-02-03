@@ -41,9 +41,10 @@ Kirigami.ApplicationWindow {
             // HACK: ApplicationHeaderStyle.None doesn't load fabs
             preferredHeight: Kirigami.Settings.isMobile && !root.pageStack.wideMode ? 0 : (Kirigami.Units.gridUnit * 1.8) + Kirigami.Units.smallSpacing * 2
         }
+        initialPage: [leadPageComponent, boulderPageComponent]
     }
 
-    pageStack.initialPage: [leadPageComponent, boulderPageComponent]
+    Component.onCompleted: pageStack.currentIndex = 0; //TODO: save the state
 
     header: Controls.ToolBar {
         //TODO: make the behavior of abstractapplicationheader sliding away work again
@@ -169,10 +170,8 @@ Kirigami.ApplicationWindow {
                     color: parent.checked ? Kirigami.Theme.highlightedTextColor : Kirigami.Theme.textColor
                 }
                 checkable: !root.pageStack.wideMode
-                checked: checkable && root.pageStack.currentIndex == 0
-                onClicked: {
-                    root.pageStack.currentIndex = 0
-                }
+                checked: checkable && root.pageStack.currentIndex === 0
+                onClicked: root.pageStack.currentIndex = 0
             }
             Kirigami.Separator {
                 Layout.fillWidth: true
@@ -188,7 +187,10 @@ Kirigami.ApplicationWindow {
                     Layout.fillWidth: true
                     text: name
                     checkState: scaleEnabled ? Qt.Checked : Qt.Unchecked
-                    onToggled: dataStore.availableLeadModel.setScaleEnabled(index, checkState == Qt.Checked)
+                    onToggled: {
+                        dataStore.availableLeadModel.setScaleEnabled(index, checkState == Qt.Checked);
+                        root.pageStack.currentIndex = 0;
+                    }
                 }
             }
             Kirigami.AbstractListItem {
@@ -199,10 +201,8 @@ Kirigami.ApplicationWindow {
                     color: parent.checked ? Kirigami.Theme.highlightedTextColor : Kirigami.Theme.textColor
                 }
                 checkable: !root.pageStack.wideMode
-                checked: checkable && root.pageStack.currentIndex == 1
-                onClicked: {
-                    root.pageStack.currentIndex = 1
-                }
+                checked: checkable && root.pageStack.currentIndex === 1
+                onClicked: root.pageStack.currentIndex = 1
             }
             Kirigami.Separator {
                 Layout.fillWidth: true
@@ -218,7 +218,10 @@ Kirigami.ApplicationWindow {
                     Layout.fillWidth: true
                     text: name
                     checkState: scaleEnabled ? Qt.Checked : Qt.Unchecked
-                    onToggled: dataStore.availableBoulderModel.setScaleEnabled(index, checkState == Qt.Checked)
+                    onToggled: {
+                        dataStore.availableBoulderModel.setScaleEnabled(index, checkState == Qt.Checked);
+                        root.pageStack.currentIndex = 1;
+                    }
                 }
             }
             Kirigami.Separator {

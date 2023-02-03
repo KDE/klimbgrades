@@ -29,6 +29,7 @@ Kirigami.ScrollablePage {
     property int defaultGrade
 
     Kirigami.ColumnView.fillWidth: true
+    Kirigami.ColumnView.reservedSpace: Kirigami.ColumnView.view.width/2
 
     //Close the drawer with the back button
     onBackRequested: {
