@@ -16,52 +16,81 @@ msgstr ""
 "X-Qt-Contexts: true\n"
 "X-POFile-SpellExtra: Wikipedia\n"
 
-#: Global.qml:42
+#: Global.qml:40 Global.qml:80
+#, fuzzy
+#| msgctxt "Main|"
+#| msgid "Lead"
+msgctxt "Global|"
+msgid "Lead"
+msgstr "Líder"
+
+#: Global.qml:40
+#, fuzzy
+#| msgctxt "Main|"
+#| msgid "Boulder"
+msgctxt "Global|"
+msgid "Bouldering"
+msgstr "Auxiliar"
+
+#: Global.qml:53
 msgctxt "Global|"
 msgid "Reset"
 msgstr "Reiniciar"
 
-#: Global.qml:47
+#: Global.qml:58
 msgctxt "Global|"
 msgid "Set Record"
 msgstr "Definir como Recorde"
 
-#: Global.qml:48
+#: Global.qml:59
 msgctxt "Global|"
 msgid "Set Grade As Personal Record"
 msgstr "Definir a Cotação como Recorde Pessoal"
 
-#: Global.qml:55
+#: Global.qml:66
 msgctxt "Global|"
 msgid "Clear"
 msgstr "Limpar"
 
-#: Global.qml:56
+#: Global.qml:67
 msgctxt "Global|"
 msgid "Clear Personal Record"
 msgstr "Limpar o Recorde Pessoal"
 
-#: Global.qml:79
+#: Global.qml:85
+#, fuzzy
+#| msgctxt "Main|"
+#| msgid "Boulder"
+msgctxt "Global|"
+msgid "Boulder"
+msgstr "Auxiliar"
+
+#: Global.qml:106
 msgctxt "Global|"
 msgid "Source: Wikipedia"
 msgstr "Origem: Wikipedia"
 
-#: GradeWidgetBase.qml:102
+#: GradeWidgetBase.qml:93
 msgctxt "GradeWidgetBase|"
 msgid "Record: "
 msgstr "Recorde: "
 
-#: Main.qml:46 Main.qml:164
+#: Main.qml:84
+msgctxt "Main|"
+msgid "Klimbgrades"
+msgstr ""
+
+#: Main.qml:88
 msgctxt "Main|"
 msgid "Lead"
 msgstr "Líder"
 
-#: Main.qml:77 Main.qml:172
+#: Main.qml:110
 msgctxt "Main|"
 msgid "Boulder"
 msgstr "Auxiliar"
 
-#: Main.qml:118
+#: Main.qml:136
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
 msgstr "Líder de Ligação e Auxiliar"

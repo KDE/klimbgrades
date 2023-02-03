@@ -15,52 +15,81 @@ msgstr ""
 "X-Crowdin-File: /kf5-trunk/messages/klimbgrades/klimbgrades_qt.pot\n"
 "X-Crowdin-File-ID: 7980\n"
 
-#: Global.qml:42
+#: Global.qml:40 Global.qml:80
+#, fuzzy
+#| msgctxt "Main|"
+#| msgid "Lead"
+msgctxt "Global|"
+msgid "Lead"
+msgstr "铅"
+
+#: Global.qml:40
+#, fuzzy
+#| msgctxt "Main|"
+#| msgid "Boulder"
+msgctxt "Global|"
+msgid "Bouldering"
+msgstr "博耳德"
+
+#: Global.qml:53
 msgctxt "Global|"
 msgid "Reset"
 msgstr "复位"
 
-#: Global.qml:47
+#: Global.qml:58
 msgctxt "Global|"
 msgid "Set Record"
 msgstr ""
 
-#: Global.qml:48
+#: Global.qml:59
 msgctxt "Global|"
 msgid "Set Grade As Personal Record"
 msgstr ""
 
-#: Global.qml:55
+#: Global.qml:66
 msgctxt "Global|"
 msgid "Clear"
 msgstr "清除"
 
-#: Global.qml:56
+#: Global.qml:67
 msgctxt "Global|"
 msgid "Clear Personal Record"
 msgstr ""
 
-#: Global.qml:79
+#: Global.qml:85
+#, fuzzy
+#| msgctxt "Main|"
+#| msgid "Boulder"
+msgctxt "Global|"
+msgid "Boulder"
+msgstr "博耳德"
+
+#: Global.qml:106
 msgctxt "Global|"
 msgid "Source: Wikipedia"
 msgstr "来源：维基百科"
 
-#: GradeWidgetBase.qml:102
+#: GradeWidgetBase.qml:93
 msgctxt "GradeWidgetBase|"
 msgid "Record: "
 msgstr "捕获: "
 
-#: Main.qml:46 Main.qml:164
+#: Main.qml:84
+msgctxt "Main|"
+msgid "Klimbgrades"
+msgstr ""
+
+#: Main.qml:88
 msgctxt "Main|"
 msgid "Lead"
 msgstr "铅"
 
-#: Main.qml:77 Main.qml:172
+#: Main.qml:110
 msgctxt "Main|"
 msgid "Boulder"
 msgstr "博耳德"
 
-#: Main.qml:118
+#: Main.qml:136
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
 msgstr ""

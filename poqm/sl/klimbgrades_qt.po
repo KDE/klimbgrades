@@ -15,52 +15,81 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100>=3 && n"
 "%100<=4 ? 2 : 3);\n"
 
-#: Global.qml:42
+#: Global.qml:40 Global.qml:80
+#, fuzzy
+#| msgctxt "Main|"
+#| msgid "Lead"
+msgctxt "Global|"
+msgid "Lead"
+msgstr "Vodilni"
+
+#: Global.qml:40
+#, fuzzy
+#| msgctxt "Main|"
+#| msgid "Boulder"
+msgctxt "Global|"
+msgid "Bouldering"
+msgstr "Balvan"
+
+#: Global.qml:53
 msgctxt "Global|"
 msgid "Reset"
 msgstr "Ponastavi"
 
-#: Global.qml:47
+#: Global.qml:58
 msgctxt "Global|"
 msgid "Set Record"
 msgstr "Postavi rekord"
 
-#: Global.qml:48
+#: Global.qml:59
 msgctxt "Global|"
 msgid "Set Grade As Personal Record"
 msgstr "Postavi težavnost kot osebni rekord"
 
-#: Global.qml:55
+#: Global.qml:66
 msgctxt "Global|"
 msgid "Clear"
 msgstr "Očisti"
 
-#: Global.qml:56
+#: Global.qml:67
 msgctxt "Global|"
 msgid "Clear Personal Record"
 msgstr "Očisti osebni rekord"
 
-#: Global.qml:79
+#: Global.qml:85
+#, fuzzy
+#| msgctxt "Main|"
+#| msgid "Boulder"
+msgctxt "Global|"
+msgid "Boulder"
+msgstr "Balvan"
+
+#: Global.qml:106
 msgctxt "Global|"
 msgid "Source: Wikipedia"
 msgstr "Vir: Wikipedia"
 
-#: GradeWidgetBase.qml:102
+#: GradeWidgetBase.qml:93
 msgctxt "GradeWidgetBase|"
 msgid "Record: "
 msgstr "Rekord:"
 
-#: Main.qml:46 Main.qml:164
+#: Main.qml:84
+msgctxt "Main|"
+msgid "Klimbgrades"
+msgstr ""
+
+#: Main.qml:88
 msgctxt "Main|"
 msgid "Lead"
 msgstr "Vodilni"
 
-#: Main.qml:77 Main.qml:172
+#: Main.qml:110
 msgctxt "Main|"
 msgid "Boulder"
 msgstr "Balvan"
 
-#: Main.qml:118
+#: Main.qml:136
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
 msgstr "Poveži vodilnega in balvan"

@@ -13,52 +13,72 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 21.12.2\n"
 
-#: Global.qml:42
+#: Global.qml:40 Global.qml:80
+msgctxt "Global|"
+msgid "Lead"
+msgstr ""
+
+#: Global.qml:40
+msgctxt "Global|"
+msgid "Bouldering"
+msgstr ""
+
+#: Global.qml:53
 msgctxt "Global|"
 msgid "Reset"
 msgstr "Reinitialisa"
 
-#: Global.qml:47
+#: Global.qml:58
 msgctxt "Global|"
 msgid "Set Record"
 msgstr "Fixa Record"
 
-#: Global.qml:48
+#: Global.qml:59
 msgctxt "Global|"
 msgid "Set Grade As Personal Record"
 msgstr ""
 
-#: Global.qml:55
+#: Global.qml:66
 msgctxt "Global|"
 msgid "Clear"
 msgstr "Netta"
 
-#: Global.qml:56
+#: Global.qml:67
 msgctxt "Global|"
 msgid "Clear Personal Record"
 msgstr "Clara Record personal"
 
-#: Global.qml:79
+#: Global.qml:85
+msgctxt "Global|"
+msgid "Boulder"
+msgstr ""
+
+#: Global.qml:106
 msgctxt "Global|"
 msgid "Source: Wikipedia"
 msgstr "Fonte: Wikipedia"
 
-#: GradeWidgetBase.qml:102
+#: GradeWidgetBase.qml:93
 msgctxt "GradeWidgetBase|"
 msgid "Record: "
 msgstr "Registra: "
 
-#: Main.qml:46 Main.qml:164
+#: Main.qml:84
+msgctxt "Main|"
+msgid "Klimbgrades"
+msgstr ""
+
+#: Main.qml:88
 msgctxt "Main|"
 msgid "Lead"
 msgstr ""
 
-#: Main.qml:77 Main.qml:172
+#: Main.qml:110
 msgctxt "Main|"
 msgid "Boulder"
 msgstr ""
 
-#: Main.qml:118
+#: Main.qml:136
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
 msgstr ""

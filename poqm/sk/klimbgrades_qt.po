@@ -16,52 +16,81 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Qt-Contexts: true\n"
 
-#: Global.qml:42
+#: Global.qml:40 Global.qml:80
+#, fuzzy
+#| msgctxt "Main|"
+#| msgid "Lead"
+msgctxt "Global|"
+msgid "Lead"
+msgstr "Olovo"
+
+#: Global.qml:40
+#, fuzzy
+#| msgctxt "Main|"
+#| msgid "Boulder"
+msgctxt "Global|"
+msgid "Bouldering"
+msgstr "Boulder"
+
+#: Global.qml:53
 msgctxt "Global|"
 msgid "Reset"
 msgstr "Obnoviť"
 
-#: Global.qml:47
+#: Global.qml:58
 msgctxt "Global|"
 msgid "Set Record"
 msgstr ""
 
-#: Global.qml:48
+#: Global.qml:59
 msgctxt "Global|"
 msgid "Set Grade As Personal Record"
 msgstr ""
 
-#: Global.qml:55
+#: Global.qml:66
 msgctxt "Global|"
 msgid "Clear"
 msgstr "Vyčistiť"
 
-#: Global.qml:56
+#: Global.qml:67
 msgctxt "Global|"
 msgid "Clear Personal Record"
 msgstr ""
 
-#: Global.qml:79
+#: Global.qml:85
+#, fuzzy
+#| msgctxt "Main|"
+#| msgid "Boulder"
+msgctxt "Global|"
+msgid "Boulder"
+msgstr "Boulder"
+
+#: Global.qml:106
 msgctxt "Global|"
 msgid "Source: Wikipedia"
 msgstr ""
 
-#: GradeWidgetBase.qml:102
+#: GradeWidgetBase.qml:93
 msgctxt "GradeWidgetBase|"
 msgid "Record: "
 msgstr "Nahrať:"
 
-#: Main.qml:46 Main.qml:164
+#: Main.qml:84
+msgctxt "Main|"
+msgid "Klimbgrades"
+msgstr ""
+
+#: Main.qml:88
 msgctxt "Main|"
 msgid "Lead"
 msgstr "Olovo"
 
-#: Main.qml:77 Main.qml:172
+#: Main.qml:110
 msgctxt "Main|"
 msgid "Boulder"
 msgstr "Boulder"
 
-#: Main.qml:118
+#: Main.qml:136
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
 msgstr ""

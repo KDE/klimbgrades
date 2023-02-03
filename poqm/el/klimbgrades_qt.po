@@ -13,52 +13,81 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 20.04.2\n"
 
-#: Global.qml:42
+#: Global.qml:40 Global.qml:80
+#, fuzzy
+#| msgctxt "Main|"
+#| msgid "Lead"
+msgctxt "Global|"
+msgid "Lead"
+msgstr "Καθοδήγηση"
+
+#: Global.qml:40
+#, fuzzy
+#| msgctxt "Main|"
+#| msgid "Boulder"
+msgctxt "Global|"
+msgid "Bouldering"
+msgstr "Αναρρίχηση"
+
+#: Global.qml:53
 msgctxt "Global|"
 msgid "Reset"
 msgstr "Επαναφορά"
 
-#: Global.qml:47
+#: Global.qml:58
 msgctxt "Global|"
 msgid "Set Record"
 msgstr "Ρύθμιση ρεκόρ"
 
-#: Global.qml:48
+#: Global.qml:59
 msgctxt "Global|"
 msgid "Set Grade As Personal Record"
 msgstr "Ρύθμιση βαθμού ως προσωπικό ρεκόρ"
 
-#: Global.qml:55
+#: Global.qml:66
 msgctxt "Global|"
 msgid "Clear"
 msgstr "Καθαρισμός"
 
-#: Global.qml:56
+#: Global.qml:67
 msgctxt "Global|"
 msgid "Clear Personal Record"
 msgstr "Καθαρισμός προσωπικού ρεκόρ"
 
-#: Global.qml:79
+#: Global.qml:85
+#, fuzzy
+#| msgctxt "Main|"
+#| msgid "Boulder"
+msgctxt "Global|"
+msgid "Boulder"
+msgstr "Αναρρίχηση"
+
+#: Global.qml:106
 msgctxt "Global|"
 msgid "Source: Wikipedia"
 msgstr "Πηγή: Wikipedia"
 
-#: GradeWidgetBase.qml:102
+#: GradeWidgetBase.qml:93
 msgctxt "GradeWidgetBase|"
 msgid "Record: "
 msgstr "Ρεκόρ: "
 
-#: Main.qml:46 Main.qml:164
+#: Main.qml:84
+msgctxt "Main|"
+msgid "Klimbgrades"
+msgstr ""
+
+#: Main.qml:88
 msgctxt "Main|"
 msgid "Lead"
 msgstr "Καθοδήγηση"
 
-#: Main.qml:77 Main.qml:172
+#: Main.qml:110
 msgctxt "Main|"
 msgid "Boulder"
 msgstr "Αναρρίχηση"
 
-#: Main.qml:118
+#: Main.qml:136
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
 msgstr "Σύνδεση καθοδήγησης κα αναρρίχησης"
