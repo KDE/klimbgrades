@@ -22,11 +22,12 @@ import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.2
 import QtGraphicalEffects 1.0
 import org.kde.kirigami 2.19 as Kirigami
-import org.kde.kirigamiaddons.labs.mobileform 0.1 as MobileForm
 import "HeuristicConverter.js" as HeuristicConverter
 
-MobileForm.AbstractFormDelegate {
+Controls.Control {
     id: root
+
+    Layout.fillWidth: true
 
     property Item page
     required property QtObject availableGradesModel
@@ -34,9 +35,10 @@ MobileForm.AbstractFormDelegate {
     required property string url
     required property string description
     required property bool scaleEnabled
+    required property int index
+    required property bool isLast
 
     visible: scaleEnabled
-    background: null
 
     function increment() {
         print("Decimal grade: " + availableGradesModel.currentGrade);
@@ -122,6 +124,16 @@ MobileForm.AbstractFormDelegate {
             } else if (mouse.x - startX < -Kirigami.Units.gridUnit) {
                 startX = mouse.x;
                 decrement();
+            }
+        }
+    }
+    background: Item {
+        visible: !root.isLast
+        Kirigami.Separator {
+            anchors {
+                left: parent.left
+                right: parent.right
+                bottom: parent.bottom
             }
         }
     }

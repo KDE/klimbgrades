@@ -21,7 +21,6 @@ import QtQuick 2.0
 import QtQuick.Layouts 1.15
 import QtQuick.Controls 2.0 as Controls
 import org.kde.kirigami 2.19 as Kirigami
-import org.kde.kirigamiaddons.labs.mobileform 0.1 as MobileForm
 
 Kirigami.ScrollablePage {
     id: root
@@ -93,32 +92,18 @@ Kirigami.ScrollablePage {
         id: mainLayout
         spacing: 0
 
-        MobileForm.FormCard {
+        Kirigami.AbstractCard {
             Layout.topMargin: Kirigami.Units.largeSpacing
             Layout.fillWidth: true
             contentItem: ColumnLayout {
                 spacing: 0
                 Repeater {
+                    id: repeater
                     model: root.model
-                    delegate: ColumnLayout {
-                        id: gradeDelegate
-
-                        required property string name
-                        required property string url
-                        required property string description
-                        required property bool scaleEnabled
-
-                        spacing: 0
-                        GradeWidgetBase {
-                            page: root
-                            availableGradesModel: root.model
-                            name: gradeDelegate.name
-                            url: gradeDelegate.url
-                            description: gradeDelegate.description
-                            scaleEnabled: gradeDelegate.scaleEnabled
-                        }
-
-                        MobileForm.FormDelegateSeparator {}
+                    delegate: GradeWidgetBase {
+                        page: root
+                        availableGradesModel: root.model
+                        isLast: index == repeater.count - 1
                     }
                 }
             }
