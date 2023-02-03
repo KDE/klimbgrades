@@ -33,8 +33,9 @@ MobileForm.AbstractFormDelegate {
     required property string name
     required property string url
     required property string description
+    required property bool scaleEnabled
 
-    visible: enabled
+    visible: scaleEnabled
     background: null
 
     function increment() {

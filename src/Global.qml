@@ -106,6 +106,7 @@ Kirigami.ScrollablePage {
                         required property string name
                         required property string url
                         required property string description
+                        required property bool scaleEnabled
 
                         spacing: 0
                         GradeWidgetBase {
@@ -114,6 +115,7 @@ Kirigami.ScrollablePage {
                             name: gradeDelegate.name
                             url: gradeDelegate.url
                             description: gradeDelegate.description
+                            scaleEnabled: gradeDelegate.scaleEnabled
                         }
 
                         MobileForm.FormDelegateSeparator {}

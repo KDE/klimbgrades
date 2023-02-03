@@ -183,12 +183,13 @@ Kirigami.ApplicationWindow {
                 delegate: Controls.CheckDelegate {
                     required property int index
                     required property string name
+                    required property bool scaleEnabled
 
                     visible: name.toUpperCase().indexOf(filterField.text.toUpperCase()) !== -1
                     Layout.fillWidth: true
                     text: name
-                    checkState: enabled ? Qt.Checked : Qt.Unchecked
-                    onCheckStateChanged: dataStore.availableLeadModel.setScaleEnabled(index, checkState == Qt.Checked)
+                    checkState: scaleEnabled ? Qt.Checked : Qt.Unchecked
+                    onToggled: dataStore.availableLeadModel.setScaleEnabled(index, checkState == Qt.Checked)
                 }
             }
             Kirigami.AbstractListItem {
@@ -214,12 +215,13 @@ Kirigami.ApplicationWindow {
                 delegate: Controls.CheckDelegate {
                     required property int index
                     required property string name
+                    required property bool scaleEnabled
 
                     visible: name.toUpperCase().indexOf(filterField.text.toUpperCase()) !== -1
                     Layout.fillWidth: true
                     text: name
-                    checkState: enabled ? Qt.Checked : Qt.Unchecked
-                    onCheckStateChanged: dataStore.availableBoulderModel.setScaleEnabled(index, checkState == Qt.Checked)
+                    checkState: scaleEnabled ? Qt.Checked : Qt.Unchecked
+                    onToggled: dataStore.availableBoulderModel.setScaleEnabled(index, checkState == Qt.Checked)
                 }
             }
             Kirigami.Separator {
@@ -229,7 +231,7 @@ Kirigami.ApplicationWindow {
                 Layout.fillWidth: true
                 text: qsTr("Link Lead and Boulder")
                 checked: dataStore.leadAndBoulderLinked
-                onCheckedChanged: dataStore.leadAndBoulderLinked = checked
+                onToggled: dataStore.leadAndBoulderLinked = checked
             }
             Item {
                 Layout.fillHeight: true

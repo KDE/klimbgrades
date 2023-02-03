@@ -38,7 +38,7 @@ AvailableGradesModel::AvailableGradesModel(Data *parent)
       m_personalRecord(0)
 {
     m_roleNames.insert(NameRole, "name");
-    m_roleNames.insert(EnabledRole, "enabled");
+    m_roleNames.insert(EnabledRole, "scaleEnabled");
     m_roleNames.insert(DescriptionRole, "description");
     m_roleNames.insert(UrlRole, "url");
 }
