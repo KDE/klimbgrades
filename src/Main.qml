@@ -132,6 +132,7 @@ Kirigami.ApplicationWindow {
         drawerOpen: !Kirigami.Settings.isMobile && enabled
         width: Kirigami.Units.gridUnit * 16
 
+        Kirigami.Theme.colorSet: Kirigami.Theme.View
         handleClosedIcon.source: modal ? null : "sidebar-expand-left"
         handleOpenIcon.source: modal ? null : "sidebar-collapse-left"
         handleVisible: modal
@@ -165,12 +166,10 @@ Kirigami.ApplicationWindow {
                 contentItem: Kirigami.Heading {
                     text: qsTr("Lead")
                     level: 2
-                    Layout.fillWidth: true
-                    Layout.leftMargin: Kirigami.Units.smallSpacing
-                    Layout.rightMargin: Kirigami.Units.smallSpacing
+                    color: parent.checked ? Kirigami.Theme.highlightedTextColor : Kirigami.Theme.textColor
                 }
-                checkable: true
-                checked: root.pageStack.currentIndex == 0
+                checkable: !root.pageStack.wideMode
+                checked: checkable && root.pageStack.currentIndex == 0
                 onClicked: {
                     root.pageStack.currentIndex = 0
                 }
@@ -197,12 +196,10 @@ Kirigami.ApplicationWindow {
                 contentItem: Kirigami.Heading {
                     text: qsTr("Boulder")
                     level: 2
-                    Layout.fillWidth: true
-                    Layout.leftMargin: Kirigami.Units.smallSpacing
-                    Layout.rightMargin: Kirigami.Units.smallSpacing
+                    color: parent.checked ? Kirigami.Theme.highlightedTextColor : Kirigami.Theme.textColor
                 }
-                checkable: true
-                checked: root.pageStack.currentIndex == 1
+                checkable: !root.pageStack.wideMode
+                checked: checkable && root.pageStack.currentIndex == 1
                 onClicked: {
                     root.pageStack.currentIndex = 1
                 }
