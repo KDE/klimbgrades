@@ -14,81 +14,83 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Generator: Lokalize 21.07.70\n"
 
-#: Global.qml:40 Global.qml:80
-#, fuzzy
-#| msgctxt "Main|"
-#| msgid "Lead"
-msgctxt "Global|"
-msgid "Lead"
-msgstr "قائد"
-
-#: Global.qml:40
-#, fuzzy
-#| msgctxt "Main|"
-#| msgid "Boulder"
-msgctxt "Global|"
-msgid "Bouldering"
-msgstr "حر"
-
-#: Global.qml:53
+#: Global.qml:45
 msgctxt "Global|"
 msgid "Reset"
 msgstr "أعد الضبط"
 
-#: Global.qml:58
+#: Global.qml:50
 msgctxt "Global|"
 msgid "Set Record"
 msgstr "ضع سجل"
 
-#: Global.qml:59
+#: Global.qml:51
 msgctxt "Global|"
 msgid "Set Grade As Personal Record"
 msgstr "ضعّ الدرجة كسجل شخصي"
 
-#: Global.qml:66
+#: Global.qml:58
 msgctxt "Global|"
 msgid "Clear"
 msgstr "امسح"
 
-#: Global.qml:67
+#: Global.qml:59
 msgctxt "Global|"
 msgid "Clear Personal Record"
 msgstr "امسح السجل الشخصي"
 
-#: Global.qml:85
-#, fuzzy
-#| msgctxt "Main|"
-#| msgid "Boulder"
-msgctxt "Global|"
-msgid "Boulder"
-msgstr "حر"
-
-#: Global.qml:106
+#: Global.qml:83
 msgctxt "Global|"
 msgid "Source: Wikipedia"
 msgstr "المصدر: ويكيبيديا"
 
-#: GradeWidgetBase.qml:93
+#: GradeWidgetBase.qml:96
 msgctxt "GradeWidgetBase|"
 msgid "Record: "
 msgstr "الدرجة"
 
-#: Main.qml:84
+#: Main.qml:54
 msgctxt "Main|"
-msgid "Klimbgrades"
+msgid "Climbing Grades"
 msgstr ""
 
-#: Main.qml:88
+#: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
 msgid "Lead"
 msgstr "قائد"
 
-#: Main.qml:110
+#: Main.qml:87 Main.qml:117 Main.qml:199
 msgctxt "Main|"
 msgid "Boulder"
 msgstr "حر"
 
-#: Main.qml:136
+#: Main.qml:162
+msgctxt "Main|"
+msgid "Filter…"
+msgstr ""
+
+#: Main.qml:232
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
 msgstr "اربط القائد والحر"
+
+#, fuzzy
+#~| msgctxt "Main|"
+#~| msgid "Lead"
+#~ msgctxt "Global|"
+#~ msgid "Lead"
+#~ msgstr "قائد"
+
+#, fuzzy
+#~| msgctxt "Main|"
+#~| msgid "Boulder"
+#~ msgctxt "Global|"
+#~ msgid "Bouldering"
+#~ msgstr "حر"
+
+#, fuzzy
+#~| msgctxt "Main|"
+#~| msgid "Boulder"
+#~ msgctxt "Global|"
+#~ msgid "Boulder"
+#~ msgstr "حر"

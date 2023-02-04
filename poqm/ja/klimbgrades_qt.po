@@ -11,72 +11,62 @@ msgstr ""
 "X-Text-Markup: qtrich\n"
 "X-Qt-Contexts: true\n"
 
-#: Global.qml:40 Global.qml:80
-msgctxt "Global|"
-msgid "Lead"
-msgstr ""
-
-#: Global.qml:40
-msgctxt "Global|"
-msgid "Bouldering"
-msgstr ""
-
-#: Global.qml:53
+#: Global.qml:45
 msgctxt "Global|"
 msgid "Reset"
 msgstr ""
 
-#: Global.qml:58
+#: Global.qml:50
 msgctxt "Global|"
 msgid "Set Record"
 msgstr ""
 
-#: Global.qml:59
+#: Global.qml:51
 msgctxt "Global|"
 msgid "Set Grade As Personal Record"
 msgstr ""
 
-#: Global.qml:66
+#: Global.qml:58
 msgctxt "Global|"
 msgid "Clear"
 msgstr ""
 
-#: Global.qml:67
+#: Global.qml:59
 msgctxt "Global|"
 msgid "Clear Personal Record"
 msgstr ""
 
-#: Global.qml:85
-msgctxt "Global|"
-msgid "Boulder"
-msgstr ""
-
-#: Global.qml:106
+#: Global.qml:83
 msgctxt "Global|"
 msgid "Source: Wikipedia"
 msgstr ""
 
-#: GradeWidgetBase.qml:93
+#: GradeWidgetBase.qml:96
 msgctxt "GradeWidgetBase|"
 msgid "Record: "
 msgstr ""
 
-#: Main.qml:84
+#: Main.qml:54
 msgctxt "Main|"
-msgid "Klimbgrades"
+msgid "Climbing Grades"
 msgstr ""
 
-#: Main.qml:88
+#: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
 msgid "Lead"
 msgstr ""
 
-#: Main.qml:110
+#: Main.qml:87 Main.qml:117 Main.qml:199
 msgctxt "Main|"
 msgid "Boulder"
 msgstr ""
 
-#: Main.qml:136
+#: Main.qml:162
+msgctxt "Main|"
+msgid "Filter…"
+msgstr ""
+
+#: Main.qml:232
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
 msgstr ""

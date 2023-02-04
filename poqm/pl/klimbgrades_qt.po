@@ -14,81 +14,83 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 19.03.70\n"
 
-#: Global.qml:40 Global.qml:80
-#, fuzzy
-#| msgctxt "Main|"
-#| msgid "Lead"
-msgctxt "Global|"
-msgid "Lead"
-msgstr "Lead"
-
-#: Global.qml:40
-#, fuzzy
-#| msgctxt "Main|"
-#| msgid "Boulder"
-msgctxt "Global|"
-msgid "Bouldering"
-msgstr "Boulder"
-
-#: Global.qml:53
+#: Global.qml:45
 msgctxt "Global|"
 msgid "Reset"
 msgstr "Wyzeruj"
 
-#: Global.qml:58
+#: Global.qml:50
 msgctxt "Global|"
 msgid "Set Record"
 msgstr "Ustaw rekord"
 
-#: Global.qml:59
+#: Global.qml:51
 msgctxt "Global|"
 msgid "Set Grade As Personal Record"
 msgstr "Ustaw stopień jako osobisty rekord"
 
-#: Global.qml:66
+#: Global.qml:58
 msgctxt "Global|"
 msgid "Clear"
 msgstr "Wyczyść"
 
-#: Global.qml:67
+#: Global.qml:59
 msgctxt "Global|"
 msgid "Clear Personal Record"
 msgstr "Wyczyść osobisty rekord"
 
-#: Global.qml:85
-#, fuzzy
-#| msgctxt "Main|"
-#| msgid "Boulder"
-msgctxt "Global|"
-msgid "Boulder"
-msgstr "Boulder"
-
-#: Global.qml:106
+#: Global.qml:83
 msgctxt "Global|"
 msgid "Source: Wikipedia"
 msgstr "Źródło: Wikipedia"
 
-#: GradeWidgetBase.qml:93
+#: GradeWidgetBase.qml:96
 msgctxt "GradeWidgetBase|"
 msgid "Record: "
 msgstr "Rekord: "
 
-#: Main.qml:84
+#: Main.qml:54
 msgctxt "Main|"
-msgid "Klimbgrades"
+msgid "Climbing Grades"
 msgstr ""
 
-#: Main.qml:88
+#: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
 msgid "Lead"
 msgstr "Lead"
 
-#: Main.qml:110
+#: Main.qml:87 Main.qml:117 Main.qml:199
 msgctxt "Main|"
 msgid "Boulder"
 msgstr "Boulder"
 
-#: Main.qml:136
+#: Main.qml:162
+msgctxt "Main|"
+msgid "Filter…"
+msgstr ""
+
+#: Main.qml:232
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
 msgstr "Odnośniki do lead i boulder"
+
+#, fuzzy
+#~| msgctxt "Main|"
+#~| msgid "Lead"
+#~ msgctxt "Global|"
+#~ msgid "Lead"
+#~ msgstr "Lead"
+
+#, fuzzy
+#~| msgctxt "Main|"
+#~| msgid "Boulder"
+#~ msgctxt "Global|"
+#~ msgid "Bouldering"
+#~ msgstr "Boulder"
+
+#, fuzzy
+#~| msgctxt "Main|"
+#~| msgid "Boulder"
+#~ msgctxt "Global|"
+#~ msgid "Boulder"
+#~ msgstr "Boulder"

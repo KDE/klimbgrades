@@ -1,8 +1,8 @@
-# Emir SARI <emir_sari@icloud.com>, 2022.
+# Emir SARI <emir_sari@icloud.com>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-04-12 10:55+0300\n"
+"PO-Revision-Date: 2023-02-03 18:51+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -11,83 +11,85 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.12.1\n"
 
-#: Global.qml:40 Global.qml:80
-#, fuzzy
-#| msgctxt "Main|"
-#| msgid "Lead"
-msgctxt "Global|"
-msgid "Lead"
-msgstr "Öncü:"
-
-#: Global.qml:40
-#, fuzzy
-#| msgctxt "Main|"
-#| msgid "Boulder"
-msgctxt "Global|"
-msgid "Bouldering"
-msgstr "Kaya:"
-
-#: Global.qml:53
+#: Global.qml:45
 msgctxt "Global|"
 msgid "Reset"
 msgstr "Sıfırla"
 
-#: Global.qml:58
+#: Global.qml:50
 msgctxt "Global|"
 msgid "Set Record"
 msgstr "Rekor Ayarla"
 
-#: Global.qml:59
+#: Global.qml:51
 msgctxt "Global|"
 msgid "Set Grade As Personal Record"
 msgstr "Dereceyi Kişisel Rekor Olarak Ayarla"
 
-#: Global.qml:66
+#: Global.qml:58
 msgctxt "Global|"
 msgid "Clear"
 msgstr "Temizle"
 
-#: Global.qml:67
+#: Global.qml:59
 msgctxt "Global|"
 msgid "Clear Personal Record"
 msgstr "Kişisel Rekoru Temizle"
 
-#: Global.qml:85
-#, fuzzy
-#| msgctxt "Main|"
-#| msgid "Boulder"
-msgctxt "Global|"
-msgid "Boulder"
-msgstr "Kaya:"
-
-#: Global.qml:106
+#: Global.qml:83
 msgctxt "Global|"
 msgid "Source: Wikipedia"
 msgstr "Kaynak: Vikipedi"
 
-#: GradeWidgetBase.qml:93
+#: GradeWidgetBase.qml:96
 msgctxt "GradeWidgetBase|"
 msgid "Record: "
 msgstr "Rekor:"
 
-#: Main.qml:84
+#: Main.qml:54
+#, fuzzy
+#| msgctxt "Main|"
+#| msgid "Klimbgrades"
 msgctxt "Main|"
-msgid "Klimbgrades"
-msgstr ""
+msgid "Climbing Grades"
+msgstr "Klimbgrades"
 
-#: Main.qml:88
+#: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
 msgid "Lead"
 msgstr "Öncü:"
 
-#: Main.qml:110
+#: Main.qml:87 Main.qml:117 Main.qml:199
 msgctxt "Main|"
 msgid "Boulder"
 msgstr "Kaya:"
 
-#: Main.qml:136
+#: Main.qml:162
+msgctxt "Main|"
+msgid "Filter…"
+msgstr ""
+
+#: Main.qml:232
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
 msgstr "Öncü ve Kaya'yı Birbirine Bağla"
+
+#~| msgctxt "Main|"
+#~| msgid "Lead"
+#~ msgctxt "Global|"
+#~ msgid "Lead"
+#~ msgstr "Öncü"
+
+#~| msgctxt "Main|"
+#~| msgid "Boulder"
+#~ msgctxt "Global|"
+#~ msgid "Bouldering"
+#~ msgstr "Kaya Tırmanışı"
+
+#~| msgctxt "Main|"
+#~| msgid "Boulder"
+#~ msgctxt "Global|"
+#~ msgid "Boulder"
+#~ msgstr "Kaya"
