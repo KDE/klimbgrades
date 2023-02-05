@@ -18,52 +18,62 @@ msgstr ""
 "X-Text-Markup: qtrich\n"
 "X-Qt-Contexts: true\n"
 
-#: Global.qml:42
+#: Global.qml:45
 msgctxt "Global|"
 msgid "Reset"
 msgstr "Nullstill"
 
-#: Global.qml:47
+#: Global.qml:50
 msgctxt "Global|"
 msgid "Set Record"
 msgstr "Definer som rekord"
 
-#: Global.qml:48
+#: Global.qml:51
 msgctxt "Global|"
 msgid "Set Grade As Personal Record"
 msgstr "Definer gradering som personleg rekord"
 
-#: Global.qml:55
+#: Global.qml:58
 msgctxt "Global|"
 msgid "Clear"
 msgstr "Fjern"
 
-#: Global.qml:56
+#: Global.qml:59
 msgctxt "Global|"
 msgid "Clear Personal Record"
 msgstr "Fjern personnleg rekord"
 
-#: Global.qml:79
+#: Global.qml:83
 msgctxt "Global|"
 msgid "Source: Wikipedia"
 msgstr "Kjelde: Wikipedia"
 
-#: GradeWidgetBase.qml:102
+#: GradeWidgetBase.qml:96
 msgctxt "GradeWidgetBase|"
 msgid "Record: "
 msgstr "Rekord: "
 
-#: Main.qml:46 Main.qml:164
+#: Main.qml:54
+msgctxt "Main|"
+msgid "Climbing Grades"
+msgstr ""
+
+#: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
 msgid "Lead"
 msgstr "Led"
 
-#: Main.qml:77 Main.qml:172
+#: Main.qml:87 Main.qml:117 Main.qml:199
 msgctxt "Main|"
 msgid "Boulder"
 msgstr "Buldring"
 
-#: Main.qml:118
+#: Main.qml:162
+msgctxt "Main|"
+msgid "Filter…"
+msgstr ""
+
+#: Main.qml:232
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
 msgstr "Kopla led og buldring"

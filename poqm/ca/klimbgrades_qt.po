@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: klimbgrades\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"PO-Revision-Date: 2023-02-03 15:16+0100\n"
+"PO-Revision-Date: 2023-02-04 10:53+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -56,12 +56,9 @@ msgid "Record: "
 msgstr "Registre: "
 
 #: Main.qml:54
-#, fuzzy
-#| msgctxt "Main|"
-#| msgid "Klimbgrades"
 msgctxt "Main|"
 msgid "Climbing Grades"
-msgstr "Klimbgrades"
+msgstr "Graus d'escalada"
 
 #: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
@@ -76,27 +73,9 @@ msgstr "En bloc"
 #: Main.qml:162
 msgctxt "Main|"
 msgid "Filter…"
-msgstr ""
+msgstr "Filtre…"
 
 #: Main.qml:232
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
 msgstr "Enllaça de dificultat i en bloc"
-
-#~| msgctxt "Main|"
-#~| msgid "Lead"
-#~ msgctxt "Global|"
-#~ msgid "Lead"
-#~ msgstr "De dificultat"
-
-#~| msgctxt "Main|"
-#~| msgid "Boulder"
-#~ msgctxt "Global|"
-#~ msgid "Bouldering"
-#~ msgstr "En bloc"
-
-#~| msgctxt "Main|"
-#~| msgid "Boulder"
-#~ msgctxt "Global|"
-#~ msgid "Boulder"
-#~ msgstr "En bloc"

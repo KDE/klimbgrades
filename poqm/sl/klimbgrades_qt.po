@@ -1,9 +1,9 @@
-# Matjaž Jeran <matjaz.jeran@amis.net>, 2020.
+# Matjaž Jeran <matjaz.jeran@amis.net>, 2020, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2020-06-04 09:23+0200\n"
+"PO-Revision-Date: 2023-02-04 08:39+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 19.12.2\n"
+"X-Generator: Lokalize 22.12.1\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100>=3 && n"
 "%100<=4 ? 2 : 3);\n"
 
@@ -53,7 +53,7 @@ msgstr "Rekord:"
 #: Main.qml:54
 msgctxt "Main|"
 msgid "Climbing Grades"
-msgstr ""
+msgstr "Težavnostne stopnje plezanja"
 
 #: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
@@ -68,7 +68,7 @@ msgstr "Balvan"
 #: Main.qml:162
 msgctxt "Main|"
 msgid "Filter…"
-msgstr ""
+msgstr "Filter…"
 
 #: Main.qml:232
 msgctxt "Main|"

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-02-03 18:51+0300\n"
+"PO-Revision-Date: 2023-02-04 10:59+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -49,12 +49,9 @@ msgid "Record: "
 msgstr "Rekor:"
 
 #: Main.qml:54
-#, fuzzy
-#| msgctxt "Main|"
-#| msgid "Klimbgrades"
 msgctxt "Main|"
 msgid "Climbing Grades"
-msgstr "Klimbgrades"
+msgstr "Tırmanma Aşamaları"
 
 #: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
@@ -69,7 +66,7 @@ msgstr "Kaya:"
 #: Main.qml:162
 msgctxt "Main|"
 msgid "Filter…"
-msgstr ""
+msgstr "Süz…"
 
 #: Main.qml:232
 msgctxt "Main|"

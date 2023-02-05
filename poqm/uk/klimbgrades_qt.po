@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: klimbgrades_qt\n"
-"PO-Revision-Date: 2023-02-03 08:25+0200\n"
+"PO-Revision-Date: 2023-02-04 08:23+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -56,12 +56,9 @@ msgid "Record: "
 msgstr "Запис:"
 
 #: Main.qml:54
-#, fuzzy
-#| msgctxt "Main|"
-#| msgid "Klimbgrades"
 msgctxt "Main|"
 msgid "Climbing Grades"
-msgstr "Klimbgrades"
+msgstr "Оцінки сходження"
 
 #: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
@@ -76,7 +73,7 @@ msgstr "Техніка"
 #: Main.qml:162
 msgctxt "Main|"
 msgid "Filter…"
-msgstr ""
+msgstr "Фільтрувати…"
 
 #: Main.qml:232
 msgctxt "Main|"
