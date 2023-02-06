@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: klimbgrades_qt\n"
-"PO-Revision-Date: 2018-08-30 15:12+0800\n"
-"Last-Translator: Simon Depiets <sdepiets@gmail.com>\n"
+"PO-Revision-Date: 2023-02-04 19:53+0100\n"
+"Last-Translator: Xavier BESNARD <xavier.besnard]neuf.fr>\n"
 "Language-Team: fr\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -55,7 +55,7 @@ msgstr "Record :"
 #: Main.qml:54
 msgctxt "Main|"
 msgid "Climbing Grades"
-msgstr ""
+msgstr "Grades d'escalade"
 
 #: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
@@ -70,7 +70,7 @@ msgstr "Bloc"
 #: Main.qml:162
 msgctxt "Main|"
 msgid "Filter…"
-msgstr ""
+msgstr "Filtrer…"
 
 #: Main.qml:232
 msgctxt "Main|"
