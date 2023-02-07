@@ -49,12 +49,9 @@ msgid "Record: "
 msgstr "Nahrávat: "
 
 #: Main.qml:54
-#, fuzzy
-#| msgctxt "Main|"
-#| msgid "Klimbgrades"
 msgctxt "Main|"
 msgid "Climbing Grades"
-msgstr "Klimbgrades"
+msgstr ""
 
 #: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
@@ -75,11 +72,3 @@ msgstr ""
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
 msgstr ""
-
-#~ msgctxt "Global|"
-#~ msgid "Bouldering"
-#~ msgstr "Bouldering"
-
-#~ msgctxt "Global|"
-#~ msgid "Boulder"
-#~ msgstr "Boulder"
