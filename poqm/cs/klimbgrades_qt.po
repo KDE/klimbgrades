@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-02-03 15:48+0100\n"
+"PO-Revision-Date: 2023-02-07 09:09+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 22.12.2\n"
 "X-Qt-Contexts: true\n"
 
 #: Global.qml:45
@@ -51,7 +51,7 @@ msgstr "Nahrávat: "
 #: Main.qml:54
 msgctxt "Main|"
 msgid "Climbing Grades"
-msgstr ""
+msgstr "Hodnocení lezení"
 
 #: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
@@ -66,7 +66,7 @@ msgstr "Boulder"
 #: Main.qml:162
 msgctxt "Main|"
 msgid "Filter…"
-msgstr ""
+msgstr "Filtrovat…"
 
 #: Main.qml:232
 msgctxt "Main|"
