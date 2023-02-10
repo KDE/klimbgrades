@@ -1,10 +1,10 @@
 # Translation of klimbgrades_qt to Norwegian Nynorsk
 #
-# Karl Ove Hufthammer <karl@huftis.org>, 2020.
+# Karl Ove Hufthammer <karl@huftis.org>, 2020, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2020-08-30 20:34+0200\n"
+"PO-Revision-Date: 2023-02-09 21:40+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.08.0\n"
+"X-Generator: Lokalize 22.12.2\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: qtrich\n"
@@ -71,7 +71,7 @@ msgstr "Buldring"
 #: Main.qml:162
 msgctxt "Main|"
 msgid "Filter…"
-msgstr ""
+msgstr "Filter …"
 
 #: Main.qml:232
 msgctxt "Main|"
