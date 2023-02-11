@@ -1,15 +1,15 @@
 # Translation of klimbgrades_qt.po to Catalan (Valencian)
-# Copyright (C) 2018-2021 This_file_is_part_of_KDE
+# Copyright (C) 2018-2023 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2018.
-# Josep M. Ferrer <txemaq@gmail.com>, 2021.
+# Josep M. Ferrer <txemaq@gmail.com>, 2021, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: klimbgrades\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"PO-Revision-Date: 2021-11-07 22:08+0100\n"
+"PO-Revision-Date: 2023-02-04 10:53+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -58,12 +58,12 @@ msgstr "Registre: "
 #: Main.qml:54
 msgctxt "Main|"
 msgid "Climbing Grades"
-msgstr ""
+msgstr "Graus d'escalada"
 
 #: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
 msgid "Lead"
-msgstr "Líder"
+msgstr "De dificultat"
 
 #: Main.qml:87 Main.qml:117 Main.qml:199
 msgctxt "Main|"
@@ -73,30 +73,9 @@ msgstr "En bloc"
 #: Main.qml:162
 msgctxt "Main|"
 msgid "Filter…"
-msgstr ""
+msgstr "Filtre…"
 
 #: Main.qml:232
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
-msgstr "Enllaça líder i en bloc"
-
-#, fuzzy
-#~| msgctxt "Main|"
-#~| msgid "Lead"
-#~ msgctxt "Global|"
-#~ msgid "Lead"
-#~ msgstr "Líder"
-
-#, fuzzy
-#~| msgctxt "Main|"
-#~| msgid "Boulder"
-#~ msgctxt "Global|"
-#~ msgid "Bouldering"
-#~ msgstr "En bloc"
-
-#, fuzzy
-#~| msgctxt "Main|"
-#~| msgid "Boulder"
-#~ msgctxt "Global|"
-#~ msgid "Boulder"
-#~ msgstr "En bloc"
+msgstr "Enllaça de dificultat i en bloc"
