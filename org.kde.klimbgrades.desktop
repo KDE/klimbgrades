@@ -63,4 +63,4 @@ MimeType=application/x-klimbgrades;
 Icon=klimbgrades
 Type=Application
 Terminal=false
-Categories=Qt;KDE;Education;
+Categories=Qt;KDE;Utility;
