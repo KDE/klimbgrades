@@ -2,13 +2,13 @@ cmake_minimum_required(VERSION 3.16)
 
 project(klimbgrades VERSION 0.1)
 
-set(KF5_MIN_VERSION "5.18.0")
+set(KF_MIN_VERSION "5.18.0")
 set(QT_MIN_VERSION "5.15.0")
 if (ANDROID)
     set(QT_MIN_VERSION "5.15.8")
 endif()
 
-find_package(ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
+find_package(ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ECM_MODULE_PATH})
 
@@ -24,8 +24,8 @@ if(NOT ANDROID)
     find_package(Qt${QT_MAJOR_VERSION}Widgets REQUIRED)
 endif()
 
-find_package(KF5Config ${KF5_DEP_VERSION} "5.22.0")
-find_package(KF5Kirigami2 ${KF5_DEP_VERSION} "5.22.0")
+find_package(KF${QT_MAJOR_VERSION}Config ${KF${QT_MAJOR_VERSION}_DEP_VERSION} "5.22.0")
+find_package(KF${QT_MAJOR_VERSION}Kirigami2 ${KF${QT_MAJOR_VERSION}_DEP_VERSION} "5.22.0")
 
 set (CMAKE_CXX_STANDARD 11)
 
