@@ -1,8 +1,8 @@
-# Giovanni Sora <g.sora@tiscali.it>, 2020, 2022.
+# Giovanni Sora <g.sora@tiscali.it>, 2020, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2022-02-05 22:51+0100\n"
+"PO-Revision-Date: 2023-05-10 09:38+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.12.2\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #: Global.qml:45
 msgctxt "Global|"
@@ -26,7 +26,7 @@ msgstr "Fixa Record"
 #: Global.qml:51
 msgctxt "Global|"
 msgid "Set Grade As Personal Record"
-msgstr ""
+msgstr "Fixa Grade como Record (Registro) Personal"
 
 #: Global.qml:58
 msgctxt "Global|"
@@ -51,24 +51,24 @@ msgstr "Registra: "
 #: Main.qml:54
 msgctxt "Main|"
 msgid "Climbing Grades"
-msgstr ""
+msgstr "Scalar Grados"
 
 #: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
 msgid "Lead"
-msgstr ""
+msgstr "Plumbo"
 
 #: Main.qml:87 Main.qml:117 Main.qml:199
 msgctxt "Main|"
 msgid "Boulder"
-msgstr ""
+msgstr "Boulder (Petra Grosse)"
 
 #: Main.qml:162
 msgctxt "Main|"
 msgid "Filter…"
-msgstr ""
+msgstr "Filtra ..."
 
 #: Main.qml:232
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
-msgstr ""
+msgstr "Liga Plumbo e Boulder"
