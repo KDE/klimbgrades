@@ -1,17 +1,18 @@
 # Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2018.
+# Geraldo Simiao <geraldosimiao@fedoraproject.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2018-09-06 10:14-0300\n"
-"Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
-"Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
+"PO-Revision-Date: 2023-07-29 22:12-0300\n"
+"Last-Translator: Geraldo Simiao <geraldosimiao@fedoraproject.org>\n"
+"Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #: Global.qml:45
 msgctxt "Global|"
@@ -21,12 +22,12 @@ msgstr "Redefinir"
 #: Global.qml:50
 msgctxt "Global|"
 msgid "Set Record"
-msgstr ""
+msgstr "Definir registro"
 
 #: Global.qml:51
 msgctxt "Global|"
 msgid "Set Grade As Personal Record"
-msgstr ""
+msgstr "Definir grau como recorde pessoal"
 
 #: Global.qml:58
 msgctxt "Global|"
@@ -36,7 +37,7 @@ msgstr "Limpar"
 #: Global.qml:59
 msgctxt "Global|"
 msgid "Clear Personal Record"
-msgstr ""
+msgstr "Limpar registro pessoal"
 
 #: Global.qml:83
 msgctxt "Global|"
@@ -46,29 +47,29 @@ msgstr "Fonte: Wikipédia"
 #: GradeWidgetBase.qml:96
 msgctxt "GradeWidgetBase|"
 msgid "Record: "
-msgstr ""
+msgstr "Registrar:"
 
 #: Main.qml:54
 msgctxt "Main|"
 msgid "Climbing Grades"
-msgstr ""
+msgstr "Graus de escalada"
 
 #: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
 msgid "Lead"
-msgstr ""
+msgstr "Lead"
 
 #: Main.qml:87 Main.qml:117 Main.qml:199
 msgctxt "Main|"
 msgid "Boulder"
-msgstr ""
+msgstr "Boulder"
 
 #: Main.qml:162
 msgctxt "Main|"
 msgid "Filter…"
-msgstr ""
+msgstr "Filtrar..."
 
 #: Main.qml:232
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
-msgstr ""
+msgstr "Relacionar Lead e Boulder"
