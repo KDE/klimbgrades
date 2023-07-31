@@ -58,6 +58,7 @@
   <summary xml:lang="nn">Lite program for å rekna graderingar for fjell­klatring, led­klatring og buldring om til ulike graderings­system</summary>
   <summary xml:lang="pl">Mała aplikacja do przekształcania trudnych stopni we wspinaczce górskiej, skale lead i boulder</summary>
   <summary xml:lang="pt">Pequena aplicação para converter rapidamente as cotações de dificuldade de escaladas, bem como escalas de montanhismo e de liderança</summary>
+  <summary xml:lang="pt-BR">Pequeno aplicativo para converter rapidamente graus de dificuldade de escalada nas escalas para rocha, lead e bouldering</summary>
   <summary xml:lang="sl">Majhna aplikacija za hitro pretvorbo težavnostnih razredov za skalno plezanje, vodilne in balvanske lestvice</summary>
   <summary xml:lang="sv">Litet program för att snabbt konvertera svåra lutningar vid bergsbestigning och klippbestigning</summary>
   <summary xml:lang="tr">Tırmanma Yardımcısı</summary>
@@ -87,6 +88,7 @@
       <li xml:lang="nn">Led: Fransk, YDS, UIAA, British Tech, British Adjectival</li>
       <li xml:lang="pl">Lead: French, YDS, UIAA, British Tech, British Adjectival</li>
       <li xml:lang="pt">Liderança: Francês, YDS, UIAA, Inglês Técnico, Inglês Adjectivado</li>
+      <li xml:lang="pt-BR">Lead: Francesa, YDS, UIAA, British Tech, British Adjectival</li>
       <li xml:lang="sl">Vodilne: Francoska, YDS, UIAA, British Tech, British Adjectival</li>
       <li xml:lang="sv">Ledare: French, YDS, UIAA, British Tech, British Adjectival</li>
       <li xml:lang="tr">Öncü: Fransız, YDS, UIAA, British Tech, British Adjectival</li>
@@ -115,6 +117,7 @@
       <li xml:lang="nn">Buldring: Fontainebleu, Hueco, B Grade</li>
       <li xml:lang="pl">Boulder: Fontainebleu, Hueco, B Grade</li>
       <li xml:lang="pt">Montanhismo: Fontainebleu, Hueco, Escala B</li>
+      <li xml:lang="pt-BR">Boulder: Fontainebleu, Hueco, B Grade</li>
       <li xml:lang="sl">Balvanske: Fontainebleu, Hueco, B Grade</li>
       <li xml:lang="sv">Klippa: Fontainebleu, Hueco, B Grade</li>
       <li xml:lang="tr">Kaşa: Fontainebleu, Hueco, B Grade</li>
@@ -143,6 +146,7 @@
     <p xml:lang="nn">Eksempelprogram for å demonstrera KDE sitt Kirigami Qt-baserte rammeverk for bygging av kryssplattform­program.</p>
     <p xml:lang="pl">Przykładowa aplikacja do przestawienia szkieletu KDE Kirigami opartego na Qt do tworzenia wieloplatformowych aplikacji.</p>
     <p xml:lang="pt">Aplicação de exemplo para demonstrar a plataforma Kirigami do KDE, baseada no Qt, para criar aplicações multi-plataforma.</p>
+    <p xml:lang="pt-BR">Aplicativo de exemplo para demonstrar a estrutura baseada em Qt do KDE Kirigami para criar aplicativos multiplataforma.</p>
     <p xml:lang="sl">Primer aplikacije za prikaz razvojnega okvirja na KDE Kirigami Qt za izdelavo aplikacij za več platform.</p>
     <p xml:lang="sv">Exempelprogram för att demonstrera KDE:s Kirigami Qt-baserade ramverk för att bygga program för flera plattformar.</p>
     <p xml:lang="tr">KDE'nin çok platformlu uygulamak geliştirmek için yazdığı Qt tabanlı kod kitaplığı Kirigami'yi göstermek için yazılmış örnek uygulama.</p>
