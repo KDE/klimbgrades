@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: klimbgrades\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-05 13:43+0100\n"
-"PO-Revision-Date: 2024-02-26 21:30+0100\n"
+"PO-Revision-Date: 2024-03-24 10:34+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo.org>\n"
 "Language: eo\n"
@@ -27,12 +27,12 @@ msgstr "Restarigi"
 #: Global.qml:50
 msgctxt "Global|"
 msgid "Set Record"
-msgstr ""
+msgstr "Agordi Rekordon"
 
 #: Global.qml:51
 msgctxt "Global|"
 msgid "Set Grade As Personal Record"
-msgstr ""
+msgstr "Agordi Gradon Kiel Personan Rekordon"
 
 #: Global.qml:58
 msgctxt "Global|"
@@ -42,22 +42,22 @@ msgstr "Viŝi"
 #: Global.qml:59
 msgctxt "Global|"
 msgid "Clear Personal Record"
-msgstr ""
+msgstr "Viŝi Personan Rekordon"
 
 #: Global.qml:83
 msgctxt "Global|"
 msgid "Source: Wikipedia"
-msgstr ""
+msgstr "Fonto: Vikipedio"
 
 #: GradeWidgetBase.qml:96
 msgctxt "GradeWidgetBase|"
 msgid "Record: "
-msgstr ""
+msgstr "Rekordo:"
 
 #: Main.qml:54
 msgctxt "Main|"
 msgid "Climbing Grades"
-msgstr ""
+msgstr "Grimpantaj Gradoj"
 
 #: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
@@ -77,4 +77,4 @@ msgstr "Filtri…"
 #: Main.qml:232
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
-msgstr ""
+msgstr "Ligo Plumbo kaj Boulder"
