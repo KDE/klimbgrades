@@ -20,22 +20,21 @@
 #include "availablegradesmodel.h"
 #include "data.h"
 
+#include <QByteArray>
 #include <QCoreApplication>
 #include <QDebug>
-#include <QByteArray>
 #include <QDir>
 #include <QDirIterator>
 #include <QFile>
-#include <QStandardPaths>
 #include <QSettings>
+#include <QStandardPaths>
 
 #include <KConfigGroup>
 
-
 AvailableGradesModel::AvailableGradesModel(Data *parent)
-    : QAbstractListModel(parent),
-      m_data(parent),
-      m_personalRecord(0)
+    : QAbstractListModel(parent)
+    , m_data(parent)
+    , m_personalRecord(0)
 {
     m_roleNames.insert(NameRole, "name");
     m_roleNames.insert(EnabledRole, "scaleEnabled");
@@ -95,7 +94,6 @@ QVariant AvailableGradesModel::data(const QModelIndex &index, int role) const
 
     return QVariant();
 }
-
 
 void AvailableGradesModel::load(const QString &dataName)
 {

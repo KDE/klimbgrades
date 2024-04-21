@@ -25,12 +25,12 @@
 #include <QApplication>
 #endif
 #include <QQmlApplicationEngine>
-#include <QtQml>
-#include <QUrl>
 #include <QQuickStyle>
+#include <QUrl>
+#include <QtQml>
 
-#include "data.h"
 #include "availablegradesmodel.h"
+#include "data.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
@@ -49,8 +49,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCoreApplication::setOrganizationDomain("kde.org");
     QCoreApplication::setApplicationName("Climbing Grades");
 
-    //qputenv("QML_IMPORT_TRACE", "1");
-    qRegisterMetaType<AvailableGradesModel*>();
+    // qputenv("QML_IMPORT_TRACE", "1");
+    qRegisterMetaType<AvailableGradesModel *>();
     QQmlApplicationEngine engine;
 
     Data data;

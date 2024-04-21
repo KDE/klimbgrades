@@ -17,26 +17,24 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-
 #include "data.h"
 #include "availablegradesmodel.h"
 
-#include <QFile>
+#include <KConfigGroup>
+#include <QCoreApplication>
 #include <QDebug>
+#include <QFile>
 #include <QTextStream>
 #include <QTimer>
-#include <QCoreApplication>
-#include <KConfigGroup>
 
 Data::Data(QObject *parent)
     : QObject(parent)
 {
     m_configSyncTimer = new QTimer(this);
     m_configSyncTimer->setSingleShot(false);
-    connect(m_configSyncTimer, &QTimer::timeout,
-        this, [this]() {
-            config()->sync();
-        });
+    connect(m_configSyncTimer, &QTimer::timeout, this, [this]() {
+        config()->sync();
+    });
 
     KConfigGroup cg(config(), "General");
     m_currentTab = cg.readEntry("currentTab", 0);
@@ -76,7 +74,7 @@ Data::Data(QObject *parent)
             }
             ++line;
         }
-        //qWarning()<<m_data;
+        // qWarning()<<m_data;
     }
 }
 
@@ -109,12 +107,11 @@ AvailableGradesModel *Data::availableBoulderModel()
     return m_availableBoulderModel;
 }
 
-
 QString Data::gradeName(const QString &scale, int decimalGrade) const
 {
-    const int position = qRound((qreal)decimalGrade/(qreal)2.0);
+    const int position = qRound((qreal)decimalGrade / (qreal)2.0);
 
-    if (position < 0 || !m_data.contains(scale) || m_data[scale].size() <= position+1) {
+    if (position < 0 || !m_data.contains(scale) || m_data[scale].size() <= position + 1) {
         return QString();
     }
 
@@ -162,4 +159,3 @@ void Data::setLeadAndBoulderLinked(bool linked)
 }
 
 #include "moc_data.cpp"
-

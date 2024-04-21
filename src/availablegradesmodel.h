@@ -22,8 +22,8 @@
 
 #include <QAbstractListModel>
 #include <QJsonArray>
-#include <QJsonObject>
 #include <QJsonDocument>
+#include <QJsonObject>
 
 class Data;
 
@@ -38,7 +38,7 @@ public:
         NameRole = Qt::UserRole,
         EnabledRole,
         DescriptionRole,
-        UrlRole
+        UrlRole,
     };
 
     explicit AvailableGradesModel(Data *parent = 0);

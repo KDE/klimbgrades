@@ -20,8 +20,8 @@
 #ifndef DATA_H
 #define DATA_H
 
-#include <QObject>
 #include <QHash>
+#include <QObject>
 #include <QStandardItemModel>
 #include <QVector>
 
@@ -30,7 +30,8 @@
 class QTimer;
 class AvailableGradesModel;
 
-class Data : public QObject {
+class Data : public QObject
+{
     Q_OBJECT
     Q_PROPERTY(AvailableGradesModel *availableLeadModel READ availableLeadModel CONSTANT)
     Q_PROPERTY(AvailableGradesModel *availableBoulderModel READ availableBoulderModel CONSTANT)
@@ -48,7 +49,7 @@ public:
 
     int currentTab() const;
     void setCurrentTab(int tab);
- 
+
     int isLeadAndBoulderLinked() const;
     void setLeadAndBoulderLinked(bool linked);
 
@@ -62,7 +63,7 @@ Q_SIGNALS:
 
 private:
     QStringList m_scales;
-    QHash<QString, QVector<QString> > m_data;
+    QHash<QString, QVector<QString>> m_data;
     AvailableGradesModel *m_availableLeadModel;
     AvailableGradesModel *m_availableBoulderModel;
     QTimer *m_configSyncTimer;
