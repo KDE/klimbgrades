@@ -3,6 +3,8 @@
   <id>org.kde.klimbgrades.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
+  <content_rating type="oars-1.1"/>
+  <developer_name translate="no">KDE</developer_name>
   <name>Klimbgrades</name>
   <name xml:lang="ar">درجات التسلق</name>
   <name xml:lang="ca">Klimbgrades</name>
@@ -37,7 +39,7 @@
   <name xml:lang="x-test">xxKlimbgradesxx</name>
   <name xml:lang="zh-CN">Klimbgrades</name>
   <name xml:lang="zh-TW">Klimbgrades</name>
-  <summary>Small application to quickly convert difficulty grades for rock climbing, lead and bouldering scales</summary>
+  <summary>Quickly convert difficulty grades for rock climbing, lead and bouldering scales</summary>
   <summary xml:lang="ar">تطبيق صغير لتحويل درجات الصعوبة بين تسلق الصخور والتسلق الحر و التسلق القائد</summary>
   <summary xml:lang="ca">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per a escalar en roca, de dificultat i en bloc</summary>
   <summary xml:lang="ca-valencia">Xicoteta aplicació per a convertir ràpidament els graus de dificultat a escales per a escalar en roca, de dificultat i en bloc</summary>
@@ -158,6 +160,7 @@
     <p xml:lang="uk">Приклад програми для демонстрації оболонки Kirigami на основі Qt та технологій KDE для побудови багатоплатформових програм.</p>
     <p xml:lang="x-test">xxExample application to demonstrate KDE's Kirigami Qt-based framework for building cross-platform applications.xx</p>
   </description>
+  <url type="homepage">https://apps.kde.org/klimbgrades</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=klimbgrades</url>
   <screenshots>
     <screenshot type="default">
@@ -168,4 +171,5 @@
   <provides>
     <binary>klimbgrades</binary>
   </provides>
+  <launchable type="desktop-id">org.kde.klimbgrades.desktop</launchable>
 </component>
