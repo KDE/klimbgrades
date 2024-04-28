@@ -2,11 +2,9 @@ cmake_minimum_required(VERSION 3.16)
 
 project(klimbgrades VERSION 0.1)
 
-set(KF_MIN_VERSION "5.18.0")
-set(QT_MIN_VERSION "5.15.0")
-if (ANDROID)
-    set(QT_MIN_VERSION "5.15.10")
-endif()
+set(KF_MIN_VERSION "6.0.0")
+set(QT_MIN_VERSION "6.6.0")
+set(KDE_COMPILERSETTINGS_LEVEL "5.84")
 
 find_package(ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
 
@@ -20,16 +18,14 @@ include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDEClangFormat)
 include(KDEGitCommitHooks)
 
-find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2)
+find_package(Qt6 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2)
 
 if(NOT ANDROID)
-    find_package(Qt${QT_MAJOR_VERSION}Widgets REQUIRED)
+    find_package(Qt6Widgets REQUIRED)
 endif()
 
-find_package(KF${QT_MAJOR_VERSION}Config ${KF${QT_MAJOR_VERSION}_DEP_VERSION} "5.22.0")
-find_package(KF${QT_MAJOR_VERSION}Kirigami2 ${KF${QT_MAJOR_VERSION}_DEP_VERSION} "5.22.0")
-
-set (CMAKE_CXX_STANDARD 11)
+find_package(KF6Config ${KF_MIN_VERSION})
+find_package(KF6Kirigami ${KF_MIN_VERSION})
 
 add_subdirectory(src)
 

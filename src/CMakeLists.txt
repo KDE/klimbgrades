@@ -12,13 +12,13 @@ set(klimbgrades_SRCS
 qt_add_resources(RESOURCES resources.qrc)
 
 add_executable(klimbgrades ${klimbgrades_SRCS} ${RESOURCES})
-target_link_libraries(klimbgrades Qt::Core Qt::Qml Qt::Quick Qt::QuickControls2 Qt::Svg KF${QT_MAJOR_VERSION}::ConfigCore)
+target_link_libraries(klimbgrades Qt::Core Qt::Qml Qt::Quick Qt::QuickControls2 Qt::Svg KF6::ConfigCore)
 
 if(NOT ANDROID)
     target_link_libraries(klimbgrades Qt::Widgets)
 endif()
 
-install(TARGETS klimbgrades ${KF${QT_MAJOR_VERSION}_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS klimbgrades ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 if (ANDROID)
     configure_file(${CMAKE_CURRENT_SOURCE_DIR}/android/version.gradle.in ${CMAKE_BINARY_DIR}/version.gradle)
@@ -27,5 +27,5 @@ else()
     install(FILES klimbgrades.svg DESTINATION ${KDE_INSTALL_FULL_ICONDIR}/hicolor/scalable/apps)
 endif()
 
-#include(KF${QT_MAJOR_VERSION}KirigamiMacros.cmake)
+#include(KF6KirigamiMacros.cmake)
 kirigami_package_breeze_icons(ICONS documentinfo view-refresh edit-clear games-highscores)
