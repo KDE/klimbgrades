@@ -1,0 +1,74 @@
+# SPDX-FileCopyrightText: 2024 Yaron Shahrabani <sh.yaron@gmail.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2024-04-30 09:26+0300\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 23.08.5\n"
+
+#: Global.qml:45
+msgctxt "Global|"
+msgid "Reset"
+msgstr "איפוס"
+
+#: Global.qml:50
+msgctxt "Global|"
+msgid "Set Record"
+msgstr "הגדרת שיא"
+
+#: Global.qml:51
+msgctxt "Global|"
+msgid "Set Grade As Personal Record"
+msgstr "הגדרת שיא כשיא אישי"
+
+#: Global.qml:58
+msgctxt "Global|"
+msgid "Clear"
+msgstr "מחיקה"
+
+#: Global.qml:59
+msgctxt "Global|"
+msgid "Clear Personal Record"
+msgstr "מחיקת שיא אישי"
+
+#: Global.qml:83
+msgctxt "Global|"
+msgid "Source: Wikipedia"
+msgstr "מקור: ויקיפדיה"
+
+#: GradeWidgetBase.qml:96
+msgctxt "GradeWidgetBase|"
+msgid "Record: "
+msgstr "שיא:"
+
+#: Main.qml:54
+msgctxt "Main|"
+msgid "Climbing Grades"
+msgstr "דירוג טיפוס"
+
+#: Main.qml:82 Main.qml:109 Main.qml:168
+msgctxt "Main|"
+msgid "Lead"
+msgstr "הובלה"
+
+#: Main.qml:87 Main.qml:117 Main.qml:199
+msgctxt "Main|"
+msgid "Boulder"
+msgstr "בולדרינג"
+
+#: Main.qml:162
+msgctxt "Main|"
+msgid "Filter…"
+msgstr "סינון…"
+
+#: Main.qml:232
+msgctxt "Main|"
+msgid "Link Lead and Boulder"
+msgstr "קישור הובלה ובולדרינג"
