@@ -40,34 +40,6 @@
   <name xml:lang="zh-CN">Klimbgrades</name>
   <name xml:lang="zh-TW">Klimbgrades</name>
   <summary>Quickly convert difficulty grades for rock climbing, lead and bouldering scales</summary>
-  <summary xml:lang="ar">تطبيق صغير لتحويل درجات الصعوبة بين تسلق الصخور والتسلق الحر و التسلق القائد</summary>
-  <summary xml:lang="ca">Petita aplicació per a convertir ràpidament els graus de dificultat a escales per a escalar en roca, de dificultat i en bloc</summary>
-  <summary xml:lang="ca-valencia">Xicoteta aplicació per a convertir ràpidament els graus de dificultat a escales per a escalar en roca, de dificultat i en bloc</summary>
-  <summary xml:lang="de">Anwendung zum Umwandeln von Schwierigkeitsskalen für Felsklettern, Vorstieg und Bouldern</summary>
-  <summary xml:lang="el">Μικρή εφαρμογή γρήγορης μετατροπής βαθμών δυσκολίας για ορειβασία, καθοδήγηση και αναρριχητικές κλίμακες</summary>
-  <summary xml:lang="en-GB">Small application to quickly convert difficulty grades for rock climbing, lead and bouldering scales</summary>
-  <summary xml:lang="eo">Malgranda aplikaĵo por rapide konverti malfacilecajn gradojn por rokgrimpado, gvidanto- kaj bouldering-skaloj</summary>
-  <summary xml:lang="es">Pequeña aplicación para convertir rápidamente grados de dificultad de escalada según las escalas de líder y de bloques</summary>
-  <summary xml:lang="eu">Arroka eskalada, liderra eta bloke eskalen zailtasun graduak azkar bihurtzeko aplikazio txikia</summary>
-  <summary xml:lang="fr">Petite application permettant de convertir rapidement les cotations des murs, des voies d'escalade libre et des blocs</summary>
-  <summary xml:lang="gl">Pequeno aplicación para converter rapidamente graos de dificultade de escalada de rochas, chumbo e escalas de rochas</summary>
-  <summary xml:lang="he">יישום קטן להמרה מהירה בין דרגות קושי בקני מידה של טיפוס, הובלה ובולדרינג.</summary>
-  <summary xml:lang="hi">पत्थर की चढ़ाई हेतु कठिनाई पदक्रम को आसानी से परिवर्तित करने के लिए एक छोटा अनुप्रयोग</summary>
-  <summary xml:lang="ia">Parve application pro converter rapidemente grados de diffìcultate per scalar de rochas, scalas de plumbo  e bouldering </summary>
-  <summary xml:lang="id">Aplikasi kecil untuk secara cepat mengkonversi nilai kesulitan untuk panjat tebing, timbal, dan timbangan batu</summary>
-  <summary xml:lang="it">Piccola applicazione per convertire in maniera rapida i gradi di difficoltà per le arrampicate lead e boulder e l'arrampicata su roccia</summary>
-  <summary xml:lang="ka">პატარა აპლიკაცია კლდეზე ცოცვის სხვადასხვა სტილებს შორის სიძნელის დონეებს შორის გადასაყვანად</summary>
-  <summary xml:lang="ko">암벽 등반, 리드, 볼더링 등급을 변환하는 간편한 도구</summary>
-  <summary xml:lang="nl">Een kleine toepassing om snel moeilijke schalen voor graden van gezekerde en niet-gezekerde rotsbeklimming te converteren</summary>
-  <summary xml:lang="nn">Lite program for å rekna graderingar for fjell­klatring, led­klatring og buldring om til ulike graderings­system</summary>
-  <summary xml:lang="pl">Mała aplikacja do przekształcania trudnych stopni we wspinaczce górskiej, skale lead i boulder</summary>
-  <summary xml:lang="pt">Pequena aplicação para converter rapidamente as cotações de dificuldade de escaladas, bem como escalas de montanhismo e de liderança</summary>
-  <summary xml:lang="pt-BR">Pequeno aplicativo para converter rapidamente graus de dificuldade de escalada nas escalas para rocha, lead e bouldering</summary>
-  <summary xml:lang="sl">Majhna aplikacija za hitro pretvorbo težavnostnih razredov za skalno plezanje, vodilne in balvanske lestvice</summary>
-  <summary xml:lang="sv">Litet program för att snabbt konvertera svåra lutningar vid bergsbestigning och klippbestigning</summary>
-  <summary xml:lang="tr">Tırmanma Yardımcısı</summary>
-  <summary xml:lang="uk">Невеличка програма для швидкого перетворення оцінок складності для скелелазання, оцінок лідерства та техніки скелелазання</summary>
-  <summary xml:lang="x-test">xxSmall application to quickly convert difficulty grades for rock climbing, lead and bouldering scalesxx</summary>
   <description>
     <ul>
       <li>Lead: French, YDS, UIAA, British Tech, British Adjectival</li>
