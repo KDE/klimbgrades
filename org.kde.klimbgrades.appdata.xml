@@ -40,6 +40,17 @@
   <name xml:lang="zh-CN">Klimbgrades</name>
   <name xml:lang="zh-TW">Klimbgrades</name>
   <summary>Quickly convert difficulty grades for rock climbing, lead and bouldering scales</summary>
+  <summary xml:lang="ca">Converteix ràpidament els graus de dificultat a escales per a escalar en roca, de dificultat i en bloc</summary>
+  <summary xml:lang="ca-valencia">Convertix ràpidament els graus de dificultat a escales per a escalar en roca, de dificultat i en bloc</summary>
+  <summary xml:lang="eo">Rapide konvertu malfacilecajn gradojn por rokgrimpado, gvidanto- kaj bouldering-skaloj</summary>
+  <summary xml:lang="es">Conversión rápida de grados de dificultad de escalada según las escalas de líder y de bloques</summary>
+  <summary xml:lang="it">Converti in maniera rapida i gradi di difficoltà per le arrampicate lead e boulder e l'arrampicata su roccia</summary>
+  <summary xml:lang="ka">კლდეზე ცოცვის სიძნელის ქულებს სწრაფი გადაყვანა</summary>
+  <summary xml:lang="nl">Snel moeilijkheidsschalen voor graden van gezekerde en niet-gezekerde rotsbeklimming converteren</summary>
+  <summary xml:lang="sl">Hitro pretvori težavnostne razrede za skalno plezanje, vodilne in balvanske lestvice</summary>
+  <summary xml:lang="tr">Tırmanma Yardımcısı</summary>
+  <summary xml:lang="uk">Програма для швидкого перетворення оцінок складності для скелелазання, оцінок лідерства та техніки скелелазання</summary>
+  <summary xml:lang="x-test">xxQuickly convert difficulty grades for rock climbing, lead and bouldering scalesxx</summary>
   <description>
     <ul>
       <li>Lead: French, YDS, UIAA, British Tech, British Adjectival</li>
@@ -128,7 +139,7 @@
     <p xml:lang="pt-BR">Aplicativo de exemplo para demonstrar a estrutura baseada em Qt do KDE Kirigami para criar aplicativos multiplataforma.</p>
     <p xml:lang="sl">Primer aplikacije za prikaz razvojnega okvirja na KDE Kirigami Qt za izdelavo aplikacij za več platform.</p>
     <p xml:lang="sv">Exempelprogram för att demonstrera KDE:s Kirigami Qt-baserade ramverk för att bygga program för flera plattformar.</p>
-    <p xml:lang="tr">KDE'nin çok platformlu uygulamak geliştirmek için yazdığı Qt tabanlı kod kitaplığı Kirigami'yi göstermek için yazılmış örnek uygulama.</p>
+    <p xml:lang="tr">KDE’nin çok platformlu uygulamak geliştirmek için yazdığı Qt tabanlı kod kitaplığı Kirigami'yi göstermek için yazılmış örnek uygulama.</p>
     <p xml:lang="uk">Приклад програми для демонстрації оболонки Kirigami на основі Qt та технологій KDE для побудови багатоплатформових програм.</p>
     <p xml:lang="x-test">xxExample application to demonstrate KDE's Kirigami Qt-based framework for building cross-platform applications.xx</p>
   </description>
