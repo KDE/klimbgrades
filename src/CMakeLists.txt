@@ -22,6 +22,9 @@ install(TARGETS klimbgrades ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 if (ANDROID)
     configure_file(${CMAKE_CURRENT_SOURCE_DIR}/android/version.gradle.in ${CMAKE_BINARY_DIR}/version.gradle)
+
+    ecm_add_android_apk(klimbgrades ANDROID_DIR ${CMAKE_SOURCE_DIR}/android)
+
     install(FILES klimbgrades.svg DESTINATION ${KDE_INSTALL_QMLDIR}/org/kde/kirigami.2/icons)
 else()
     install(FILES klimbgrades.svg DESTINATION ${KDE_INSTALL_FULL_ICONDIR}/hicolor/scalable/apps)
