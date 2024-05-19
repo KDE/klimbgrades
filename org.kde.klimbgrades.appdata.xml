@@ -45,6 +45,7 @@
   <summary xml:lang="ca-valencia">Convertix ràpidament els graus de dificultat a escales per a escalar en roca, de dificultat i en bloc</summary>
   <summary xml:lang="eo">Rapide konvertu malfacilecajn gradojn por rokgrimpado, gvidanto- kaj bouldering-skaloj</summary>
   <summary xml:lang="es">Conversión rápida de grados de dificultad de escalada según las escalas de líder y de bloques</summary>
+  <summary xml:lang="eu">Arroka eskaladako zailtasun graduak azkar bihurtzeko, leader eta bloke eskalak</summary>
   <summary xml:lang="fr">Convertir rapidement les notations en difficulté des murs, des voies d'escalade libre et des blocs</summary>
   <summary xml:lang="he">המרה מהירה בין דרגות קושי בקני מידה של טיפוס, הובלה ובולדרינג.</summary>
   <summary xml:lang="ia">Converter rapidemente grados de diffìcultate per scalar de rochas, scalas de plumbo  e bouldering </summary>
@@ -126,7 +127,7 @@
     <p xml:lang="en-GB">Example application to demonstrate KDE's Kirigami Qt-based framework for building cross-platform applications.</p>
     <p xml:lang="eo">Ekzempla aplikaĵo por demonstri la Qt-bazitan framon Kirigami de KDE por konstrui plurplatformajn aplikojn.</p>
     <p xml:lang="es">Aplicación de ejemplo para probar la infraestructura Kirigami de KDE, basada en Qt, para crear aplicaciones multiplataforma.</p>
-    <p xml:lang="eu">KDEren Kirigami, plataforma anitzeko aplikazioak sortzeko Qt-oinarriko azpiegitura agertzeko aplikazio adibidea.</p>
+    <p xml:lang="eu">KDEren Kirigami, plataforma anitzeko aplikazioak sortzeko Qt-oinarriko «framework» azpiegitura agertzeko aplikazio adibidea.</p>
     <p xml:lang="fr">Exemple d'application pour démontrer l'utilisation du framework Qt Kirigami de KDE pour le développement d'applications multi-plate-formes.</p>
     <p xml:lang="gl">Aplicación de exemplo que demostra a infraestrutura Kirigami de KDE, baseada en Qt, para construír aplicacións para múltiples plataformas.</p>
     <p xml:lang="he">יישום להדגמת תשתית Kirigami מבית KDE המבוססת על Qt לבניית יישומים חוצי פלטפורמות.</p>
