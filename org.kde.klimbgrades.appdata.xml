@@ -31,6 +31,7 @@
   <name xml:lang="pt">Klimbgrades</name>
   <name xml:lang="pt-BR">Klimbgrades</name>
   <name xml:lang="ru">Klimbgrades</name>
+  <name xml:lang="sa">आरोहति</name>
   <name xml:lang="sk">Klimbgrades</name>
   <name xml:lang="sl">Klimbgrades</name>
   <name xml:lang="sv">Klimbgrades</name>
@@ -59,6 +60,7 @@
   <summary xml:lang="nl">Snel moeilijkheidsschalen voor graden van gezekerde en niet-gezekerde rotsbeklimming converteren</summary>
   <summary xml:lang="nn">Rekna graderingar for fjell­klatring, led­klatring og buldring om til ulike graderings­system</summary>
   <summary xml:lang="pl">Szybko przekształcaj stopnie trudności we wspinaczce górskiej, skale lead i boulder</summary>
+  <summary xml:lang="sa">शिलारोहणस्य, सीसस्य, बोल्डरिंग् स्केलस्य च कृते कठिनताश्रेणीं शीघ्रं परिवर्तयन्तु</summary>
   <summary xml:lang="sl">Hitro pretvori težavnostne razrede za skalno plezanje, vodilne in balvanske lestvice</summary>
   <summary xml:lang="sv">Konvertera snabbt svåra lutningar vid bergsbestigning och klippbestigning</summary>
   <summary xml:lang="tr">Tırmanma Yardımcısı</summary>
@@ -90,6 +92,7 @@
       <li xml:lang="pl">Lead: French, YDS, UIAA, British Tech, British Adjectival</li>
       <li xml:lang="pt">Liderança: Francês, YDS, UIAA, Inglês Técnico, Inglês Adjectivado</li>
       <li xml:lang="pt-BR">Lead: Francesa, YDS, UIAA, British Tech, British Adjectival</li>
+      <li xml:lang="sa">लीड: फ्रेंच, YDS, UIAA, ब्रिटिश टेक्, ब्रिटिश विशेषण</li>
       <li xml:lang="sl">Vodilne: Francoska, YDS, UIAA, British Tech, British Adjectival</li>
       <li xml:lang="sv">Ledare: French, YDS, UIAA, British Tech, British Adjectival</li>
       <li xml:lang="tr">Öncü: Fransız, YDS, UIAA, British Tech, British Adjectival</li>
@@ -120,6 +123,7 @@
       <li xml:lang="pl">Boulder: Fontainebleu, Hueco, B Grade</li>
       <li xml:lang="pt">Montanhismo: Fontainebleu, Hueco, Escala B</li>
       <li xml:lang="pt-BR">Boulder: Fontainebleu, Hueco, B Grade</li>
+      <li xml:lang="sa">बोल्डर : फॉन्टेनब्लेउ, ह्यूको, बी ग्रेड</li>
       <li xml:lang="sl">Balvanske: Fontainebleu, Hueco, B Grade</li>
       <li xml:lang="sv">Klippa: Fontainebleu, Hueco, B Grade</li>
       <li xml:lang="tr">Kaşa: Fontainebleu, Hueco, B Grade</li>
@@ -150,6 +154,7 @@
     <p xml:lang="pl">Przykładowa aplikacja do przestawienia szkieletu KDE Kirigami opartego na Qt do tworzenia wieloplatformowych aplikacji.</p>
     <p xml:lang="pt">Aplicação de exemplo para demonstrar a plataforma Kirigami do KDE, baseada no Qt, para criar aplicações multi-plataforma.</p>
     <p xml:lang="pt-BR">Aplicativo de exemplo para demonstrar a estrutura baseada em Qt do KDE Kirigami para criar aplicativos multiplataforma.</p>
+    <p xml:lang="sa">पार-मञ्च-अनुप्रयोगानाम् निर्माणार्थं KDE इत्यस्य Kirigami Qt-आधारितरूपरेखां प्रदर्शयितुं उदाहरणानुप्रयोगः ।</p>
     <p xml:lang="sl">Primer aplikacije za prikaz razvojnega okvirja na KDE Kirigami Qt za izdelavo aplikacij za več platform.</p>
     <p xml:lang="sv">Exempelprogram för att demonstrera KDE:s Kirigami Qt-baserade ramverk för att bygga program för flera plattformar.</p>
     <p xml:lang="tr">KDE’nin çok platformlu uygulamak geliştirmek için yazdığı Qt tabanlı kod kitaplığı Kirigami'yi göstermek için yazılmış örnek uygulama.</p>
