@@ -1,72 +1,74 @@
-#
+# SPDX-FileCopyrightText: 2024 kali <skkalwar999@gmail.com>
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2024-12-13 19:10+0530\n"
-"Last-Translator: Kali <EMAIL@ADDRESS>\n"
-"Language-Team: Sanskrit\n"
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2024-12-14 01:48+0530\n"
+"Last-Translator: kali <skkalwar999@gmail.com>\n"
+"Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
 "Language: sa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #: Global.qml:45
 msgctxt "Global|"
 msgid "Reset"
-msgstr ""
+msgstr "पुनः सेट् करें"
 
 #: Global.qml:50
 msgctxt "Global|"
 msgid "Set Record"
-msgstr ""
+msgstr "Record सेट् कुर्वन्तु"
 
 #: Global.qml:51
 msgctxt "Global|"
 msgid "Set Grade As Personal Record"
-msgstr ""
+msgstr "Grade As Personal Record इति सेट् कुर्वन्तु"
 
 #: Global.qml:58
 msgctxt "Global|"
 msgid "Clear"
-msgstr ""
+msgstr "स्पष्टः"
 
 #: Global.qml:59
 msgctxt "Global|"
 msgid "Clear Personal Record"
-msgstr ""
+msgstr "व्यक्तिगत अभिलेख स्पष्ट करें"
 
 #: Global.qml:83
 msgctxt "Global|"
 msgid "Source: Wikipedia"
-msgstr ""
+msgstr "स्रोतः - विकिपीडिया"
 
 #: GradeWidgetBase.qml:96
 msgctxt "GradeWidgetBase|"
 msgid "Record: "
-msgstr ""
+msgstr "अभिलेख: "
 
 #: Main.qml:54
 msgctxt "Main|"
 msgid "Climbing Grades"
-msgstr ""
+msgstr "आरोहण ग्रेड्स"
 
 #: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
 msgid "Lead"
-msgstr ""
+msgstr "सीसम्‌"
 
 #: Main.qml:87 Main.qml:117 Main.qml:199
 msgctxt "Main|"
 msgid "Boulder"
-msgstr ""
+msgstr "बोल्डर"
 
 #: Main.qml:162
 msgctxt "Main|"
 msgid "Filter…"
-msgstr ""
+msgstr "फ़िल्टर…"
 
 #: Main.qml:232
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
-msgstr ""
+msgstr "लीड् एण्ड् बोल्डर इति लिङ्क् कुर्वन्तु"
