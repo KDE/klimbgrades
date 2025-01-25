@@ -174,4 +174,7 @@
     <binary>klimbgrades</binary>
   </provides>
   <launchable type="desktop-id">org.kde.klimbgrades.desktop</launchable>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
 </component>
