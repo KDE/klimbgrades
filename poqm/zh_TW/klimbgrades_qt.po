@@ -1,17 +1,18 @@
 # pan93412 <pan93412@gmail.com>, 2019.
+# SPDX-FileCopyrightText: 2025 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2019-01-04 01:01+0800\n"
-"Last-Translator: pan93412 <pan93412@gmail.com>\n"
-"Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
+"PO-Revision-Date: 2025-04-07 15:01+0900\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 18.12.0\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #: Global.qml:45
 msgctxt "Global|"
@@ -26,7 +27,7 @@ msgstr "設定記錄"
 #: Global.qml:51
 msgctxt "Global|"
 msgid "Set Grade As Personal Record"
-msgstr "將成績設為個人記錄"
+msgstr "將等級設為個人記錄"
 
 #: Global.qml:58
 msgctxt "Global|"
@@ -51,24 +52,24 @@ msgstr "記錄："
 #: Main.qml:54
 msgctxt "Main|"
 msgid "Climbing Grades"
-msgstr ""
+msgstr "攀岩等級"
 
 #: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
 msgid "Lead"
-msgstr ""
+msgstr "領攀"
 
 #: Main.qml:87 Main.qml:117 Main.qml:199
 msgctxt "Main|"
 msgid "Boulder"
-msgstr ""
+msgstr "抱石"
 
 #: Main.qml:162
 msgctxt "Main|"
 msgid "Filter…"
-msgstr ""
+msgstr "過濾…"
 
 #: Main.qml:232
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
-msgstr ""
+msgstr "連結領攀與抱石"
