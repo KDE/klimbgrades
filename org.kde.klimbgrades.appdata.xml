@@ -67,6 +67,7 @@
   <summary xml:lang="tr">Tırmanma Yardımcısı</summary>
   <summary xml:lang="uk">Програма для швидкого перетворення оцінок складності для скелелазання, оцінок лідерства та техніки скелелазання</summary>
   <summary xml:lang="x-test">xxQuickly convert difficulty grades for rock climbing, lead and bouldering scalesxx</summary>
+  <summary xml:lang="zh-TW">快速在攀岩、領攀、抱石的難度等級之間轉換</summary>
   <description>
     <ul>
       <li>Lead: French, YDS, UIAA, British Tech, British Adjectival</li>
@@ -99,6 +100,7 @@
       <li xml:lang="tr">Öncü: Fransız, YDS, UIAA, British Tech, British Adjectival</li>
       <li xml:lang="uk">Складність: French, YDS, UIAA, British Tech, British Adjectival</li>
       <li xml:lang="x-test">xxLead: French, YDS, UIAA, British Tech, British Adjectivalxx</li>
+      <li xml:lang="zh-TW">領攀：法國、YDS、UIAA、英國 (tech)、英國 (adjectival)</li>
       <li>Boulder: Fontainebleu, Hueco, B Grade</li>
       <li xml:lang="ar">النمط الحر: فونتينبلو، هويكو ، مستوى ب</li>
       <li xml:lang="ca">En bloc («boulder»): Fontainebleu, Hueco, grau B</li>
@@ -130,6 +132,7 @@
       <li xml:lang="tr">Kaşa: Fontainebleu, Hueco, B Grade</li>
       <li xml:lang="uk">Техніка скелелазання: Fontainebleu, Hueco, B Grade</li>
       <li xml:lang="x-test">xxBoulder: Fontainebleu, Hueco, B Gradexx</li>
+      <li xml:lang="zh-TW">抱石：楓丹白露 (Fontainebleu)、Hueco、B Grade</li>
     </ul>
     <p>Example application to demonstrate KDE's Kirigami Qt-based framework for building cross-platform applications.</p>
     <p xml:lang="ar">تطبيق مثال لإثبات إطار عمل Kirigami Qt القائم على كِيدِي لبناء تطبيقات عبر الأنظمة الأساسية.</p>
@@ -161,6 +164,7 @@
     <p xml:lang="tr">KDE’nin çok platformlu uygulamak geliştirmek için yazdığı Qt tabanlı kod kitaplığı Kirigami'yi göstermek için yazılmış örnek uygulama.</p>
     <p xml:lang="uk">Приклад програми для демонстрації оболонки Kirigami на основі Qt та технологій KDE для побудови багатоплатформових програм.</p>
     <p xml:lang="x-test">xxExample application to demonstrate KDE's Kirigami Qt-based framework for building cross-platform applications.xx</p>
+    <p xml:lang="zh-TW">用來快速在攀岩、領攀、抱石的難度等級之間轉換的應用程式</p>
   </description>
   <url type="homepage">https://apps.kde.org/klimbgrades</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=klimbgrades</url>
