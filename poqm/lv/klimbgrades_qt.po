@@ -1,0 +1,75 @@
+# SPDX-FileCopyrightText: 2025 Toms Trasuns <toms.trasuns@posteo.net>
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2025-04-07 16:28+0300\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: Lokalize 24.12.3\n"
+
+#: Global.qml:45
+msgctxt "Global|"
+msgid "Reset"
+msgstr "Atiestatīt"
+
+#: Global.qml:50
+msgctxt "Global|"
+msgid "Set Record"
+msgstr "Norādīt kā rekordu"
+
+#: Global.qml:51
+msgctxt "Global|"
+msgid "Set Grade As Personal Record"
+msgstr "Norādīt pakāpi kā personīgu rekordu"
+
+#: Global.qml:58
+msgctxt "Global|"
+msgid "Clear"
+msgstr "Notīrīt"
+
+#: Global.qml:59
+msgctxt "Global|"
+msgid "Clear Personal Record"
+msgstr "Notīrīt personīgo rekordu"
+
+#: Global.qml:83
+msgctxt "Global|"
+msgid "Source: Wikipedia"
+msgstr "Avots: Vikipēdija"
+
+#: GradeWidgetBase.qml:96
+msgctxt "GradeWidgetBase|"
+msgid "Record: "
+msgstr "Rekords: "
+
+#: Main.qml:54
+msgctxt "Main|"
+msgid "Climbing Grades"
+msgstr "Kāpšanas pakāpes"
+
+#: Main.qml:82 Main.qml:109 Main.qml:168
+msgctxt "Main|"
+msgid "Lead"
+msgstr "Augstās"
+
+#: Main.qml:87 Main.qml:117 Main.qml:199
+msgctxt "Main|"
+msgid "Boulder"
+msgstr "Boulderinga"
+
+#: Main.qml:162
+msgctxt "Main|"
+msgid "Filter…"
+msgstr "Filtrēt…"
+
+#: Main.qml:232
+msgctxt "Main|"
+msgid "Link Lead and Boulder"
+msgstr "Saistīt augstās un boulderinga"
