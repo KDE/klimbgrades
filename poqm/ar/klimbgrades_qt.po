@@ -31,12 +31,12 @@ msgstr "ضعّ الدرجة كسجل شخصي"
 #: Global.qml:58
 msgctxt "Global|"
 msgid "Clear"
-msgstr "امسح"
+msgstr "امحُ"
 
 #: Global.qml:59
 msgctxt "Global|"
 msgid "Clear Personal Record"
-msgstr "امسح السجل الشخصي"
+msgstr "امحُ السجل الشخصي"
 
 #: Global.qml:83
 msgctxt "Global|"
