@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+
+#: Global.qml:45
+msgctxt "Global|"
+msgid "Reset"
+msgstr ""
+
+#: Global.qml:50
+msgctxt "Global|"
+msgid "Set Record"
+msgstr ""
+
+#: Global.qml:51
+msgctxt "Global|"
+msgid "Set Grade As Personal Record"
+msgstr ""
+
+#: Global.qml:58
+msgctxt "Global|"
+msgid "Clear"
+msgstr ""
+
+#: Global.qml:59
+msgctxt "Global|"
+msgid "Clear Personal Record"
+msgstr ""
+
+#: Global.qml:83
+msgctxt "Global|"
+msgid "Source: Wikipedia"
+msgstr ""
+
+#: GradeWidgetBase.qml:96
+msgctxt "GradeWidgetBase|"
+msgid "Record: "
+msgstr ""
+
+#: Main.qml:54
+msgctxt "Main|"
+msgid "Climbing Grades"
+msgstr ""
+
+#: Main.qml:82 Main.qml:109 Main.qml:168
+msgctxt "Main|"
+msgid "Lead"
+msgstr ""
+
+#: Main.qml:87 Main.qml:117 Main.qml:199
+msgctxt "Main|"
+msgid "Boulder"
+msgstr ""
+
+#: Main.qml:162
+msgctxt "Main|"
+msgid "Filter…"
+msgstr ""
+
+#: Main.qml:232
+msgctxt "Main|"
+msgid "Link Lead and Boulder"
+msgstr ""
