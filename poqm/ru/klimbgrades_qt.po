@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2026-02-17 20:38+0200\n"
+"PO-Revision-Date: 2026-02-21 14:07+0200\n"
 "Last-Translator: Alexander Yavorskiy <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -57,7 +57,7 @@ msgstr "Классификация сложности маршрутов"
 #: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
 msgid "Lead"
-msgstr ""
+msgstr "Страховка"
 
 #: Main.qml:87 Main.qml:117 Main.qml:199
 msgctxt "Main|"
