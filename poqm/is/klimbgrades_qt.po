@@ -1,0 +1,74 @@
+# SPDX-FileCopyrightText: 2026 Sveinn í Felli <sv1@fellsnet.is>
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2026-03-23 12:03+0000\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
+"Language-Team: Icelandic\n"
+"Language: is\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 23.08.5\n"
+
+#: Global.qml:45
+msgctxt "Global|"
+msgid "Reset"
+msgstr "Endurstilla"
+
+#: Global.qml:50
+msgctxt "Global|"
+msgid "Set Record"
+msgstr "Setja sem besta árangur"
+
+#: Global.qml:51
+msgctxt "Global|"
+msgid "Set Grade As Personal Record"
+msgstr "Setja gráðu sem persónulegan besta árangur"
+
+#: Global.qml:58
+msgctxt "Global|"
+msgid "Clear"
+msgstr "Hreinsa"
+
+#: Global.qml:59
+msgctxt "Global|"
+msgid "Clear Personal Record"
+msgstr "Hreinsa persónulegan árangur"
+
+#: Global.qml:83
+msgctxt "Global|"
+msgid "Source: Wikipedia"
+msgstr "Heimild: Wikipedia"
+
+#: GradeWidgetBase.qml:96
+msgctxt "GradeWidgetBase|"
+msgid "Record: "
+msgstr "Besti árangur: "
+
+#: Main.qml:54
+msgctxt "Main|"
+msgid "Climbing Grades"
+msgstr "Klifurgráður"
+
+#: Main.qml:82 Main.qml:109 Main.qml:168
+msgctxt "Main|"
+msgid "Lead"
+msgstr "Leiðsluklifur"
+
+#: Main.qml:87 Main.qml:117 Main.qml:199
+msgctxt "Main|"
+msgid "Boulder"
+msgstr "Grjótglímuklifur"
+
+#: Main.qml:162
+msgctxt "Main|"
+msgid "Filter…"
+msgstr "Sía…"
+
+#: Main.qml:232
+msgctxt "Main|"
+msgid "Link Lead and Boulder"
+msgstr "Tengja leiðsluklifur og grjótglímu"
