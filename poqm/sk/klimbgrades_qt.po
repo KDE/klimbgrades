@@ -12,8 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 2.0\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 2.0\n"
 "X-Qt-Contexts: true\n"
 
 #: Global.qml:45
@@ -24,12 +24,12 @@ msgstr "Obnoviť"
 #: Global.qml:50
 msgctxt "Global|"
 msgid "Set Record"
-msgstr ""
+msgstr "Set Record"
 
 #: Global.qml:51
 msgctxt "Global|"
 msgid "Set Grade As Personal Record"
-msgstr ""
+msgstr "Nastaviť stupeň ako osobný rekord"
 
 #: Global.qml:58
 msgctxt "Global|"
@@ -39,12 +39,12 @@ msgstr "Vyčistiť"
 #: Global.qml:59
 msgctxt "Global|"
 msgid "Clear Personal Record"
-msgstr ""
+msgstr "Clear Personal Record"
 
 #: Global.qml:83
 msgctxt "Global|"
 msgid "Source: Wikipedia"
-msgstr ""
+msgstr "Zdroj: Wikipedia"
 
 #: GradeWidgetBase.qml:96
 msgctxt "GradeWidgetBase|"
@@ -54,7 +54,7 @@ msgstr "Nahrať:"
 #: Main.qml:54
 msgctxt "Main|"
 msgid "Climbing Grades"
-msgstr ""
+msgstr "Climbing Grades"
 
 #: Main.qml:82 Main.qml:109 Main.qml:168
 msgctxt "Main|"
@@ -69,30 +69,24 @@ msgstr "Boulder"
 #: Main.qml:162
 msgctxt "Main|"
 msgid "Filter…"
-msgstr ""
+msgstr "Filter…"
 
 #: Main.qml:232
 msgctxt "Main|"
 msgid "Link Lead and Boulder"
-msgstr ""
+msgstr "Prepojiť lezenie s lanom a bouldering"
 
 #, fuzzy
-#~| msgctxt "Main|"
-#~| msgid "Lead"
 #~ msgctxt "Global|"
 #~ msgid "Lead"
 #~ msgstr "Olovo"
 
 #, fuzzy
-#~| msgctxt "Main|"
-#~| msgid "Boulder"
 #~ msgctxt "Global|"
 #~ msgid "Bouldering"
 #~ msgstr "Boulder"
 
 #, fuzzy
-#~| msgctxt "Main|"
-#~| msgid "Boulder"
 #~ msgctxt "Global|"
 #~ msgid "Boulder"
 #~ msgstr "Boulder"
