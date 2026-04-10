@@ -66,6 +66,7 @@
   <summary xml:lang="pt-BR">Rapidamente converta graus de dificuldade de escalada nas escalas para rocha, lead e bouldering</summary>
   <summary xml:lang="ru">Быстрое преобразование уровней сложности для скалолазания, спортивного лазания и боулдеринга</summary>
   <summary xml:lang="sa">शिलारोहणस्य, सीसस्य, बोल्डरिंग् स्केलस्य च कृते कठिनताश्रेणीं शीघ्रं परिवर्तयन्तु</summary>
+  <summary xml:lang="sk">Rýchly prevod stupňov obtiažnosti pre lezenie na skalách, lezenie s lanom a bouldering</summary>
   <summary xml:lang="sl">Hitro pretvori težavnostne razrede za skalno plezanje, vodilne in balvanske lestvice</summary>
   <summary xml:lang="sv">Konvertera snabbt svåra lutningar vid bergsbestigning och klippbestigning</summary>
   <summary xml:lang="tr">Tırmanma Yardımcısı</summary>
@@ -102,6 +103,7 @@
       <li xml:lang="pt-BR">Lead: Francesa, YDS, UIAA, British Tech, British Adjectival</li>
       <li xml:lang="ru">Ведущие системы: французская, YDS, UIAA, британская техническая, британская описательная;</li>
       <li xml:lang="sa">लीड: फ्रेंच, YDS, UIAA, ब्रिटिश टेक्, ब्रिटिश विशेषण</li>
+      <li xml:lang="sk">Lead: French, YDS, UIAA, British Tech, British Adjectival</li>
       <li xml:lang="sl">Vodilne: Francoska, YDS, UIAA, British Tech, British Adjectival</li>
       <li xml:lang="sv">Ledare: French, YDS, UIAA, British Tech, British Adjectival</li>
       <li xml:lang="tr">Öncü: Fransız, YDS, UIAA, British Tech, British Adjectival</li>
@@ -136,6 +138,7 @@
       <li xml:lang="pt-BR">Boulder: Fontainebleu, Hueco, B Grade</li>
       <li xml:lang="ru">Боулдер: Фонтенбло, Уэко, оценка B;</li>
       <li xml:lang="sa">बोल्डर : फॉन्टेनब्लेउ, ह्यूको, बी ग्रेड</li>
+      <li xml:lang="sk">Boulder: Fontainebleu, Hueco, B Grade</li>
       <li xml:lang="sl">Balvanske: Fontainebleu, Hueco, B Grade</li>
       <li xml:lang="sv">Klippa: Fontainebleu, Hueco, B Grade</li>
       <li xml:lang="tr">Kaşa: Fontainebleu, Hueco, B Grade</li>
@@ -170,6 +173,7 @@
     <p xml:lang="pt-BR">Aplicativo de exemplo para demonstrar a estrutura baseada em Qt do KDE Kirigami para criar aplicativos multiplataforma.</p>
     <p xml:lang="ru">Пример приложения, демонстрирующего использование Qt-фреймворка Kirigami от KDE для создания кроссплатформенных приложений.</p>
     <p xml:lang="sa">पार-मञ्च-अनुप्रयोगानाम् निर्माणार्थं KDE इत्यस्य Kirigami Qt-आधारितरूपरेखां प्रदर्शयितुं उदाहरणानुप्रयोगः ।</p>
+    <p xml:lang="sk">Example application to demonstrate KDE's Kirigami Qt-based framework for building cross-platform applications.</p>
     <p xml:lang="sl">Primer aplikacije za prikaz razvojnega okvirja na KDE Kirigami Qt za izdelavo aplikacij za več platform.</p>
     <p xml:lang="sv">Exempelprogram för att demonstrera KDE:s Kirigami Qt-baserade ramverk för att bygga program för flera plattformar.</p>
     <p xml:lang="tr">KDE’nin çok platformlu uygulamak geliştirmek için yazdığı Qt tabanlı kod kitaplığı Kirigami'yi göstermek için yazılmış örnek uygulama.</p>
