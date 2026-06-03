@@ -38,6 +38,7 @@
   <name xml:lang="sl">Klimbgrades</name>
   <name xml:lang="sv">Klimbgrades</name>
   <name xml:lang="tr">Klimbgrades</name>
+  <name xml:lang="ug">Klimbgrades</name>
   <name xml:lang="uk">Klimbgrades</name>
   <name xml:lang="zh-CN">Klimbgrades</name>
   <name xml:lang="zh-TW">Klimbgrades</name>
@@ -142,6 +143,7 @@
       <li xml:lang="sl">Balvanske: Fontainebleu, Hueco, B Grade</li>
       <li xml:lang="sv">Klippa: Fontainebleu, Hueco, B Grade</li>
       <li xml:lang="tr">Kaşa: Fontainebleu, Hueco, B Grade</li>
+      <li xml:lang="ug">Boulder: Fontainebleu, Hueco, B Grade</li>
       <li xml:lang="uk">Техніка скелелазання: Fontainebleu, Hueco, B Grade</li>
       <li xml:lang="zh-TW">抱石：楓丹白露 (Fontainebleu)、Hueco、B Grade</li>
     </ul>
