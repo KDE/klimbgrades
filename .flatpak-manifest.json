@@ -5,16 +5,26 @@
     "runtime-version": "6.11",
     "sdk": "org.kde.Sdk",
     "command": "klimbgrades",
-    "tags": ["nightly"],
+    "tags": [
+        "nightly"
+    ],
     "desktop-file-name-suffix": " (Nightly)",
-    "finish-args": ["--share=ipc", "--socket=x11", "--socket=wayland" ],
-
+    "finish-args": [
+        "--share=ipc",
+        "--socket=x11",
+        "--socket=wayland"
+    ],
     "modules": [
         {
             "name": "klimbgrades",
             "buildsystem": "cmake-ninja",
             "builddir": true,
-            "sources": [ { "type": "dir", "path": "." } ]
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "."
+                }
+            ]
         }
     ]
 }
